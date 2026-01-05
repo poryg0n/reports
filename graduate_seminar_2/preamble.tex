@@ -1,0 +1,61 @@
+
+%\usepackage[japanese]{babel}
+
+%\usepackage{xeCJK}
+% \setCJKmainfont[BoldFont=../fonts/AozoraMincho-bold,AutoFakeSlant=0.15]{../fonts/AozoraMinchoRegular.ttf}
+%
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}
+
+\usepackage{cite}
+\usepackage{mciteplus} 
+
+%\newcommand\Fontvi{\fontsize{9}{7.2}\selectfont}
+
+\usepackage{xcolor,graphicx}
+\usepackage[outdir=figures/converted_figs/]{epstopdf}
+\usepackage{subfig,float}
+\usepackage[figurename=Fig.,tablename=Tab.]{caption}% center as possible option
+\usepackage{booktabs,array,rotating,tabularx}
+%\usepackage{verbatim}       %% Doesnt work with beamer
+
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{pipe}{ $|$ }% or $\vert$
+\captionsetup{
+  format=plain,
+  justification=raggedright,
+  singlelinecheck=false,
+  font=small,
+  labelsep=colon,
+  figurename=Figure
+}
+
+
+\def\eq{equation}
+
+\usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=red,
+    bookmarksnumbered=true,
+    citecolor=blue
+ }
+ \urlstyle{same}
+
+%\usepackage[acronym,nonumberlist]{glossaries}
+% \makeglossaries
+% \loadglsentries{../glossary}
+
+\usepackage{tikz}
+ \usetikzlibrary{positioning}
+ \usetikzlibrary{snakes}
+%\usetikzlibrary{shapes.misc}
+%\usetikzlibrary{decorations}
+
+
+%\newcommand*\ExpandableInput[1]{\@@input#1 }

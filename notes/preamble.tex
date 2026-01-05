@@ -1,0 +1,79 @@
+%\usepackage{physics}
+ \usepackage[a4paper]{geometry}
+%\listfiles
+
+%\usepackage[T1]{fontenc}
+ \usepackage[utf8]{inputenc}                        % for direct accents
+ \usepackage[french]{babel}
+%\usepackage[english]{babel}
+
+%\usepackage[square,numbers,sectionbib]{natbib}
+ \usepackage{cite}
+%\usepackage{mciteplus}            
+%\usepackage[sectionbib]{chapterbib}
+
+% \usepackage[acronym,nonumberlist]{glossaries}
+%  \makeglossaries
+%   \loadglsentries{glossary}
+%%\usepackage{biblatex}
+%%  \addbibresource{bibliographie.bib}
+% \usepackage{filecontents}
+%
+ \usepackage{indentfirst}                          %indent beginning of section
+ \usepackage{multicol}
+ \usepackage{wrapfig}                              %text around figures
+
+ \usepackage{tikz}
+  \usetikzlibrary{snakes}
+  \usetikzlibrary{shapes.misc}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+%\usepackage{feynmf}
+
+ \usepackage{dsfont}                      %doublestroke symbols for N,R,C ...
+ \usepackage{amsmath,amssymb}    % bolsymb, mathcal etc..       
+%\usepackage{scalerel}
+%   \def\stretchint#1{\vcenter{\hbox{\stretchto[440]{\displaystyle\int}{#1}}}}
+%   \def\scaleint#1{\vcenter{\hbox{\scaleto[3ex]{\displaystyle\int}{#1}}}} 
+ \usepackage{upgreek}                           
+ \usepackage{fancyhdr}
+ \usepackage{esint}                                   %better integrals?
+
+ \usepackage{diagbox}                     
+ \usepackage{xcolor,graphicx}
+ \usepackage[figurename=Fig.,tablename=Tab.]{caption}% center as possible option          
+ \usepackage[outdir=./figures/]{epstopdf}               % requires ghostscript
+ \usepackage{float,subfig}
+ \usepackage[export]{adjustbox}
+
+ \usepackage{booktabs,array,rotating,tabularx}
+ \usepackage{verbatim}
+%\usepackage{todonotes}
+ \usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=red,
+    bookmarksnumbered=true,
+    citecolor=blue
+ }
+ \urlstyle{same}
+
+%\pagestyle{empty}
+ \geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,
+lmargin=2.5cm,rmargin=2.5cm,
+ headheight=1.5cm,headsep=1.5cm,footskip=1.5cm}
+
+\newcommand\textdot[1]{\stackon[1pt]{\csname text#1\endcsname}{.}}
+
+%select main font of the whole document
+%\usepackage{put}
+%\usepackage{bch}
+%\usepackage{qag}
+%\usepackage{tgbonum}
+
+\def\eq{equation}

@@ -1,0 +1,17 @@
+\section{Introduction}
+\begin{frame}
+\frametitle{Introduction}
+\framesubtitle{Contexte et motivation}
+
+\begin{itemize}
+\item Non localisation du paquet d'onde dans l'\acrshort{ec}
+\item Impulsion finie dans l'espace des moments
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+\framesubtitle{Plan}
+\tableofcontents
+\end{frame}

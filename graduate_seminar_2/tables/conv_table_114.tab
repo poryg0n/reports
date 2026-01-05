@@ -1,0 +1,15 @@
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}[l]{*{6}{l|}}
+    \hline
+         \multicolumn{6}{c|}{$\omega=0.114\,{\rm a.u.},\hspace{20pt}\Delta t\leqslant 0.08\,{\rm a.u.},\hspace{20pt} \tau = 5\times 2\pi /\omega = 275.5783\,{\rm a.u.}$} \\ \hline
+         $F_0 (\rm a.u.)$	&	$3\tau$			&	$5\tau$			&	$8\tau$			&	$12\tau$		&	$16\tau$				     \\ \hline
+         $0.03$			&	(20/100) - 2000		&	(40/200) - 4000		&	(40/200) - 6000		&	(80/200) - 8000		&	(70-200) - 10000			     \\ \hline
+         $0.1$			&	(40/200) - 3000		&	(80/200) - 6000		&	(70/300) - 8000		&	(90/400) - 12000	&	(70-400) - 12000*			     \\ \hline
+         $0.3$			&	(90/400) - 7000		&	(100/500) - 10000	&				&				&						     \\ \hline
+         $1.0$			&				&	   			&				&				&						     
+
+    \end{tabular}
+\end{table}
+
+

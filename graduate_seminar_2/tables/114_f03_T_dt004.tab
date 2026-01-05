@@ -1,0 +1,16 @@
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}[l]{*{7}{l|}}
+    \hline
+         \multicolumn{7}{c|}{$F_0=0.3\,{\rm a.u.} \hspace{20pt} \Delta t=0.04\,{\rm a.u.},\hspace{20pt} \tau = 5\times 2\pi/ \omega = 275.5783\,{\rm a.u.}$} \\ \hline
+        n     & $T=n\tau$       & $\rm nsteps$          & $Q^{(c)}(\omega=1.00)$   & $Q^{(c)}(\omega=1.50)$  & $Q^{(c)}(\omega=2.00)$            & $Q^{(c)}(\omega=2.09)$     \\ \hline
+        3     &    826.73491    &	20668	        & 	&       & 	    &     \\\hline
+        5     &   1377.8915     &	34448  	        & 	&       & 	    &	  \\\hline
+        8     &    2204.288     &	55116	        & 	&       & 	    &	  \\\hline
+        12    &    3306.9396    &	82674	        & 	&       & 	    &	  \\\hline
+        16    &    4409.2528    &	110232	        & 	&       & 	    &	  \\\hline
+
+    \end{tabular}
+\end{table}
+
+

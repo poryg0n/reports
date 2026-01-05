@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage{forloop}
+\usepackage{csvsimple}
+
+\begin{document}
+\newcounter{x}
+\forloop{x}{1}{\value{x} < 10}{ % value of x is 1...9
+    \arabic{x}                  % print x in arabic notation
+}
+\\                              % print a newline
+
+\begin{table}
+ \centering
+ \csvautotabular[]{file.dat}
+\end{table}
+\end{document}

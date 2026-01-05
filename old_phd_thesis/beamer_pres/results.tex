@@ -1,0 +1,731 @@
+\section{R\'esultats}
+
+\begin{frame}
+ \frametitle{Progression}
+ \framesubtitle{}
+ \begin{itemize}
+   \item \textcolor{gray}{Introduction}
+   \item \textcolor{gray}{G\'en\'eralit\'es sur l'interaction laser-atome
+en champ fort}
+   \item \textcolor{gray}{Nouvelle approche de r\'esolution 
+dans l'espace des moments}
+   \item \textbf{R\'esultats}
+   \item Conclusion
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Validation du mod\`ele}
+ \framesubtitle{Comparaison aux valeurs exactes}
+\begin{textblock*}{400pt}(30pt,60pt)
+\small \begin{itemize}
+\item Energies propres
+\end{itemize}
+\begin{table}[p]
+ \tiny\centering
+\input{../tables/tab_eigval_l3_n100_1200_k03_beam.txt}
+\end{table}
+\end{textblock*}
+
+\begin{textblock*}{400pt}(30pt,170pt)
+\small\begin{itemize}
+\item Fonctions propres
+\end{itemize}
+\begin{table}[p]
+ \tiny\centering
+ \input{../tables/tab_wavfun_nl_beam.txt}
+\end{table}
+
+\end{textblock*}
+
+
+
+\begin{textblock*}{30pt}(250pt,35pt)
+\tiny
+\begin{equation*}
+ \kappa_{\rm ex}=Z/n,\qquad \kappa=0.3,\qquad n_{\rm max}=1200, \qquad \ell_{\rm max}=3
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(150pt,60pt)
+%\footnotesize
+ \scriptsize
+\begin{itemize}
+ \item[$\bullet$] D\'ependance du nombre d'\'etats li\'es d\'ecrits aux param\`etres de la base
+ \item[$\bullet$] Pr\'ecision de plus de 10 chiffres sur 60\% des \'etats-li\'es d\'ecrits
+\end{itemize}
+
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(150pt,172pt)
+%\footnotesize
+ \scriptsize
+\begin{itemize}
+ \item[$\bullet$] Les pseudo-\'etats reproduisent les fonctions propres de l'hydrog\`ene
+ \item[$\bullet$] Le recouvrement est sur 11 chiffres
+\end{itemize}
+
+\end{textblock*}
+
+%\begin{itemize}
+%  \item Comparaison des \'energies propres
+%  \item Comparaison des vecteurs propres
+%\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Validation du mod\`ele}
+ \framesubtitle{Comparaison aux valeurs exactes - Forces d'oscillateur/Polarisabilit\'es}
+
+\begin{textblock*}{400pt}(30pt,55pt)
+\begin{table}[p]
+ \tiny\centering
+ \input{../tables/tab_oscstr_conf_mom_beam.txt}
+\end{table}
+
+\end{textblock*}
+
+
+\begin{textblock*}{410pt}(140pt,185pt)
+\begin{table}[p]
+ \tiny\centering
+ \input{../tables/tab_polarizab.txt}
+\end{table}
+
+\end{textblock*}
+
+
+\begin{textblock*}{220pt}(20pt,185pt)
+%\footnotesize
+ \scriptsize
+\begin{itemize}
+ \item[$\bullet$] Excellent accord avec les r\'ef\'erences\footnote{
+\Tiny
+%\fontsize{4}{12} \selectfont
+Bethe \textit{et al.}, Quantum Mechanics of One- and Two-Electron Systems.
+Springer, Berlin, (1957) \\
+\hspace{5.4mm}Harriman, Phys. Rev. 101, 594–598, (1956). \\
+\hspace{5.4mm}Thu \textit{et al.}, J. Phys. B : At. Mol. Opt. Phys. 27, 4083–4094, (1994)}
+ \item[$\bullet$] Validit\'e du mod\`ele pour diff\'erents hydrog\'eno\"ides 
+ \item[$\bullet$] \textbf{Description tr\`es pr\'ecise de la structure}
+\end{itemize}
+
+\end{textblock*}
+
+%\begin{itemize}
+%  \item Table des forces d'oscillateur
+%  \item R\`egle de sommation de Thomas-Reiche-Kuhn
+%  \item Polarisabilit\'es 
+%\end{itemize}
+
+
+%\begin{textblock*}{300pt}(30pt,235pt)
+%\scriptsize
+%Bethe \textit{et al.}, Quantum Mechanics of One- and Two-Electron Systems.
+%Springer, Berlin, (1957). \\
+%Harriman, Phys. Rev. 101, 594–598, (1956).
+%\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Validation du mod\`ele}
+ \framesubtitle{Validation en r\'egime haute fr\'equence - 1}
+
+%\makebox[0pt][1]{
+% \raisebox{-\totalheight}[10pt][10pt]{%
+%   \includegraphics[width=75mm]{../figures/fig6.eps}}} %
+
+
+\begin{textblock*}{270pt}(20pt,60pt)
+\includegraphics[scale=.35]{../figures/fig6.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(230pt,55pt)
+\includegraphics[scale=.4, trim=0 0 100 0]{../figures/fig5.eps}
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(30pt,205pt)
+\begin{itemize}
+\scriptsize
+ \item Premiers tests \`a haute fr\'equence et 
+en champ intense
+ \item Excellent recouvrement de notre mod\`ele avec la MCDT\footnote{
+\Tiny
+Hamido \textit{et al.}, Phys. Rev. A 84, 013422, (2011).}
+\end{itemize}
+\end{textblock*}
+
+%\begin{textblock*}{270pt}(285pt,225pt)
+%\scriptsize
+%Hamido \textit{et al.}, Phys. Rev. A 84, 013422, (2011).
+%\end{textblock*}
+%\begin{tikzpicture}
+% %\node (0) {\includegraphics[width=55mm]{../figures/fig6.eps}};
+% \node at (0,.5) {\includegraphics[width=75mm]{../figures/fig6.eps}};
+% %\node [right=of 0] {\includegraphics[width=55mm]{../figures/fig6.eps}};
+% \node at (7,-0){\includegraphics[width=70mm, trim=0 0 100 0]{../figures/fig5.eps}};
+%\end{tikzpicture}
+
+%\begin{picture}(0,0)
+% \put(-0,-15){\includegraphics[width=40mm]{../figures/fig3.eps}}
+%\end{picture}
+
+%\begin{picture}(0,0)
+% \put(-20,-80){\includegraphics[width=75mm]{../figures/fig6.eps}}
+%\end{picture}
+
+%\begin{picture}(0,0)
+% \put(0,0){\includegraphics[width=90mm]{../figures/fig5.eps}}
+%\end{picture}
+
+% \begin{figure}
+%  \begin{minipage}[p]{.4\textwidth}
+%  \includegraphics[scale=.3]{../figures/fig2.eps} 
+%  \end{minipage}
+%  \begin{minipage}[p]{.4\textwidth}
+%  \includegraphics[scale=.3]{../figures/fig2.eps} 
+%  \end{minipage}
+% \end{figure}
+
+%\begin{itemize}
+%  \item Courbes de Ongonwou \textit{et al.} 
+%  
+%\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Validation du mod\`ele}
+ \framesubtitle{Validation en r\'egime haute fr\'equence - 2}
+
+
+\begin{textblock*}{270pt}(30pt,60pt)
+\includegraphics[scale=.30]{../figures/fig1.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(230pt,50pt)
+\includegraphics[scale=.35, trim=0 0 100 0]{../figures/fig2.eps}
+\end{textblock*}
+
+%\begin{tikzpicture}
+% %\node (0) {\includegraphics[width=55mm]{../figures/fig6.eps}};
+% \node at (0,.5) {\includegraphics[width=65mm]{../figures/fig2.eps}};
+% %\node [right=of 0] {\includegraphics[width=55mm]{../figures/fig6.eps}};
+% \node at (7,-0){\includegraphics[width=60mm, trim=0 0 100 0]{../figures/fig1.eps}};
+%\end{tikzpicture}
+
+%\begin{itemize}
+%  \item Courbes de Ongonwou \textit{et al.} (suite)
+%\end{itemize}
+
+\begin{textblock*}{270pt}(30pt,190pt)
+\begin{itemize}
+\scriptsize
+ \item Accord qualitatif (positions et amplitudes des pics ATI)
+ \item D\'esaccord progressif avec l'augmentation de la dur\'ee d'interaction 
+ \item D\'esaccord quantitatif tr\`es net avec la MPS\footnote{
+\Tiny
+Tetchou Nganso \textit{et al.}, Phys. Rev. A 83, 013401, (2011)
+}
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Pr\'esentation des diff\'erents signaux laser utilis\'es}
+
+\begin{textblock*}{270pt}(30pt,60pt)
+\includegraphics[scale=.23]{../figures/chap2/il1_il2_2c.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(180pt,60pt)
+\includegraphics[scale=.23, trim=0 0 100 0]{../figures/chap2/il2_2c_0_ps42.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(320pt,60pt)
+\includegraphics[scale=.23, trim=0 0 100 0]{../figures/chap2/il1_il3_8c.eps}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(30pt,153pt)
+\scriptsize
+ \begin{itemize}
+  \item IL1\footnote{\Tiny 
+Tetchou Nganso, Ph.D. dissertation, Université de Douala, 2011 ;
+Telnov \textit{et al.}, Phys. Rev. A 100, (4), (2019).}\hspace{1mm} $A(t)=A_0 \sin^2(\frac{\pi t}{\tau})\sin(\omega t + \phi)$
+ \hspace{3mm} $n_c=2,\;\phi=0,\,\frac{\pi}{4},\,\frac{\pi}{2} ;
+\quad n_c=8,\; I({10^{14}\,\rm W/cm^2}) = 1.3, 3, 5 ;
+\quad n_c=20$%,\; {\rm H}(1s),  {\rm He^+}(2sp)$
+  \item IL2\footnote{\Tiny 
+Chen \textit{et al.}, Phys. Rev. A 86, 013410, (2012).}\hspace{2mm} $\mathcal{E}(t)=\mathcal{E}_0 \sin^2(\frac{\pi t}{\tau})\sin(\omega t + \phi)$
+ \hspace{3mm} $n_c=2, 5, 10,
+ \quad\phi=0, \frac{\pi}{4}, \frac{\pi}{2}$
+  \item IL3\footnote{\Tiny 
+Arb\'o \textit{et al.} Phys. Rev. Lett.96, (14), (2006).}\hspace{2mm} $\mathcal{E}(t)=\mathcal{E}_0 \sin^2(\frac{\pi t}{\tau})\cos(\omega t)$
+\hspace{8mm} $n_c=8,\; I\left({10^{14}\,\rm W/cm^2}\right) = 
+0.5, 1, 2 $
+ \end{itemize}
+\end{textblock*}
+
+
+
+%\begin{textblock*}{500pt}(30pt,153pt)
+%\tiny
+% \begin{itemize}
+%  \item IL1\footnote{\Tiny 
+%Tetchou Nganso, Ph.D. dissertation, Université de Douala, 2011 ;
+%Telnov \textit{et al.}, Phys. Rev. A 100, (4), (2019).}\hspace{1mm} $A(t)=A_0 \sin^2(\frac{\pi t}{\tau})\sin(\omega t + \phi)$
+% \hspace{3mm} $n_c=2,\;\phi=\left\lbrace\begin{matrix}
+%0 \\ 
+%\pi/4 \\
+%\pi/2
+%\end{matrix}\right.
+%\quad n_c=8,\; I({\rm W/cm^2}) = \left\lbrace\begin{matrix}
+%1.3\\ 
+%3\\ 
+%5
+%\end{matrix}\right.
+%\quad n_c=20,\; Z = \left\lbrace\begin{matrix}
+%1({\rm H})\\ 
+%2({\rm He^+}) 
+%\end{matrix}\right.$
+%  \item IL2\footnote{\Tiny 
+%Chen \textit{et al.}, Phys. Rev. A 86, 013410, (2012).}\hspace{2mm} $\mathcal{E}(t)=\mathcal{E}_0 \sin^2(\frac{\pi t}{\tau})\sin(\omega t + \phi)$
+% \hspace{3mm} $n_c=\left\lbrace\begin{matrix}
+%2 \\ 
+%5 \\
+%10
+%\end{matrix}\right.;
+% \qquad\phi=\left\lbrace\begin{matrix}
+%0 \\ 
+%\pi/4 \\
+%\pi/2
+%\end{matrix}\right.$
+%  \item IL3\footnote{\Tiny 
+%Arb\'o \textit{et al.} Phys. Rev. Lett.96, (14), (2006).}\hspace{2mm} $\mathcal{E}(t)=\mathcal{E}_0 \sin^2(\frac{\pi t}{\tau})\cos(\omega t)$
+%\hspace{3mm} $n_c=8,\; I\left({10^{14}\,\rm W/cm^2}\right) = \left\lbrace\begin{matrix}
+%0.5\\ 
+%1\\ 
+%2 
+%\end{matrix}\right.$
+% \end{itemize}
+%\end{textblock*}
+
+\begin{textblock*}{200pt}(280pt,200pt)
+\scriptsize
+\begin{itemize}
+ \item[$\bullet$] R\'esultats relatifs \`a 22 runs
+ \item[$\bullet$] Plus d'une semaine requise par run
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Populations des \'etats li\'es et probabilit\'e d'ionisation - 1}
+
+%%\visible<2->{
+%\begin{tikzpicture}
+% \node at (0,6) {\includegraphics[width=.4\linewidth]{../figures/pop_time_states_ion_stacked_diego2006.eps}};
+% \node at (5,6.4){\includegraphics[width=.30\linewidth, trim=0 0 100 0]{../figures/pop_time_states_ion_stacked_tetchou2010.eps}};
+%\end{tikzpicture}
+%%}
+
+%\begin{itemize}
+%  \item Evolution des populations dans le temps (courbes)
+%\end{itemize}
+
+\begin{textblock*}{270pt}(30pt,55pt)
+\includegraphics[scale=.23]{../figures/chap5/pop_time_states_ion_stacked_diego2006.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(170pt,55pt)
+\includegraphics[scale=.23, trim=0 0 100 0]{../figures/chap5/pop_time_states_ion_stacked_tetchou2010.eps}
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(30pt,220pt)
+\scriptsize
+\begin{itemize}
+ \item Excitation/ionisation cons\'equente du syst\`eme 
+seulement dans le r\'egime tunnel 
+ \item Confirmation de l'ionisation quasi-totale \`a l'approche de 
+l'intensit\'e de saturation
+\end{itemize}
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(250pt,220pt)
+\scriptsize
+\begin{equation}
+ I_s = 8 \times 10^{14}\,\rm W/cm^2
+\end{equation}
+\end{textblock*}
+
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Populations des \'etats li\'es et probabilit\'e d'ionisation - 2}
+
+
+\begin{textblock*}{270pt}(200pt,55pt)
+\includegraphics[scale=.27]{../figures/chap5/pop_l_n_int1_cyc_cep_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(-20pt,60pt)
+\begin{table}
+\tiny\centering
+\scalebox{.8}{
+\input{../tables/chen2012_tab_2_nopc2_ps2_i1.txt}}
+\end{table}
+\end{textblock*}
+
+
+\begin{textblock*}{270pt}(-20pt,130pt)
+\begin{table}
+\tiny\centering
+\scalebox{.8}{
+\input{../tables/chen2012_tab_3_nopc10_ps2_i1.txt}}
+\end{table}
+\end{textblock*}
+
+
+\begin{textblock*}{290pt}(20pt,205pt)
+\scriptsize
+\begin{itemize}
+ \item Accord avec la m\'ethode spectrale de l'auteur\footnote{\Tiny 
+Chen \textit{et al.}, Phys. Rev. A 86, 013410, (2012).}
+pour les impulsions br\`eves
+ \item Accord avec la m\'ethode des grilles pour les impulsions longues
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Populations des \'etats li\'es et probabilit\'e d'ionisation - 3}
+
+%\begin{tikzpicture}
+% \node at (0,6) {\includegraphics[width=.45\linewidth]{../figures/chap5/pop_3d_nl_phase_nc2_tetchou2010_chen2012.eps}};
+% \node at (5,6) {\includegraphics[height=.3\linewidth,width=.4\linewidth]{../figures/chap5/pop_l_n_intens_diego2006_bar.eps}};
+% \node at (9.5,6.3){\includegraphics[width=.3\linewidth, trim=0 0 0 0]{../figures/chap5/pop_3d_nl_telnov2019.eps}};
+%\end{tikzpicture}
+%
+% \begin{itemize}
+%   \item Populations finales $P_\ell$ des sous-\'etats 
+%et $P_n$ \'etats (courbes)
+%   \item Populations finales $P_{n\ell}$ des sous-\'etats
+% \end{itemize}
+
+
+\begin{textblock*}{270pt}(0pt,55pt)
+\includegraphics[scale=.27]{../figures/chap5/pop_3d_nl_phase_nc2_tetchou2010_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(134pt,65pt)
+\includegraphics[scale=.2]{../figures/chap5/pop_l_n_intens_diego2006_bar.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(334pt,55pt)
+\includegraphics[scale=.2]{../figures/chap5/pop_3d_nl_telnov2019.eps}
+\end{textblock*}
+
+\begin{textblock*}{290pt}(20pt,190pt)
+\scriptsize
+\begin{itemize}
+ \item Forte d\'ependance des populations \`a la phase pour les impulsions br\`eves
+ \item Forte d\'ependance des populations aux intensit\'es pour les impulsions longues
+ \item D\'esaccord avec la loi $\ell=n-1$\footnote{\Tiny Piraux \textit{et al.} Phys. Rev.
+A 96(4), (2017).} liant le niveau $n$ et le sous-niveau $\ell$ les plus peupl\'es 
+ \item Similarit\'e du comportement de ${\rm He^+}(2p)$ \`a celui de ${\rm H}(1s)$ 
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Densit\'es d'\'energie - 1}
+
+%\framezoom<1><2>[border](1cm,-3cm)(6cm,5cm)
+%\begin{tikzpicture}
+% \node at (0,6) {\includegraphics[width=.5\linewidth]{../figures/chap5/fig_time_pz_8c_e0_diego2006.jpg}};
+%\end{tikzpicture}
+
+\begin{textblock*}{270pt}(10pt,60pt)
+\includegraphics[scale=.27]{../figures/chap5/fig_time_pz_8c_e0_diego2006.jpg}
+\end{textblock*}
+
+
+\begin{textblock*}{240pt}(220pt,90pt)
+\footnotesize
+ \begin{itemize}
+   \item Visualisation directe de l'ionisation\footnote{\Tiny
+A. de Bohan, Ph.D. dissertation, Universit\'e Catholique de Louvain, 2000.}
+   \item Oscillation en opposition de phase de la densit\'e avec le champ 
+$\boldsymbol{A}(t)$
+   \item Ionisation d'autant plus rapide que l'intensit\'e est \'elev\'ee
+   \item Pr\'esence de raies verticales fixes par rapport \`a l'axe $p_z$
+donnant les positions des pics ATI
+ \end{itemize}
+\end{textblock*}
+
+
+\begin{textblock*}{240pt}(55pt,220pt)
+\scriptsize
+ $\gamma \gg 1$ % = 1.3263$
+\hspace{12mm}
+ $\gamma \sim 1$ % = 0.9434$
+\hspace{12mm}
+ $\gamma \ll 1$ % = 0.6667$
+\end{textblock*}
+
+%\begin{itemize}
+%  \item Evolution dans le temps des densit\'es d'\'energie
+%\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Densit\'es d'\'energie - 2}
+
+%\begin{tikzpicture}
+% \node at (0,0) {\includegraphics[width=.7\linewidth]{../figures/chap5/energy_density_tetchou2010_chen2012.eps}};
+% \node at (7,.5) {\includegraphics[width=.32\linewidth]{../figures/chap5/energy_density_phase_nc2510_0_chen2012.eps}};
+%\end{tikzpicture}
+
+\begin{textblock*}{270pt}(30pt,55pt)
+\includegraphics[scale=.24]{../figures/chap5/energy_density_tetchou2010_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(270pt,55pt)
+\includegraphics[scale=.24]{../figures/chap5/energy_density_phase_nc2510_0_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{400pt}(20pt,220pt)
+\scriptsize
+ \begin{itemize}
+   \item Asym\'etrie gauche/droite manifeste pour les impulsions br\`eves
+   \item Disparition des effets de phases avec l'augmentation 
+de la dur\'ee de l'interaction
+ \end{itemize}
+\end{textblock*}
+
+% \begin{itemize}
+%   \item Densit\'es d'\'energie avant et arri\`ere \`a la fin
+%de l'interaction
+% \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Spectres en \'energie - 1}
+%% \putat{-0}{-120}{\includegraphics[scale=0.3]{../figures/chap5/energy_distrib_dif_pis2_nc2510_chen2012.eps}}
+%
+%\begin{tikzpicture}
+% \node at (0,0) {\includegraphics[width=.5\linewidth]{../figures/chap5/energy_distrib_dif_pis2_nc2510_chen2012.eps}};
+% \node at (7,.5) {\includegraphics[width=.45\linewidth]{../figures/chap5/energy_distrib_dif_intens_diego2006.eps}};
+%\end{tikzpicture}
+% 
+% \begin{itemize}
+%   \item Spectres en \'energie
+%   \item Spectres en \'energie dans les angles solides 
+%d'ouverture $\pi/6$ et $\pi/2$ vers l'avant et vers l'arri\`ere
+% \end{itemize}
+
+\begin{textblock*}{270pt}(40pt,55pt)
+\includegraphics[scale=.26]{../figures/chap5/energy_distrib_dif_pis2_nc2510_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(240pt,55pt)
+\includegraphics[scale=.25]{../figures/chap5/energy_distrib_dif_intens_diego2006.eps}
+\end{textblock*}
+
+%\begin{textblock*}{90pt}(350pt,100pt)
+%\scriptsize
+%Position des pics
+%\begin{equation*}
+% E = (n+s)\omega - (I_p + U_p) \label{eqn:ati_cons_law}.
+%\end{equation*}
+%\end{textblock*}
+
+\begin{textblock*}{350pt}(30pt,210pt)
+\scriptsize
+\begin{itemize}
+ \item Augmentation g\'en\'erale de la probabilit\'e d'\'emission ATI 
+avec la dur\'ee de l'impulsion
+ \item Pas de variation de la probabilit\'e d'\'emission directe avec 
+la dur\'ee de l'impulsion
+ \item Augmentation "uniforme" de la probabilit\'e d'\'emission ATI 
+avec l'intensit\'e de l'impulsion
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Spectres en \'energie - 2}
+%% \putat{-0}{-120}{\includegraphics[scale=0.3]{../figures/chap5/energy_distrib_dif_pis2_nc2510_chen2012.eps}}
+%
+%\begin{tikzpicture}
+% \node at (0,0) {\includegraphics[width=.6\linewidth]{../figures/chap5/fig_energy_distrib_h1s_he2s_i05_20c_iwf_telnov.eps}};
+% \node at (7,.5) {\includegraphics[width=.50\linewidth]{../figures/chap5/fig_energy_distrib_he2s_he2p_i08_20c_iwf_telnov.eps}};
+%\end{tikzpicture}
+% 
+% \begin{itemize}
+%   \item Spectre en \'energie
+%   \item Spectre en \'energie dans les angles solides 
+%d'ouverture $\pi/6$ et $\pi/2$ vers l'avant et vers l'arri\`ere
+% \end{itemize}
+
+\begin{textblock*}{270pt}(30pt,55pt)
+\includegraphics[scale=.35]{../figures/chap5/fig_energy_distrib_h1s_he2s_i05_20c_iwf_telnov.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(230pt,55pt)
+\includegraphics[scale=.35]{../figures/chap5/fig_energy_distrib_he2s_he2p_i08_20c_iwf_telnov.eps}
+\end{textblock*}
+
+%\begin{textblock*}{110pt}(350pt,100pt)
+%\scriptsize
+%Position des pics
+%\begin{equation*}
+% E = (n+s)\omega - (I_p + U_p) \label{eqn:ati_cons_law}.
+%\end{equation*}
+%\end{textblock*}
+
+\begin{textblock*}{390pt}(30pt,210pt)
+\scriptsize
+\begin{itemize}
+ \item Diminution de l'amplitude des pics ATI avec leur ordre pour 
+${\rm H}(1s)$ et ${\rm He^+}(2p)$
+avec la dur\'ee de l'impulsion
+ \item Pas d'asym\'etrie gauche/droite pour les impulsions longues ($n_c=20$)
+ \item Augmentation non lin\'eaire de l'amplitude des pics avec l'intensit\'e 
+pour ${\rm He^+}(2s)$
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Distributions en moment}
+
+%\begin{tikzpicture}
+% \node at (0,0) {\includegraphics[width=.6\linewidth]{../figures/chap5/mom_pnpz_distrib_tetchou2010_chen2012.eps}};
+% \node at (7,0) {\includegraphics[width=.3\linewidth]{../figures/chap5/mom_pnpz_distrib_phase_nc2510_chen2012.eps}};
+%% \node at (9,0) {\includegraphics[width=.3\linewidth]{../figures/chap5/mom_pnpz_distrib_intens_diego2006.eps}};
+%\end{tikzpicture}
+% 
+% \begin{itemize}
+%   \item Distributions en moment
+%   \item Distributions angulaires
+% \end{itemize}
+
+\begin{textblock*}{270pt}(10pt,55pt)
+\includegraphics[scale=.22]{../figures/chap5/mom_pnpz_distrib_tetchou2010_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(210pt,55pt)
+\includegraphics[scale=.22]{../figures/chap5/mom_pnpz_distrib_phase_nc2510_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(330pt,55pt)
+\includegraphics[scale=.23]{../figures/chap5/mom_pnpz_distrib_intens_diego2006.eps}
+\end{textblock*}
+
+
+%\begin{textblock*}{110pt}(350pt,100pt)
+%\scriptsize
+%Position des pics
+%\begin{equation*}
+% E = (n+s)\omega - (I_p + U_p) \label{eqn:ati_cons_law}.
+%\end{equation*}
+%\end{textblock*}
+
+\begin{textblock*}{390pt}(30pt,210pt)
+\scriptsize
+\begin{itemize}
+ \item Structure en \'eventail peu dense dans la r\'egion des basses \'energies
+ \item Les stries marquent la position des pics ATI
+ \item Disparition des effets de phases avec la dur\'ee de l'impulsion
+%\item Augmentation de la probabilit\'e d'ionisation avec la dur\'ee  
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Analyse des r\'esultats en r\'egime basse fr\'equence}
+ \framesubtitle{Distributions en impulsions transversale et longitudinale}
+
+
+%\begin{tikzpicture}
+% \node at (0,0) {\includegraphics[width=.33\linewidth]{../figures/chap5/momx_pz_distrib_end_phase_tetchou2010_chen2012.eps}};
+% \node at (5,0) {\includegraphics[width=.35\linewidth]{../figures/chap5/momx_pz_distrib_end_intens_diego2006.eps}};
+% \node at (10,0) {\includegraphics[width=.37\linewidth]{../figures/chap5/momx_pn_distrib_end_intens_diego2006.eps}};
+%\end{tikzpicture}
+%
+% \begin{itemize}
+%   \item Distributions en impulsion transversale
+%   \item Distributions impulsion longitudinale
+% \end{itemize}
+
+\begin{textblock*}{270pt}(30pt,75pt)
+\includegraphics[scale=.22]{../figures/chap5/momx_pz_distrib_end_phase_tetchou2010_chen2012.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(150pt,80pt)
+\includegraphics[scale=.22]{../figures/chap5/momx_pz_distrib_end_intens_diego2006.eps}
+\end{textblock*}
+
+\begin{textblock*}{270pt}(280pt,80pt)
+\includegraphics[scale=.20]{../figures/chap5/momx_pn_distrib_end_intens_diego2006.eps}
+\end{textblock*}
+
+\begin{textblock*}{300pt}(150pt,190pt)
+\scriptsize
+\begin{itemize}
+ \item Les effets de phase sont port\'es dans la direction longitudinale
+ \item Disparition des effets de phase dans la direction longitudinale avec 
+l'intensit\'e
+ \item Augmentation des \'energies des photo\'electrons ATI avec l'intensit\'e
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+

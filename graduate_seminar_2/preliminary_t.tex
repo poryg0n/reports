@@ -1,0 +1,82 @@
+\section{preliminary}
+\begin{frame}<handout:0>
+\frametitle{Convergence checking}
+	\framesubtitle{Electric field profile and charts}
+\footnotesize
+
+
+%\begin{textblock*}{400pt}(30pt,40pt)
+%%\centering
+%%\rotatebox{90}{
+% \begin{minipage}{0.5\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.3, trim={0 0 0 0},clip]{images/20230802/f01_field.png} 
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+
+
+\begin{textblock*}{400pt}(30pt,40pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{1.0\linewidth}
+ \begin{figure}[tp]
+ \centering
+ \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_6tau.png}}
+ \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_7tau.png}}
+ \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_8tau.png}} 
+%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\vspace{5pt}
+
+\begin{itemize}
+\item Profiles of the laser field $F(t)$ and the envelop $f(t)$ used. \\
+From left to right, $T=6\tau$ (a), $T=7\tau$ (b)
+and  $T=8\tau$ (c).
+\end{itemize}
+
+ \end{minipage}
+\end{textblock*}
+
+
+
+\begin{textblock*}{400pt}(50pt,180pt)
+ \begin{minipage}{0.5\linewidth}
+\begin{align}
+\tiny
+ &  F(t) = F_0 e^{-\left(2t^\prime/\tau\right)^2}\cos(\omega_0 t^\prime),
+\hspace{15pt} F_0 = 0.1\,{\rm a.u.}, 
+\nonumber \\
+ & \hspace{10pt} \omega_0= 0.114\,{\rm a.u.},
+\hspace{15pt} \tau = n_{oc}\frac{2\pi}{\omega_0}, 
+\hspace{15pt} n_{oc}=5, \nonumber\\
+ & \hspace{10pt} -T/2 \leq t^\prime \leq T/2, 
+\hspace{15pt}  {\rm nsteps} = 10000, % T=3\tau, 
+ \nonumber
+\end{align}
+
+ \end{minipage}
+
+\end{textblock*}
+
+
+ \begin{textblock*}{200pt}(250pt,140pt)
+ \begin{table}[tp]
+  \tiny\centering
+  \input{tables/20230809/test_chart.tab}
+ \end{table}
+ \end{textblock*}
+
+
+%\begin{textblock*}{180pt}(230pt,60pt)
+%\begin{itemize}
+%%\footnotesize
+%\item Chart of the pre-determined values of the parameters to each test.
+%\end{itemize}
+%
+%\end{textblock*}
+
+\end{frame}
+

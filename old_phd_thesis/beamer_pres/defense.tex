@@ -1,0 +1,406 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\mode<beamer>{%
+%\usetheme{default}}
+%\usetheme[hideothersubsections,right,width=22mm]{Goettingen}}
+ \usetheme[hideothersubsections,right,width=22mm]{Singapore}}
+
+\usepackage[french]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}                   
+
+\setbeamerfont{title}{family=\rmfamily}
+%\setbeamercolor{title}{fg=red!50!blue!30}
+ \setbeamercolor{title}{fg=black}        
+ \setbeamercolor{frametitle}{fg=black}    
+%\usepackage{fontspec}
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+%\usefonttheme{serif} % default family is serif
+
+\setbeamertemplate{frametitle}{\vspace{1mm}\color{black}\bfseries\large\insertframetitle\par\vskip-6pt\hrulefill\par\normalsize\insertframesubtitle}
+\setbeamertemplate{footline}{\qquad\color{black}\bfseries\insertframenumber\vspace{3mm}}
+%\setbeamertemplate{footline}{\vspace{5mm}}
+\setbeamertemplate{itemize item}{\color{black}\tiny$\blacksquare$}
+\addtobeamertemplate{footnote}{}{\vspace{-2ex}}
+
+\newcommand\Fontvi{\fontsize{9}{7.2}\selectfont}
+
+\usepackage{xcolor,graphicx}
+\usepackage[outdir=../figures/converted_figs/]{epstopdf} 
+\usepackage{subfig,float}
+\usepackage[figurename=Fig.,tablename=Tab.]{caption}% center as possible option 
+\usepackage{booktabs,array,rotating,tabularx}
+
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[texcoord,
+%grid,gridcolor=red!10,subgridcolor=green!10,gridunit=pt]{eso-pic}
+\setbeamerfont{footnote mark}{size=\Tiny}
+
+ \usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=red,
+    bookmarksnumbered=true,
+    citecolor=blue
+ }
+ \urlstyle{same}
+
+\usepackage[acronym,nonumberlist]{glossaries}
+ \makeglossaries
+ \loadglsentries{../glossary}
+
+\usepackage{animate}
+\usepackage{tikz}
+ \usetikzlibrary{positioning}
+ \usetikzlibrary{snakes}
+%\usetikzlibrary{shapes.misc}
+%\usetikzlibrary{decorations}
+
+\newcommand{\putat}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){#3}\end{picture}}
+
+
+%\pgfdeclaredecoration{ignore}{final}
+%{
+%\state{final}{}
+%}
+%
+%\pgfdeclaremetadecoration{middle}{initial}
+%{
+%\state{initial}[width=0pt, next state=middle] {\decoration{moveto}}
+%\state{middle}[width=\pgfdecorationsegmentlength*\pgfmetadecoratedpathlength, next state=final
+%] {\decoration{curveto}}
+%
+%\state{final}{\decoration{ignore}}
+%}
+
+%\tikzset{middle segment/.style={decoration={middle},decorate, segment length=#1}}
+
+\title{\newline\newline\newline \large \bfseries {Dynamique des atomes dans un champ laser intense : \\
+une nouvelle approche th\'eorique dans l'espace des
+moments}}
+\author[Fred]{\textbf{ONGONWOU Fred\'eric}}
+\institute{Universit\'e des Sciences et Techniques de Masuku}
+\titlegraphic{
+ \begin{picture}(-100,0)
+  \put(-240,167){\includegraphics[scale=.28]{ustm_logo.png}}%\footnote{logo USTM}}
+  \put(50,155){\includegraphics[scale=1.5]{ed-sfa_logo.jpg}}%\footnote{logo ED-SFA}}
+ %\put(-150,190){\makebox(0,0)[]{\includegraphics[width=20mm]{example-image-a}}}
+ \end{picture}
+}
+
+\date{\footnotesize Sous la direction de \par\vspace{3mm}
+EKOGO Thierry Blanchard (Ma\^itre de Conf\'erence CAMES)\par\vspace{3mm}
+\footnotesize option : Lasers et Atomes}
+
+%\usebackgroundtemplate{
+%%\includegraphics[width=\paperwidth]{}
+%\begin{tikzpicture}
+%% \node (a) {A} node (b) at (2,1) {B} node (c) at (2,-1) {C};
+%% \draw[snake=coil]                                (a) -- (c);
+%% \draw[snake=coil], segment aspect=0,red,thick]   (a) -- (c);
+% \draw[snake=coil, segment aspect=0,red, thick] (1,1) -- (6,2);
+%\end{tikzpicture}
+%}
+
+\begin{document}
+
+\begin{frame}<handout:0>
+\titlepage
+\end{frame}
+
+\input{overview}
+\input{generality}
+\input{model}
+\input{results}
+
+
+%\begin{frame}
+% \begin{animateinline}[loop]{10}
+%  \multiframe{10}{rPos=0.1+0.1}{
+%    \begin{tikzpicture}[every node/.style={draw}]
+%    \node (s) {sender};
+%    \node (r) at (5.0){receiver};
+%    \path (s) -- (r) node[pos=\rPos,coordinate](p) {};
+%    \draw[->] (s) -- (p);
+%    \end{tikzpicture}
+%}
+%\end{animateinline}
+%\end{frame}
+
+
+
+
+%\begin{frame}
+%\frametitle{Interaction laser-atome}
+%
+%%\Fontvi
+%
+%The numerical resolution of the TDSE in the momentum space
+%is rather demanding in computer resources. It reads
+%
+%\begin{equation}
+%\frac{\boldsymbol{p}^2}{2m}\mathit{\Psi}(\boldsymbol{p}) + \int{d\boldsymbol{p^\prime}V(\boldsymbol{p},\boldsymbol{p^\prime})\mathit{\Psi}(\boldsymbol{p^\prime}) } = E\mathit{\Psi}(\boldsymbol{p})
+%\end{equation}
+%
+%where
+%
+%\begin{equation}
+%V(\boldsymbol{p},\boldsymbol{p^\prime}) = -\frac{Z}{2\pi^2\left|\boldsymbol{p}-\boldsymbol{p^\prime}\right|^2} \label{eqn:kernel}
+%\end{equation}
+%
+%The Coulomb potential (\ref{eqn:kernel}) is usually dealt 
+%with with numerical techniques.
+%However, we may write (\ref{eqn:kernel}) as a spectral decomposition onto 
+%the Sturmian basis, what gives
+%
+%\begin{equation}
+% \begin{split}
+%\frac{1}{|\boldsymbol{p}^\prime - \boldsymbol{p}|^2} =
+%  \sum_{\ell=0}^\infty\sum_{m=-\ell}^\ell\sum_{n=\ell+1}^\infty
+%   \frac{2\pi^2\kappa}{n}
+%    \widetilde{\Phi}_{n\ell m}^\kappa (\boldsymbol{p})
+%     \widetilde{\Phi}_{n\ell m}^{\kappa\ast} (\boldsymbol{p}^\prime) = 0, \\
+%  \widetilde{\Phi}_{n\ell m}^\kappa(p) =
+%       \frac{\kappa^2 + p^2}{2\kappa^2}\Phi_{n\ell m}^\kappa(p). 
+% \qquad\qquad
+%   \Phi_{n\ell m}^\kappa (\boldsymbol{p})
+%     & = \Sigma_{n\ell}^\kappa (p)
+%      \widetilde{Y}_{\ell m}(\hat{\boldsymbol{p}}),
+%   \label{eqn:kernel_decomposition},
+% \end{split}
+%\end{equation}
+%
+%The resolution of the TDSE may be done by the means of different 
+%optimized algorithms.
+%
+%\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Current work - Method}
+%
+%The numerical resolution of the TDSE in the momentum space
+%is rather demanding in computer resources. It reads
+%
+%\begin{equation}
+%\frac{\boldsymbol{p}^2}{2m}\mathit{\Psi}(\boldsymbol{p}) + \int{d\boldsymbol{p^\prime}V(\boldsymbol{p},\boldsymbol{p^\prime})\mathit{\Psi}(\boldsymbol{p^\prime}) } = E\mathit{\Psi}(\boldsymbol{p})
+%\end{equation}
+%
+%where
+%
+%\begin{equation}
+%V(\boldsymbol{p},\boldsymbol{p^\prime}) = -\frac{Z}{2\pi^2\left|\boldsymbol{p}-\boldsymbol{p^\prime}\right|^2} \label{eqn:kernel}
+%\end{equation}
+%
+%The Coulomb potential (\ref{eqn:kernel}) is usually dealt 
+%with with numerical techniques.
+%However, we may write (\ref{eqn:kernel}) as a spectral decomposition onto 
+%the Sturmian basis, what gives
+%
+%\begin{equation}
+% \begin{split}
+%\frac{1}{|\boldsymbol{p}^\prime - \boldsymbol{p}|^2} =
+%  \sum_{\ell=0}^\infty\sum_{m=-\ell}^\ell\sum_{n=\ell+1}^\infty
+%   \frac{2\pi^2\kappa}{n}
+%    \widetilde{\Phi}_{n\ell m}^\kappa (\boldsymbol{p})
+%     \widetilde{\Phi}_{n\ell m}^{\kappa\ast} (\boldsymbol{p}^\prime) = 0, \\
+%  \widetilde{\Phi}_{n\ell m}^\kappa(p) =
+%       \frac{\kappa^2 + p^2}{2\kappa^2}\Phi_{n\ell m}^\kappa(p). 
+% \qquad\qquad
+%   \Phi_{n\ell m}^\kappa (\boldsymbol{p})
+%     & = \Sigma_{n\ell}^\kappa (p)
+%      \widetilde{Y}_{\ell m}(\hat{\boldsymbol{p}}),
+%   \label{eqn:kernel_decomposition},
+% \end{split}
+%\end{equation}
+%
+%The resolution of the TDSE may be done by the means of different 
+%optimized algorithms.
+%
+%\end{frame}
+%
+%\begin{frame}
+% \frametitle{Current work - Observables}
+%
+%At the end of the pulse, usual energy and angular-resolved 
+%energy distributions are considered
+%
+%
+%\begin{figure}[htbp]
+% \begin{minipage}[b]{.45\linewidth}
+% \centering
+%  \includegraphics[scale=.35]{energy_distrib_dif_nc8_intens3_zero_tetchou2010.png}
+%%  \caption{Energy distribution.}
+%\end{minipage}
+%\quad
+% \begin{minipage}[b]{.5\linewidth}
+% \centering
+%  \includegraphics[scale=.40]{energy_distrib_enez_iwp_intens.png}
+%%  \caption{Angular-resolved energy distribution.}
+%\end{minipage}
+%\end{figure}
+%
+%%\begin{figure}[htbp]
+%% \centering
+%%  \includegraphics[scale=.40]{energy_distrib_enez_iwp_intens.png}
+%%  \caption{Energy distribution.}
+%%\end{figure}
+%
+%\end{frame}
+%
+%
+%\begin{frame}
+% \frametitle{More figures with analysis aspects}
+%
+%We compare results yielded by different techniques of projection 
+%of the final wavepacket. 
+%Another interesting thing to do would studying the variation 
+%of the distributions with the parameters.
+% 
+%\begin{figure}[htbp]
+% \begin{minipage}[b]{.45\linewidth}
+% \centering
+%  \includegraphics[scale=.40]{nopcx_nl16_ns1500_st50000_cwf}
+%  %\caption{Energy distribution.}
+%\end{minipage}
+%\quad
+% \begin{minipage}[b]{.45\linewidth}
+% \centering
+%  \includegraphics[scale=.40]{nopcx_nl16_ns1500_st50000_iwp}
+%  %\caption{Energy distribution.}
+%\end{minipage}
+%  %\caption{Energy distribution}
+%\end{figure}
+%\end{frame}
+%
+%
+%
+%\begin{frame}
+% \frametitle{More figures with analysis aspects}
+%
+%We may compare our results with different author's.
+% 
+%\begin{figure}[htbp]
+% \begin{minipage}[b]{.45\linewidth}
+% \centering
+%  \includegraphics[scale=.35]{grum10_ener_dis_comp.png}
+%  %\caption{Energy distribution.}
+%\end{minipage}
+%\quad
+% \begin{minipage}[b]{.45\linewidth}
+% \centering
+%  \includegraphics[scale=.35]{1s_us-vs-dondera.png}
+%  %\caption{Energy distribution.}
+%\end{minipage}
+%\end{figure}
+%
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{End note}
+%As as been shown, I have been mainly concerned by the hydrogen 
+%atom and by convergence questions.
+%On the other hand, the research interest of the UEC's team 
+%is very broad. It addresses many different chemical species as well as
+%very precise aspects of the experiments 
+%(as can be seen by example in 10.1103/PhysRevA.87.063405).
+%
+%\begin{figure}
+%\includegraphics[scale=.3]{2020-11-11-225522_725x380_scrot.png}
+%\end{figure}
+%
+%Once the convergence problem is solved, the 
+%natural next step is the consideration of different observables, 
+%chemical aspects and physical features (this is the
+%progressively where my researches are pointing at).
+%
+%Nonetheless, working with UEC would be an opportunity for me to 
+%diversify my researches a lot.
+%
+%\end{frame}
+%
+%
+%
+%
+%
+%%\begin{frame}[fragile]
+%%\frametitle{Including Code}
+%%\begin{semiverbatim}
+%%\\begin\{frame\}
+%%\\frametitle\{Outline\}
+%%\\tableofcontents
+%%\\end\{frame\}
+%%\end{semiverbatim}
+%%\end{frame}
+%
+%
+%
+%
+%%\begin{frame}[fragile]
+%%\frametitle{Including Code}
+%%\begin{semiverbatim}
+%%\\begin\{frame\}
+%%\\frametitle\{Outline\}
+%%\\tableofcontents
+%%\\end\{frame\}
+%%\end{semiverbatim}
+%%\end{frame}
+%
+%
+%
+%
+%%\begin{frame}
+%%\frametitle{Overlays}
+%%\only<1>{First Line of Text}
+%% 
+%%\only<2>{Second Line of Text}
+%% 
+%%\only<3>{Third Line of Text}
+%%
+%%\textbf<2>{Example Text}
+%%\textit<2>{Example Text}
+%%\textsl<2>{Example Text}
+%%\textrm<2>{Example Text}
+%%\textsf<2>{Example Text}
+%%\textcolor<2>{orange}{Example Text}
+%%\alert<2>{Example Text}
+%%\structure<2>{Example Text}
+%%\end{frame}
+%%
+%%\begin{frame}
+%%\begin{definition}
+%%A prime number is a number that...
+%%\end{definition}
+%%\end{frame}
+%%
+%%\begin{frame}
+%%\frametitle{Using Columns}
+%%\begin{columns}
+%%\column{0.5\textwidth}
+%%<text>
+%%\column{0.5\textwidth}
+%%
+%%\end{columns}
+%%\end{frame}
+%%
+%%\section{Position of the problem}
+%%
+%%\begin{frame}
+%%\frametitle{Things to do on a Sunday Afternoon}
+%%\begin{block}{One could \ldots}
+%%\begin{itemize}
+%%\item walk the dog\dots \pause
+%%\item read a book\pause
+%%\item confuse a cat\pause
+%%\end{itemize}
+%%\end{block}
+%%and many other things
+%%\end{frame}
+
+\input{endword}
+
+\end{document}
+

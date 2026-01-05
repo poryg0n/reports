@@ -1,0 +1,6 @@
+\babel@toc {french}{}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{G\'en\'eralit\'es sur l'interaction laser-atome en champ fort}{5}{0}{2}
+\beamer@sectionintoc {3}{Nouvelle approche de r\'esolution dans l'espace des moments}{9}{0}{3}
+\beamer@sectionintoc {4}{R\'esultats}{17}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{32}{0}{5}

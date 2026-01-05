@@ -1,0 +1,231 @@
+\section{preliminary}
+
+%\begin{frame}<handout:0>
+%\frametitle{Additional tests}
+%	\framesubtitle{Electric field profile and charts}
+%\footnotesize
+
+
+%\begin{textblock*}{400pt}(30pt,40pt)
+%%\centering
+%%\rotatebox{90}{
+% \begin{minipage}{0.5\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.25, trim={0 0 0 0},clip]{images/f003_field_3t.png} 
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+%
+%
+%%\begin{textblock*}{400pt}(30pt,40pt)
+%%%\centering
+%%%\rotatebox{90}{
+%% \begin{minipage}{1.0\linewidth}
+%% \begin{figure}[tp]
+%% \centering
+%% \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_6tau.png}}
+%% \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_7tau.png}}
+%% \subfloat[]{\includegraphics[scale=.20, trim={0 0 0 0},clip]{images/20230809/f01_field_8tau.png}} 
+%%%\caption{Eigenvalues.}
+%%%\label{fig:pemd_0114}
+%% \end{figure}
+%
+%\vspace{5pt}
+%
+%\begin{itemize}
+%\footnotesize
+%\item Profiles of the field $F(t)$ and the envelop $f(t)$. 
+%%From left to right, $T=6\tau$ (a), $T=7\tau$ (b)
+%%and  $T=8\tau$ (c).
+%\end{itemize}
+%
+% \end{minipage}
+%\end{textblock*}
+%
+%
+%
+%\begin{textblock*}{400pt}(50pt,190pt)      %180 
+% \begin{minipage}{0.5\linewidth}
+%\begin{align}
+%\tiny
+% &  F(t) = F_0 e^{-\left(2t^\prime/\tau\right)^2}\cos(\omega_0 t^\prime),
+%\hspace{15pt}   F_0 = 0.03\,{\rm a.u.}, 
+%\nonumber \\
+% & \hspace{10pt} \omega_0= 0.114\,{\rm a.u.},
+%\hspace{15pt} \tau = n_{oc}\frac{2\pi}{\omega_0}, 
+%\hspace{15pt} n_{oc}=5, % \nonumber\\
+% & \hspace{10pt} -T/2 \leq t^\prime \leq T/2. \hspace{15pt}  % T=3\tau, 
+%%  \hspace{15pt}  {\rm nsteps} = 10000, 
+% \nonumber
+%\end{align}
+%
+% \end{minipage}
+%
+%\end{textblock*}
+%
+%
+% \begin{textblock*}{200pt}(220pt,70pt)              %250,140
+% \begin{itemize}
+%   \item Chart of the pre-determined values of the parameters to each test.
+%  \end{itemize}
+% \begin{table}[tp]
+%  \tiny\centering
+%  \input{tables/chart_1.tab}
+% \end{table}
+% \end{textblock*}
+%
+%
+%\end{frame}
+
+\section{convergence study}
+
+\begin{frame}<handout:0>
+\frametitle{Additional tests}
+	\framesubtitle{Relative errors and probability densities}
+\small
+\footnotesize
+
+
+\begin{textblock*}{100pt}(90pt,40pt)
+%\centering
+%\rotatebox{90}{
+%\begin{minipage}{0.5\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.13, trim={0 0 0 0},clip]{images/f003_field_4t.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+%\end{minipage}
+\end{textblock*}
+
+\begin{textblock*}{150pt}(160pt,130pt)
+\begin{table}[tp]
+ \Tiny\centering
+\input{tables/f003_4t_1.tab}
+\end{table}
+
+
+\end{textblock*}
+
+
+
+\begin{textblock*}{150pt}(160pt,170pt)
+\begin{table}[tp]
+ \Tiny\centering
+\input{tables/f003_4t_2.tab}
+\end{table}
+ \begin{minipage}{0.5\linewidth}
+\begin{align}
+\tiny
+ &  F(t) = F_0 e^{-\left(2t^\prime/\tau\right)^2}\cos(\omega_0 t^\prime),
+\hspace{15pt}   F_0 = 0.03\,{\rm a.u.}, 
+\nonumber \\
+ & \hspace{10pt} \omega_0= 0.114\,{\rm a.u.},
+\hspace{15pt} \tau = n_{oc}\frac{2\pi}{\omega_0}, 
+\hspace{15pt} n_{oc}=5, % \nonumber\\
+ & \hspace{10pt} -T/2 \leq t^\prime \leq T/2. \hspace{15pt}  % T=3\tau, 
+%  \hspace{15pt}  {\rm nsteps} = 10000, 
+ \nonumber
+\end{align}
+
+ \end{minipage}
+
+\end{textblock*}
+
+
+\begin{textblock*}{100pt}(30pt,60pt)
+\begin{align}
+& P_{\rm ion} = 3.24(-6)       \nonumber\\
+& P_0 = 9.999967(-1)              \nonumber\\ 
+& F_0 = 0.03\ {\rm a.u.}           \nonumber\\
+& T = 4\tau                         \nonumber\\
+                                  \nonumber\\ 
+& \sigma_r = (val - ref)/ref       \nonumber\\
+& \gamma_r = (\sigma_r^{\rm nsteps} 
+    - \sigma_r^{10000})/\sigma_r^{10000} \nonumber  \\
+                                  \nonumber\\ 
+& {\rm xmax} = 2000                 \nonumber \\
+& {\rm nbas} = 550                  \nonumber \\
+                                  \nonumber\\ 
+& {\rm xmax} = 2200                 \nonumber\\
+& {\rm nbas} = 600                  \nonumber 
+\end{align}
+\end{textblock*}
+
+
+
+\begin{textblock*}{200pt}(270pt,30pt)
+%\centering
+%\rotatebox{90}{
+%\begin{minipage}{0.5\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={0 0 0 0},clip]{images/f003_600_4t.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+%\end{minipage}
+\end{textblock*}
+
+\begin{textblock*}{200pt}(150pt,30pt)
+%\centering
+%\rotatebox{90}{
+%\begin{minipage}{0.5\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={0 0 0 0},clip]{images/f003_550_4t.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+%\end{minipage}
+\end{textblock*}
+
+\end{frame}
+
+
+% \begin{frame}<handout:0>
+% \frametitle{Additional tests}
+% 	\framesubtitle{Probability density - $\boldsymbol{\rm nsteps}$ dependence}
+% \small
+% \footnotesize
+% 
+%\begin{textblock*}{160pt}(150pt,50pt)
+%%\centering
+%%\rotatebox{90}{
+% \begin{minipage}{0.30\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.20, trim={0 0 0 40},clip]{images/f003_550_4t_1.png} 
+% \includegraphics[scale=.20, trim={0 0 0 40},clip]{images/f003_450_3t_1.png} 
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+%
+% \end{minipage}
+%\end{textblock*}
+%
+%
+%
+% \begin{textblock*}{160pt}(30pt,50pt)
+% %\centering
+% %\rotatebox{90}{
+%  \begin{minipage}{0.30\linewidth}
+%  \begin{figure}[tp]
+%  \includegraphics[scale=.2, trim={0 0 0 40},clip]{images/f003_550_4t_3.png} 
+%  \includegraphics[scale=.2, trim={0 0 0 40},clip]{images/f003_550_4t_2.png} 
+% %%\caption{Eigenvalues.}
+% %\label{fig:pemd_0114}
+%  \end{figure}
+% 
+%  \end{minipage}
+% \end{textblock*}
+% 
+%% \begin{textblock*}{150pt}(275pt,170pt)
+%%%\scriptsize
+%%%Converged probability densities for different ${\rm nbas}$
+%% \begin{itemize}
+%% \tiny
+%% \item Minimal ${\rm nsteps}$ required for convergence is smaller with smaller
+%%   ${\rm nbas}$
+%% \end{itemize}
+%% \end{textblock*}
+% 
+% \end{frame}
+

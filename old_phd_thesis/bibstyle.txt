@@ -1,0 +1,10 @@
+%\bibliographystyle{ieeetr}        % Shortened, sorted
+%\bibliographystyle{abbrv}         % Shortened, unsorted
+%\bibliographystyle{unsrt}         % Full name, first name first
+%\bibliographystyle{alpha}         % Just first letter of names and year
+%\bibliographystyle{apalike}       % Just name, et al usage, between brackets
+%\bibliographystyle{siam}          % Full name, upper case
+%\bibliographystyle{acm}           % Name first, upper case and semi upper case
+%\bibliographystyle{plain}         % Full name, no abbrev upper
+
+

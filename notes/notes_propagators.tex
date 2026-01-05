@@ -1,0 +1,460 @@
+
+
+\newpage
+
+\section{Propagators testing (Phys. Rev. E 96, 063307 (2017))}
+
+We want to solve the Schr\"odinger equation (\ref{eqn:tdse_2}) 
+by treating some of these terms as inhomogeneous terms, namely
+
+\begin{align}
+ i\frac{\partial}{\partial t}\psi(x,t) & = \left[
+	\left(-\frac{1}{2}\frac{\partial^2}{\partial x^2} 
+           + \frac{1}{2}x^2\right)
+           + \frac{1}{2}x
+           +\frac{1}{2}\left(x +1\right)\right]\psi(x,t),
+	  \hspace{9mm} \omega=1 \label{eqn:inhomo_fake} \\
+              & = \Big( H_0 +V_{\rm ext} + h_I\Big)\psi(x,t).
+\end{align}
+
+\noindent The general theory for ordinary differential equations
+consists in writing them as
+
+\begin{equation}
+   dy = dt\,f(t,y), \hspace{50pt} y(t_0)=y_0,
+   \label{eqn:gen_ode}
+\end{equation}
+
+
+To this end, we assess several methods provided by the above-mentioned 
+paper to numerically solve equations of the type 
+
+\begin{equation}
+   \frac{dy}{dt} = Ly + N(y,t),
+\end{equation}
+
+\noindent where $L$ is the linear part and $N(y,t)$ is the nonlinear part.
+The equation we concern ourslevfes with is the 
+time-dependent Kohn-Sham (TDKS) equation
+
+\begin{align}
+   i\frac{\partial}{\partial t}{\boldsymbol \rm \Psi}(\boldsymbol{r},t) 
+& = \boldsymbol{\rm H}{\boldsymbol \rm \Psi}(\boldsymbol{r},t), 
+\label{eqn:tdks} \\
+& = \boldsymbol{\rm L}{\boldsymbol \rm \Psi}(\boldsymbol{r},t),
+   +  \boldsymbol{\rm N}\left({\boldsymbol \rm \Psi}(\boldsymbol{r},t\right).
+    \label{eqn:tdks}
+\end{align}
+
+\subsection{Analytical expressions}
+\subsubsection{Time evolution operator approach in Schr\"odinger picture}
+
+A formal solution to (\ref{eqn:tdks}) is 
+\begin{equation}
+   {\boldsymbol \rm \Psi}(\boldsymbol{r},t) = U(t,t_0)
+   {\boldsymbol \rm \Psi}(\boldsymbol{r},t_0),
+   \label{eqn:schrodinger_pic}
+\end{equation}
+
+\noindent where $U(t,t_0)$ is the evolution operator defined as
+
+\begin{equation}
+   U(t,t_0) = \mathcal{T}
+     \exp\Bigg\lbrace 
+     -i\int_{t_0}^{t}{\boldsymbol{\rm H}}(\boldsymbol{r},\tau)d\tau
+\Bigg\rbrace,
+\end{equation}
+
+\noindent with $\mathcal{T}$ being the time-ordering operator.
+In practice, the above expression is split into a product 
+of evolution operators as
+
+\begin{equation}
+   U(t_n,t_0) = \prod_{k=1}^n U\left(t_k,t_{k-1}\right), \hspace{50pt}
+         t_n = n\Delta t.
+\end{equation}
+
+\noindent For sufficiently small steps, we assume the Hamiltonian is kept 
+constant between the two instants and write
+
+\begin{equation}
+   U(t_{n+1},t_n) = \exp\Big[
+     -i{\boldsymbol{\rm H}}(\boldsymbol{r},t_n)\Delta t
+\Big].
+\end{equation}
+
+\subsubsection{Implicit-explicit (IMEX) schemes}
+
+
+The equation (\ref{eqn:gen_ode}) 
+can be straightforwardly and conveniently solved 
+by approximating it, for sufficiently small steps 
+$\Delta t \longrightarrow 0$, to
+  
+\begin{equation}
+   y_{n+1} = y_n + \Delta t\,f(t_n,y_n) + O(\Delta t^2), 
+\hspace{50pt} y(t_0)=y_0.
+   \label{eqn:explicit}
+\end{equation}
+
+\noindent This expression known as an \emph{explicit scheme}
+interestingly consider that, for sufficiently small enough steps,
+the function did not change much between $t_n$ and $t_{n+1}$. \\
+
+An alternative to (\ref{eqn:explicit}) is the \emph{implicit scheme}
+given by the following equation
+
+\begin{equation}
+   y_{n+1} = y_n + \Delta t\,f(t_{n+1},y_{n+1}) + O(\Delta t^2),
+  \hspace{50pt} y(t_0)=y_0.
+   \label{eqn:implicit}
+\end{equation}
+
+\noindent This last expression is preferable whenever 
+the problem is said to be \emph{stiff}, as it is much stabler.
+
+
+
+\subsubsection{Integrating factor (IF) method}
+
+The idea here is to use an integrating factor to simplify the resolution 
+of the equation.
+
+\noindent As far as quantum mechanics is concerned,
+it is about using the \emph{interaction picture} defined as the following
+\begin{equation}
+   \boldsymbol{\rm \Phi}(\boldsymbol{r},t) 
+      = e^{i\boldsymbol{L}t}{\boldsymbol\rm\Psi} (\boldsymbol{r},t).
+     \label{eqn:interac_pic}
+\end{equation}
+
+Inserting this into (\ref{eqn:tdks}) yields
+
+\begin{equation}
+   i\frac{\partial}{\partial t}\boldsymbol{\rm \Phi}(\boldsymbol{r},t) 
+      = e^{i\boldsymbol{L}t}
+    \boldsymbol{N}\left( e^{-i\boldsymbol{L}t}\boldsymbol{\rm\Phi},t\right).
+     \label{eqn:base_if}
+\end{equation}
+
+Reversing back to $\boldsymbol{\rm \Psi}(\boldsymbol{r},t)$
+form (\ref{eqn:interac_pic}) subsequently 
+integrating from $t_n$ to $t_{n+1}$ yields
+
+\begin{equation}
+   \boldsymbol{\rm \Psi}(\boldsymbol{r},t_{n+1}) 
+      = e^{-i\boldsymbol{L}\Delta t}
+   \boldsymbol{\rm \Psi}(\boldsymbol{r},t_n) 
+      -i e^{-i\boldsymbol{L}t_{n+1}}
+      \int_{t_n}^{t_{n+1}} e^{i\boldsymbol{L}\tau}
+    \boldsymbol{N}\left(  e^{-i\boldsymbol{L}\tau}
+     \boldsymbol{\rm\Phi},\tau\right)d\tau.
+     \label{eqn:if_step}
+\end{equation}
+
+
+\subsubsection{Exponential time differencing (ETD) method}
+
+From (\ref{eqn:tdks}), we may express $\boldsymbol{N}(\boldsymbol{\Psi},t)$
+as a sum of the linear part and the time-derivative. Subsequently
+using the identity
+
+\begin{equation}
+   i\frac{\partial}{\partial t}
+      e^{i\boldsymbol{L}t}\boldsymbol{\rm \Psi}(\boldsymbol{r},t) 
+      = e^{i\boldsymbol{L}t}
+    \Bigg[ 
+    - \boldsymbol{L}(\boldsymbol{r},t)\boldsymbol{\rm \Psi}(\boldsymbol{r},t)
+    + i\frac{\partial}{\partial t}
+\boldsymbol{\Psi}(\boldsymbol{r},t)
+    \Bigg],
+\end{equation}
+
+\noindent one can rewrite (\ref{eqn:tdks}) as 
+
+\begin{equation}
+   i\frac{\partial}{\partial t}\boldsymbol{\rm \Phi}(\boldsymbol{r},t) 
+      = e^{i\boldsymbol{L}t}
+    \boldsymbol{N}\left( \boldsymbol{\rm\Psi},t\right),
+     \label{eqn:base_etd}
+\end{equation}
+
+\noindent Integrating from $t_n$ to $t_{n+1}$ yields
+
+\begin{equation}
+   \boldsymbol{\rm \Psi}(\boldsymbol{r},t_{n+1}) 
+      = e^{-i\boldsymbol{L}\Delta t}
+   \boldsymbol{\rm \Psi}(\boldsymbol{r},t_n) 
+      -i e^{-i\boldsymbol{L}t_{n+1}}
+      \int_{t_n}^{t_{n+1}} e^{i\boldsymbol{L}\tau}
+    \boldsymbol{N}\left( \boldsymbol{\rm\Psi},\tau\right)d\tau.
+     \label{eqn:etd_step}
+\end{equation}
+
+\noindent The expressions (\ref{eqn:base_etd}) and (\ref{eqn:etd_step})
+are formally identical to (\ref{eqn:base_if}), (\ref{eqn:if_step}),
+safe the variable change in the treatment of the nonlinear term.
+In other words, the IF method consists in propagating the solution 
+in the interaction picture whereas the ETD method does so in
+the Schr\"odinger picture.
+
+\vspace{20pt}
+
+From this last remark, there is an argument to make about the point 
+of propagating the solution by the means of (\ref{eqn:if_step}) or
+(\ref{eqn:etd_step}). Indeed, one can just propagate 
+the solution in the interaction picture all the way through the last 
+integration step 
+
+\begin{equation}
+   \boldsymbol{\rm \Phi}(\boldsymbol{r},t_{n+1}) 
+      = \boldsymbol{\rm \Phi}(\boldsymbol{r},t_n) 
+      -i \int_{t_n}^{t_{n+1}} e^{i\boldsymbol{L}\tau}
+    \boldsymbol{N}\left(  e^{-i\boldsymbol{L}\tau}
+     \boldsymbol{\rm\Phi},\tau\right)d\tau,
+\end{equation}
+
+\noindent and then, and then only, obtain the solution
+$\boldsymbol{\rm \Psi}(\boldsymbol{r},t_f)$ from 
+$\boldsymbol{\rm \Phi}(\boldsymbol{r},t_f)$  by making use of 
+(\ref{eqn:interac_pic}).
+
+\newpage
+
+\subsection{Solutions to the Time Dependent Density Functional Theory}
+
+In this part, we address some specific technics to solve 
+the TDKS equation, 
+either in the Schr\"odinger picture (\ref{eqn:schrodinger_pic})
+or in the interaction picture (\ref{eqn:interac_pic}).
+
+\subsubsection{Taylor time propagation}
+
+From the expression (\ref{eqn:schrodinger_pic}),
+a simple Taylor expansion yields
+
+\begin{equation}
+\boldsymbol{\rm \Psi}(\boldsymbol{r},t_{n+1})
+   = \sum_{k=0}^\infty \frac{1}{k!}
+      \Bigg( -i\Delta t\boldsymbol{\rm H}(t_n)\Bigg)^k
+     \boldsymbol{\rm \Psi}(\boldsymbol{r},t_n)
+     \label{eqn:taylor}
+\end{equation}
+
+\noindent The developpment is usually truncated after $n$ terms,
+which in turns gives an  $n$th-order approximation.
+
+\begin{equation}
+\boldsymbol{\rm \Psi}(\boldsymbol{r},t_{n+1})
+   = \sum_{k=0}^n \frac{1}{k!}
+      \Bigg( -i\Delta t\boldsymbol{\rm H}(t_n)\Bigg)^k
+     \boldsymbol{\rm \Psi}(\boldsymbol{r},t_n) + O(\Delta t^{n+1}).
+\end{equation}
+
+\noindent Most propagation schemes seems to be essentially just that 
+in some way or another.
+
+\subsubsection{Split-operator method}
+\subsubsection{Crank-Nicholson method}
+
+By making use of both the explicit and implicit schemes and 
+averaging them, we achieve the Crank Nicholson propagation scheme 
+given by the following formula
+
+\begin{\eq}
+  y_{n+1} = y_n + \frac{\Delta t}{2}
+  \Bigg(f(t_{n+1},y_{n+1}) + f(t_n,y_n)\Bigg) + O(\Delta t^3)
+  \label{eqn:crank_nich}
+\end{\eq}
+
+\noindent The application of this formula to the 
+problem (\ref{eqn:tdks}) gives 
+
+\begin{align}
+   \boldsymbol{\rm \Psi}_{n+1}  =
+   \boldsymbol{\rm \Psi}_n
+   - \frac{i\Delta t}{2}\Bigg( \boldsymbol{H}_{n+1}\boldsymbol{\rm \Psi}_{n+1}
+   + \boldsymbol{H}_{n}\boldsymbol{\rm \Psi}_{n}\Bigg), &
+    \hspace{50pt} \boldsymbol{H}_i \equiv \boldsymbol{H}(\boldsymbol{r},t_i)\\
+   \Bigg\lbrace\mathds{1} +  \frac{i\Delta t}{2}
+   \Big( \boldsymbol{L}_{n+1} + \boldsymbol{N}_{n+1}\Big)\Bigg\rbrace
+   \boldsymbol{\rm \Psi}_{n+1}
+   & = \Bigg\lbrace\mathds{1} +  \frac{i\Delta t}{2}
+       \Big( \boldsymbol{L}_{n} - \boldsymbol{N}_{n}\Big)\Bigg\rbrace
+       \boldsymbol{\rm \Psi}_{n}
+\end{align}
+
+\subsubsection{Second-order IMEX method}
+\subsubsection{Integrating factor method with explicit multistep}
+
+This method is not derived from (\ref{eqn:explicit}) but rather 
+from the \emph{Adam-Bashfort} formula, which reads
+
+\begin{\eq}
+   y_{n+1} = y_n 
+      + \frac{\Delta t}{2}\Bigg( 3f(y_n,t_n) - f(y_{n-1},t_{n-1})\Bigg) + O(\Delta t^3) ,
+     \hspace{50pt} \Delta t = t_{n+1} - t_{n}.
+\end{\eq}
+
+The application of this formula to (\ref{eqn:interac_pic}) gives 
+
+\begin{align}
+   \boldsymbol{\rm \Phi}_{n+1} = \boldsymbol{\rm \Phi}_{n} 
+      + \frac{i\Delta t}{2}
+\Bigg[ -3e^{i\boldsymbol{L}t_n}\boldsymbol{N}\left( e^{-i\boldsymbol{L}t_n}
+       \boldsymbol{\Phi}_n,t_n\right)
++ e^{i\boldsymbol{L}t_{n-1}}\boldsymbol{N}\left( e^{-i\boldsymbol{L}t_{n-1}}
+       \boldsymbol{\Phi}_{n-1},t_{n-1}\right)\Bigg], \\
+\boldsymbol{\rm \Psi}_{n+1} = 
+      e^{-i\boldsymbol{L}\Delta t}\boldsymbol{\rm \Psi}_{n} 
+ -\frac{3i\Delta t}{2} e^{-i\boldsymbol{L}\Delta t}
+       \boldsymbol{N}\left(\boldsymbol{\Psi}_n,t_n\right)
++ \frac{i\Delta t}{2} e^{-2i\boldsymbol{L}\Delta t}\boldsymbol{N}
+\left(\boldsymbol{\Psi}_{n-1},t_{n-1}\right).
+\end{align}
+
+\subsubsection{Integrating factor with Runge-Kutta}
+\emph{Runge Kutta} methods propagate the solution over an interval
+by combining the information from several Euler-style steps (each involving
+one evaluation of the right-hand function), 
+and then using the information obtained to matrch a Taylor series 
+expansion up to some order. \\
+
+%In other words Runge-Kutta method and Euler method are fundamentally the same,
+%as can been seen by the following development. 
+
+\begin{itemize}
+\item \textbf{Euler method (RK1)}
+
+The formula for the Euler method is given by
+\begin{align}
+   k_1 & =  f(t_n,y_n), \label{eqn:rk1_step}\\
+   y_{n+1} & = y_n + \Delta t\, k_1 + O(\Delta t^2) \label{eqn:rk1}.
+\end{align}
+The formula for the explicit Euler method (\ref{eqn:explicit})
+advances the solution one step forward in time. The method is described
+to be $O(\Delta t^2)$ or $o(\Delta t)$, thus of order 1.
+Though imprecise and unstable, Euler method may be used
+to obtain a partial solution that is then used in more advanced 
+propagation schemes.
+
+\begin{align}
+        k_1 & = -i e^{-i\boldsymbol{L}\Delta t}
+        \boldsymbol{N}(\boldsymbol{\rm\Psi}_{n},t_n), \\
+   \boldsymbol{\rm\Psi}_{n+1} 
+      & = e^{-i\boldsymbol{L}\Delta t}\boldsymbol{\rm\Psi}_{n}
+      +  \Delta t\, k_1.
+\end{align}
+
+\hspace{20pt}
+
+\item \textbf{Second-order Runge-Kutta methods}
+
+Using (\ref{eqn:rk1_step}) as a trial step to some point of the interval 
+and subsequently using the value of $t$ and $y$ at this point, we may 
+compute the real step as
+
+\begin{align}
+   k_1 & =  f(y_n,t_n), \label{eqn:rk1_step } \\
+   k_2 & =  f\left(t_n + \alpha\Delta t,y_n+\alpha\Delta t\,k_1\right), 
+      \label{eqn:rk2_step }\\
+   y_{n+1} & = y_n + \Delta t\Big((1-\beta) k_1 
+              +  \beta k_2 \Big) + O(\Delta t^3) \label{eqn:rk2},
+\end{align}
+\noindent where $\beta=(1-\alpha)$ and $\alpha$ is 
+some non-zero real parameter.
+For example $\alpha=1/2$ is the second-order Runge's method 
+also known as the \emph{midpoint rule}. Other popular choices
+are $\alpha=2/3$  which is Ralston's method
+and $\alpha=1$ which is Heun's method. \\
+
+Using (\ref{eqn:rk2}) on the relation (\ref{eqn:interac_pic}) yields
+\begin{align}
+        k_1 & = -i e^{-i\boldsymbol{L}\Delta t}
+        \boldsymbol{N}(\boldsymbol{\rm\Psi}_{n},t_n), \\
+        k_2 & = -i e^{-i\alpha\boldsymbol{L}\Delta t}
+        \boldsymbol{N}(\boldsymbol{\rm\Psi}_{n} + \alpha\Delta t\,k_1,
+             t_n + \alpha\Delta t), \\
+   \boldsymbol{\rm\Psi}_{n+1} 
+      & = e^{-i\boldsymbol{L}\Delta t}\boldsymbol{\rm\Psi}_{n}
+      +  \Delta t\Big( (1-\beta)k_1 + \beta k_2\Big).
+\end{align}
+
+\hspace{20pt}
+\item \textbf{Third-order Runge-Kutta methods}
+
+Following the second-order Runge-Kutta methods 
+are the third-order methods described by the equations
+
+\begin{align}
+   k_1 & =  f(y_n,t_n), \label{eqn:rk1_step } \\
+   k_2 & =  f\left(t_n + c_2\Delta t,y_n + a_{21}\Delta t\,k_1\right), \\
+   k_3 & =  f\big(t_n + c_3\Delta t, 
+        y_n + \Delta t\left( a_{31}k_1 +a_{32}k_2\right)\big), 
+      \label{eqn:rk3_step }\\
+   y_{n+1} & = y_n + \Delta t\Big( b_1k_1 
+              +  b_2 k_2 + b_3 k_3\Big) + O(\Delta t^4) \label{eqn:rk3},
+\end{align}
+
+\noindent where the coefficients $c_i$, $a_{ij}$ and $b_j$
+are given by the \emph{Butcher tableau}. 
+
+\begin{table}%[!h]
+\begin{tabular}{l|c}
+$\boldsymbol{\rm c}$      &   $\boldsymbol{A}$                   \\
+\hline
+\rule{0pt}{3ex}           &  $\boldsymbol{\rm b^T}$  
+\end{tabular}
+\end{table}
+
+
+\hspace{20pt}
+\item \textbf{Fourth-order Runge-Kutta methods}
+
+Following are the fourth-order Runge-Kutta methods described by the equations
+
+\begin{align}
+   k_1 & =  f(y_n,t_n), \label{eqn:rk1_step } \\
+   k_2 & =  f\left(t_n + c_2\Delta t,y_n + a_{21}\Delta t\,k_1\right), \\
+   k_3 & =  f\big(t_n + c_3\Delta t, 
+        y_n + \Delta t\left( a_{31}k_1 +a_{32}k_2\right)\big), \\
+   k_4 & =  f\big(t_n + c_4\Delta t, 
+        y_n + \Delta t\left( a_{41}k_1 +a_{42}k_2 + a_{43}k_3\right)\big), 
+      \label{eqn:rk4_step }\\
+   y_{n+1} & = y_n + \Delta t\Big( b_1k_1 
+              +  b_2 k_2 + b_3 k_3 + b_4 k_4\Big) 
++ O(\Delta t^5) \label{eqn:rk4},
+\end{align}
+
+\noindent where the coefficients $c_i$, $a_{ij}$ and $b_j$
+are, again, given by the \emph{Butcher tableau}. 
+
+There exist two popular fourth-order Runge-Kutta methods,
+only differing by the coefficients of the Butcher tableau. 
+\end{itemize}
+
+\begin{table}[!h]
+\centering
+%\begin{tabular}{cc}%
+%\begin{tabular}{|@{\hspace{2em}}l@{}|l@{\qquad}|}
+%\begin{tabular}{@{\hspace{2em}}c@{}@{\qquad}c}
+\begin{tabular}{@{\hspace{2em}}c@{}@{\hspace{10em}}c}
+\begin{tabular}{l|cccc}
+$0$      &  $0$    & $0$   &  $0$   & $0$              \\
+$1/2$    &  $1/2$  & $0$   &  $0$   & $0$              \\
+$1/2$    &  $0$    & $1/2$ &  $0$   & $0$              \\
+$1$      &  $0$    & $0$   &  $1$   & $0$              \\
+\hline
+         &  $1/6$  & $1/3$ &  $1/3$ & $1/6$              
+\end{tabular} &
+\begin{tabular}{l|cccc}
+$0$      &  $0$    & $0$   &  $0$   & $0$              \\
+$1/3$    &  $1/3$  & $0$   &  $0$   & $0$              \\
+$2/3$    &  $-1/3$ & $1$   &  $0$   & $0$              \\
+$1$      &  $1$    & $-1$  &  $1$   & $0$              \\
+\hline
+         &  $1/8$  & $3/8$ &  $3/8$ & $1/8$              
+\end{tabular}
+\end{tabular}
+\end{table}
+

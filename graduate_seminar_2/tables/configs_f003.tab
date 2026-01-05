@@ -1,0 +1,18 @@
+\begin{table}[!ht]
+    \small
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \hline
+     $F_0=0.03\,\rm a.u.$ & $\omega_f$ (a.u.) & num. $\omega$ steps & $\Delta\omega$ & $t_f\ (8T) $ & num. time steps & $\Delta t$ \\ 
+     Config 1 & $1.13$ & $10^5$ & $6.3(-6)$ & $1.102(3)$ & $1.(4)$ & $0.2204$ \\ 
+     Config 2 & $1.13$ & $10^6$ & $6.3(-7)$ & $1.102(3)$ & $8.(3)$ & $0.2755$ \\ 
+
+%     entry  & \textbf{nbas-nelm } & \textbf{surv. prob} & \textbf{ion. prob} & \textbf{$\sigma$}  \\ \hline
+%   1 &    \textbf{   40-200} & 0.999997485319454 &    2.514680546461534(-6) &    3.760(-13) \\ \hline
+%   2 &    \textbf{   60-200} & 0.999997485406728 &    2.514593272162635(-6) &    -8.541(-11) \\ \hline
+%   3 &    \textbf{   80-200} & 0.999997485320982 &    2.514679018461585(-6) &    -1.990(-12) \\ \hline
+%   4 &    \textbf{  100-200} & 0.999997485137976 &    2.514862024405318(-6) &    1.817(-10) \\ \hline
+    \end{tabular}
+    \caption{Configuration used for the at intensity $F_0 = 0.03\,\rm a.u.$}
+    \label{tab:f003}
+\end{table}

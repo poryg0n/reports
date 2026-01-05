@@ -1,0 +1,149 @@
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  25 AUG 2023 13:44
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/forloop/forloop.sty
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
+y (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count189
+\l__color_backend_stack_int=\count190
+\g__color_backend_stack_int=\count191
+\g__graphics_track_int=\count192
+\l__pdf_internal_box=\box50
+\g__pdf_backend_object_int=\count193
+\g__pdf_backend_annotation_int=\count194
+\g__pdf_backend_link_int=\count195
+))
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: csvsimple 2022/02/01 v2.3.0 LaTeX CSV file processing
+)
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty
+Package: csvsimple-legacy 2022/02/01 version 2.3.0 LaTeX2e CSV file processing
+
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.
+tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen139
+\pgfutil@tempdimb=\dimen140
+
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-
+lists.tex))
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.d
+ef
+\pgfutil@abb=\box51
+)
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.te
+x
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks19
+)))
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count196
+)
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\csv@file=\read2
+\c@csvinputline=\count197
+\c@csvrow=\count198
+\c@csvcol=\count199
+\csv@out=\write3
+)
+(./test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+ (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\c@x=\count266
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 14.
+
+Overfull \hbox (94.77002pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+[1
+
+] (./test.aux) ) 
+Here is how much of TeX's memory you used:
+ 2238 strings out of 476179
+ 50578 string characters out of 5808663
+ 349442 words of memory out of 5000000
+ 23008 multiletter control sequences out of 15000+600000
+ 469267 words of font info for 29 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 73i,8n,77p,272b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on test.pdf (1 page).

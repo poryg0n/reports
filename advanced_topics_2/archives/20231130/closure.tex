@@ -1,0 +1,103 @@
+\section{preliminary}
+
+\begin{frame}
+\frametitle{Current situation}
+	\framesubtitle{Personal insight}
+\footnotesize
+
+
+\begin{textblock*}{400pt}(30pt,40pt)
+
+\begin{enumerate}
+\footnotesize
+\item Program does not yield converged results past ${\rm nbas}=650$
+\item $F_0 = 0.1\ \rm a.u$ does not seem to yield converged results. 
+\item Additional tests for $F_0 = 0.03\ \rm a.u.$, 
+      $T=4\tau$, ${\rm nsteps} \geqslant 8000$.
+\end{enumerate}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,100pt)
+  \begin{enumerate}
+% \setcounter{enumi}{1}
+  \footnotesize
+\item No convergence past ${\rm nbas}=650$
+  \begin{itemize}
+  \footnotesize
+    \item[$\bullet$] Problem with the current NDVR basis set 
+    \item[$\bullet$] Either Lobatto or Kinetic energy subroutines fails
+    \item[$\bullet$] Either we can fix this fast 
+              or we change the whole basis set
+  \end{itemize}
+\item No converged results for $F_0 = 0.1\,\rm a.u.$
+  \begin{itemize}
+  \footnotesize
+    \item[$\bullet$] They are in time
+    \item[$\bullet$] They are not in anything else
+    \item[$\bullet$] Since all the parameters are linked, 
+              1. must be addressed first to really test other dependences
+  \end{itemize}
+\item Additional tests for $F_0 = 0.03\,\rm a.u.$ and $T=4\tau$
+  \begin{itemize}
+  \footnotesize
+    \item[$\bullet$] Seems okay
+    \item[$\bullet$] However, the increase was 10\% because of 1.
+  \end{itemize}
+  \end{enumerate}
+
+\end{textblock*}
+
+
+%\begin{textblock*}{150pt}(30pt,100pt)
+%  \begin{enumerate}
+%% \setcounter{enumi}{1}
+%  \footnotesize
+%\item No convergence past ${\rm nbas}=650$
+%  \begin{itemize}
+%  \footnotesize
+%    \item[$\bullet$] eigenvalues is the null vector
+%    \item[$\bullet$] not a LAPACK failure
+%    \item[$\bullet$] Gauss-Lobatto still stable
+%  \end{itemize}
+%  \end{enumerate}
+%
+%\end{textblock*}
+%
+%
+%\begin{textblock*}{400pt}(180pt,100pt)
+%
+%\begin{enumerate}
+% \setcounter{enumi}{1}
+%\item Increase $10 - 20$\%
+%  \begin{itemize}
+%  \footnotesize
+%    \item[$\bullet$] $F_0 = 0.03\ \rm a.u.$ 
+%    \item[$\bullet$] $T=4\tau$
+%    \item[$\bullet$] ${\rm xmax}=2000\times 1.1$ 
+%    \item[$\bullet$] ${\rm nbas}=550\times 1.1.$
+%    \item[$\bullet$] ${\rm nsteps}=8000\times 1.1$
+%  \end{itemize}
+%\end{enumerate}
+%\end{textblock*}
+%
+%
+%\begin{textblock*}{400pt}(280pt,100pt)
+%
+%\begin{enumerate}
+%  \setcounter{enumi}{2}
+%  \item Convergence check for $F_0 = 0.1\ \rm a.u.$
+%   \begin{itemize}
+%     \footnotesize
+%     \item[$\bullet$] $F_0 = 0.1\ \rm a.u.$
+%     \item[$\bullet$] $T=4\tau$
+%     \item[$\bullet$] ${\rm xmax} = 5000,\ 4750,\ 4500$
+%     \item[$\bullet$] ${\rm nbas} = 600,\ 550,\ 500$
+%     \item[$\bullet$] ${\rm nsteps} = 13000,\ 10000,\ 7000$ 
+%   \end{itemize}
+%\end{enumerate}
+%\end{textblock*}
+
+
+\end{frame}
+

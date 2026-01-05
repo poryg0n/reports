@@ -1,0 +1,310 @@
+
+\section{maincontent}
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{The lexicon}
+
+
+\footnotesize
+\begin{textblock*}{400pt}(30pt,70pt)
+\begin{itemize}
+\item What is a Poincar\'e field?
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] Nonstandard term 
+refering to fields that comply to the symmetries 
+of the Poincar\'e group
+\item[$\bullet$] The Poincar\'e group is the group of isometries of 
+the Minkowski spacetime \\
+(translations, rotations and boosts)
+\end{itemize}
+\item The notation ${\rm {\boldsymbol{A}}}_{jm}$, and subsequently $(j,m)$,
+applied to the field thus gives some information about
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] the number of poles, specified by $j$
+\item[$\bullet$] their spatial alignment in respect 
+to the arbitrary $z$-axis $m$
+%\begin{equation}
+%\boldsymbol{A}(r,t) = \sum_{j,m}
+%\left( a_{jm}^{(E)}\boldsymbol{A}_{jm}^{(E)}(\boldsymbol{r}) 
+%+ a_{jm}^{(M)}\boldsymbol{A}_{jm}^{(M)}(\boldsymbol{r})\right)
+%\end{equation}
+\end{itemize}
+\vspace{10pt}
+%\item The authors use them because they allow to synchronously produce
+%photoelectrons of both helicity
+\item Spin-polarization refers to the bias 
+in the orientation of spins in a beam of particle 
+relative to a chosen direction
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] It's a statistical measure
+\item[$\bullet$] not to be confused 
+with the projection $m_s$ of the spin of a particle, which is intrinsic
+\end{itemize}
+\end{itemize}
+\end{textblock*}
+ 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Electron charge density before and after the irradiation}
+
+\begin{textblock*}{150pt}(260pt,60pt)
+\includegraphics[scale=.28, trim={0 0 0 0}, clip]{images/medium1.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{230pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\item The target is ${\rm Ne}^{9+}$ $\left( Z = 10 \right)$
+\item Natural units are used $(\hbar=c=1)$
+\item Fig.1 Electron charge density before and after the irradiation 
+by a 2-cycle magnetic quadrupole field 
+\end{itemize}
+
+\footnotesize
+\begin{align}
+\gamma & = \sqrt{2I_p/a_0^2 m_e} \ll 1, \hspace{30pt}
+I_p/m_e = 1-\sqrt{1-(Z\alpha)^2}, \\
+\bar{\lambda}_c & = m_e^{-1} \sim 3.86\times 10^{-11}\,{\rm cm}, \hspace{20pt}
+\tau_C = \bar{\lambda}_C/c, \\
+a_0 & = eE_0/\omega m_e \gg 1
+\end{align}
+\end{textblock*}
+\vspace{30pt}
+
+\begin{textblock*}{400pt}(30pt,180pt)
+\footnotesize
+\begin{align}
+\footnotesize
+\gamma \sim 7.3\times 10^{-3}, \hspace{20pt} a_0 = 10, \hspace{20pt}
+\omega = 0.07m_e \sim 36\,{\rm keV}, \\
+I_0 \sim 1.14\times 10^{29}\,{\rm W/cm^2}, \hspace{30pt} 
+\lambda \sim 0.0347\,{\rm nm}
+\end{align}
+\end{textblock*}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Atomic and field potentials}
+
+
+\footnotesize
+\begin{textblock*}{400pt}(30pt,70pt)
+\begin{itemize}
+\item The system is described by the Dirac equation
+\begin{equation}
+\Bigg( \gamma_\mu \left( \hat{p}^{\mu} + \left| e \right|A^{\mu}\right)
+ - m_e\Bigg)\left|\Psi\right\rangle = 0 \label{eqn:dirac}
+\end{equation}
+where $|\Psi\rangle$ is the bispinor wavefunction, 
+$\gamma^{\mu}$ are the Dirac matrices, and
+$p^{\mu}$ and $A^{\mu}$ are the four-momentum and potential
+\begin{align}
+A^0(\boldsymbol{r}) & = V(r) = Z\alpha/\sqrt{|\boldsymbol{r}|^2+\delta r^2},
+\hspace{20pt} \delta r \longrightarrow 0, \\
+\boldsymbol{A}_{jm}(\boldsymbol{k},t) & = 
+{\rm Re}\,A_0{\boldsymbol{\Phi}}_{jm}
+\left( \theta_{\boldsymbol{k}},\varphi_{\boldsymbol{k}}\right)
+\delta(|\boldsymbol{k}|-\omega)e^{i\omega t}, \\
+{\rm where}\hspace{20pt} 
+{\boldsymbol{\Phi}}_{jm}
+\left( \theta_{\hat{\boldsymbol{k}}},\varphi_{\hat{\boldsymbol{k}}}\right) & =
+\hat{\boldsymbol{k}}\times \boldsymbol{\nabla}_{\hat{\boldsymbol{k}}} Y_{jm}
+\left( \theta_{\hat{\boldsymbol{k}}},\varphi_{\hat{\boldsymbol{k}}}\right), 
+\hspace{40pt} \hat{\boldsymbol{k}} = {\boldsymbol{k}}/\omega
+\end{align}
+\vspace{20pt}
+\begin{equation}
+%j=\ell+m_s = 1/2 \hspace{40pt}\longrightarrow 
+%\hspace{40pt}
+j\geqslant 1, \hspace{30pt} |m| < j-1
+\end{equation}
+\end{itemize}
+\end{textblock*}
+ 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Calculation of helicity}
+
+
+\footnotesize
+\begin{textblock*}{400pt}(30pt,70pt)
+\begin{itemize}
+\item The ion is initially in its ground state, written as $j=\ell + m_s=1/2$
+\item The wavefunction $\left|\psi\right\rangle$ is 
+obtained from (\ref{eqn:dirac})
+using a finite-difference scheme
+\item From the resulting wavefunction, we write
+\begin{equation}
+\left| \psi\right\rangle = 
+\left|\psi_b\right\rangle + 
+|\widetilde{\psi}\rangle
+\end{equation}
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] Bound part $|\psi_b\rangle$ is filtered through the masking 
+\begin{equation}
+\mathcal{M}_\mu(\boldsymbol{r}) = 1-\exp\left(-|\boldsymbol{r}|^4/\mu^4\right)
+\end{equation}
+\item[$\bullet$] The resulting wavefunction is Fourier transformed
+\item[$\bullet$] Low energy photoelectrons are then masked through
+$\mathcal{M}_\mu(\boldsymbol{p})$
+\end{itemize}
+\item Helicity density is expressed as
+\begin{equation}
+\zeta(\boldsymbol{p}) = \langle \widetilde{\psi}(\boldsymbol{p}) |
+\left( \boldsymbol{n}\cdot\frac{1}{2}\boldsymbol{\Sigma}\right)
+|\widetilde{\psi}(\boldsymbol{p})\rangle, \hspace{30pt}
+\boldsymbol{\Sigma}=\boldsymbol{\sigma}\mathds{1}, \hspace{20pt}
+\boldsymbol{n} = \boldsymbol{p}/|\boldsymbol{p}|
+\end{equation}
+\end{itemize}
+\end{textblock*}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields\\
+ \small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Helicity density $\zeta(\boldsymbol{p})$ of ${\rm Ne}^{9+}$ 
+(Single mode ionization case)}
+
+
+\begin{textblock*}{300pt}(60pt,70pt)
+\includegraphics[scale=.25]{images/medium2.png}
+\end{textblock*}
+
+\begin{textblock*}{400pt}(30pt,160pt)
+\begin{itemize}
+\footnotesize
+\vspace{10pt}
+\item Fig.2 Momentum-helicity distribution $\zeta(\boldsymbol{p})$ 
+for 12 individual cases
+\item The sign of $p_z$ mostly decides the sign of $\zeta(\boldsymbol{p})$, 
+despite $(3,2)$ and $(4,3)$
+\item More symmetries worth noting
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] $\int d^3\boldsymbol{p}\,\zeta(\boldsymbol{p})$ is negligible
+\item[$\bullet$] For Dirac bispinor initialized in the $e^-$ spin-down state,
+Fig. 2 will appear $\pi-$rotated through $p_y$
+\item[$\bullet$] For irradiation modes with $m<0$, 
+helicity spirals are rotatting in the opposite direction
+\end{itemize}
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Helicity density $\zeta(\boldsymbol{p})$ of ${\rm Ne}^{9+}$ 
+(Multimode ionization case)}
+
+
+\begin{textblock*}{300pt}(60pt,70pt)
+\includegraphics[scale=.25]{images/medium3.png}
+\end{textblock*}
+
+\begin{textblock*}{400pt}(30pt,160pt)
+\begin{itemize}
+\footnotesize
+\vspace{10pt}
+\item Fig.3 Momentum-helicity distribution $\zeta(\boldsymbol{p})$ 
+for multipole mode combinations $(j_1,m_1) + (j_2, m_2)$
+\item Each combination has a unique photoelectron helicity signature. 
+Which means that the helicity density may characterize the angular momentum 
+content of a given radiation field
+\item Compared to the singlemode case
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] $\int d^3\boldsymbol{p}\,\zeta(\boldsymbol{p})$ not negligible anymore, 
+notably $(1,0)+(2,0);\ (4,1)+(4,2)\ ;(3,-1)+(4,-1)$
+\item[$\bullet$] $(3,-2)+(4,-2);\ (3,2)+(4,2)\ ;(4,-1)+(4,-2)$ 
+present complex distributions with little regularity and high asymmetry
+\end{itemize}
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Spin-Polarization Control of Photoelectrons
+Using Poincar\'e Fields \\
+\small (Phys. Rev. Lett. \textbf{133}, 043201 (2024))}
+\framesubtitle{Effect of focal point misalignment}
+
+
+\begin{textblock*}{300pt}(60pt,60pt)
+\includegraphics[scale=.22]{images/medium4.png}
+\end{textblock*}
+
+\begin{textblock*}{400pt}(30pt,150pt)
+\begin{itemize}
+\footnotesize
+\vspace{10pt}
+\item Fig.4 Illustration of the effect 
+of focal-point misalignment with the ion.
+\item Panels $(1)-(3)$: snapshots in time of an offset magnetic dipole $(1,0)$
+irradiating ${\rm Ne}^{9+}$
+\item Higher density photoelectrons in the $+z$-direction 
+and suppression of negative helicity signal
+\item Sub-panels: cross-sectional views for $y$ and $p_y=0$ (panel 4) 
+\end{itemize}
+\vspace{10pt}
+\footnotesize
+It may be possible to exploit this misalignment in the focus 
+to obtain relative control over the directionality, structure and degree
+of photoelectron polarization
+\end{textblock*}
+
+
+\end{frame}

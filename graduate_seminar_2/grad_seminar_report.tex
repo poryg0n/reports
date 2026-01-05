@@ -1,0 +1,264 @@
+\documentclass[10pt]{article}
+
+\input{preamble}
+
+\begin{document}
+
+\section*{Study of the convergence parameters}
+
+
+In order to plot the HHG-C spectra, 
+we currently rely on different formula. One of them reads 
+\begin{equation}
+Q(\omega) = \left|-\dot{d}(\omega) \right|^2, \;\;\;{\rm Eq. (22)}\label{eqn:diff_dipole}
+\end{equation}
+
+\noindent where the dipole moment $d(t)$ is given by
+
+\begin{equation}
+d(t)= - \int \psi^*(x,t)\,\hat{x}\,\psi(x,t)dx, \label{eqn:dipole_moment}
+\end{equation}
+
+\noindent and its Fourier transform, by the relation
+
+\begin{equation}
+d(\omega) = \int e^{i\omega t} d(t)dt. \label{eqn:fourier}
+\end{equation}
+
+%We also have the relation
+%
+%\begin{equation}
+%  Q^{(c)} (\omega) = \Bigg| \Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+%               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\Bigg|^2,
+%\label{eqn:eq31}
+%\end{equation}
+
+In order to deal with the derivative in Eq. (\ref{eqn:dipole_moment}),
+we currently use the following formula
+
+
+\begin{align}
+f^{\prime} (x_i) = & \frac{f^{\prime}_l (x_i) + f^{\prime}_r (x_i)}{2}
+\label{eqn:diff} 
+\end{align}
+
+\noindent with
+
+\begin{align}
+f^{\prime}_l (x_i) = \frac{f(x_{i+1}) -  f(x_i)}{x_{i+1} -x_i}, & \hspace{20pt}
+f^{\prime}_r (x_i) = \frac{f(x_{i}) -  f(x_{i-1})}{x_{i} - x_{i-1}}. \nonumber
+\end{align}
+
+Let us note that a dot express differentiation in time.
+In this document we want to evaluate how accurate is the approximation 
+expressed by Eq. (\ref{eqn:diff}).
+
+
+
+%%\noindent where $x(t) = -d(t)$, which does not require from us to do 
+%%any sort of numerical approximation of the derivative of $d(t)$. 
+%
+%\begin{enumerate}
+%\item The oscillations at the peak as illustrated in Fig. (\ref{fig:f003_1})
+%\item The divergence of Eq. (\ref{eqn:diff_dipole}) and (\ref{eqn:eq31})
+%at higher energies, as illustrated by Fig. (\ref{fig:f03_1})
+%\end{enumerate}
+%
+%
+
+\newpage
+\section{Test on usual, continuous and differentiable function}
+
+In this section, we want to see how accurately 
+Eq. (\ref{eqn:diff}) approximates the derivqative of a smooth an differentiable 
+function. The function we are using for this test is  $f(x) = \sin (x)$.
+So $f^\prime(x) = \cos (x)$. Fig. (\ref{fig:err}) shows the relative error 
+between the analytical formula and the numerical estimation,
+according to the formula
+
+\begin{equation}
+ \sigma_{\rm rel} = \left| \frac{f^\prime (x) - \cos (x)}{\cos(x)} \right|.
+\end{equation}
+
+Let us recall that $f(x) = \sin (x)$ here.
+The precision depends on the number of steps 
+\begin{equation}
+  \Delta x = (b - a)/ N, \hspace{40pt} b = -a = \pi.
+\end{equation}
+
+As shown in the figure, the approximation expressed in Eq. (\ref{eqn:diff})
+is of order 2, except on the boundaries.
+The following table gives the numerical values for $\sigma_{\rm rel}$
+
+
+ \begin{figure}[htp]                   % minipage inside figure
+   \begin{minipage}{1.2\linewidth}
+ \includegraphics[scale=.40, trim={0 110 0 30},clip]{images/report_senyou/err_deriv.png}  
+ \label{fig:err}
+ \caption{Relative error to the reference for Eq. (\ref{eqn:diff})}
+ \end{minipage}
+\end{figure}
+
+
+
+\input{tables/err1.tab}
+%\input{tables/configs_f01.tab}
+%
+%From Fig. (\ref{fig:f003_1}) and (\ref{fig:f01_1}), 
+%there is no noticeable difference 
+%between those 2 configurations.
+%
+%
+% \begin{figure}[htp]                   % minipage inside figure
+%   \begin{minipage}{1.2\linewidth}
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f003_8_01_density.png}  
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f003_8_01_hhg.png} \\
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f003_8_02_density.png}  
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f003_8_02_hhg.png} 
+% \caption{Density probability and HHG spectra for configuration 1 (upper part)
+%and 2 (lower part), for $F_0 = 0.03\,\rm a.u.$}
+% \label{fig:f003_1}
+% \end{minipage}
+%\end{figure}
+%
+%
+% \begin{figure}[htp]                   % minipage inside figure
+%   \begin{minipage}{1.2\linewidth}
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f01_5_03_density.png}  
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f01_5_03_hhg.png} \\
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f01_5_04_density.png}  
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f01_5_04_hhg.png} 
+% \caption{Density probability and HHG spectra for configuration 1 (upper part)
+%and 2 (lower part), for $F_0 = 0.1\,\rm a.u.$}
+% \label{fig:f01_1}
+% \end{minipage}
+%\end{figure}
+%
+%\newpage
+%\section{The divergence at the high energies part}
+%
+% \begin{figure}[htp]                   % minipage inside figure
+%   \begin{minipage}{1.2\linewidth}
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f03_3_05_density.png}  
+% \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f03_3_05_hhg.png} \\
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f03_3_06_density.png}  
+% \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f03_3_06_hhg.png} 
+% \caption{Density probability and HHG spectra for configuration 1 (upper part)
+%and 2 (lower part), for $F_0 = 0.3\,\rm a.u.$}
+% \label{fig:f03_1}
+% \end{minipage}
+%\end{figure}
+%
+%
+%\input{tables/configs_f03.tab}
+%
+%We are now trying to assess if the lack of convcergence at higher energies 
+%is due to some shortcoming in the integration of 
+%Eq. (\ref{eqn:fourier}).
+%The problem is best illustrated by Fig. (\ref{fig:f03_1}). \\
+%
+%\textbf{As can be seen in the figure, the two configurations this time 
+%return different results.}
+
+
+
+
+
+
+
+\newpage
+\section{Test on the fundamental of the zero range potential}
+
+We now want to test the accuracy on a more difficult function, that is
+\begin{equation}
+\psi_0(x) = \varkappa^{1/2} e^{-\varkappa \left|x\right|}.
+\end{equation}
+
+The derivative of this function will then be 
+\begin{equation}
+\psi_0^\prime (x) = \begin{cases}
+                    \ \ \varkappa^{3/2} e^{\varkappa x} 
+                & \text{if $x \geqslant 0$,} \\
+                    -\varkappa^{3/2} e^{-\varkappa x} 
+                & \text{if $x \leqslant 0$. } 
+\end{cases}
+\label{eqn:deriv}
+\end{equation}
+
+
+
+We want to know how well Eq. (\ref{eqn:diff}) approximates
+Eq. (\ref{eqn:deriv}).
+As can be seen in Fig. (\ref{fig:err2}), the approximation is not as good 
+as in the case of differentiable functions.
+Tab (\ref{tab:err2}) and Tab (\ref{tab:err3}) show the 
+evolution of the relative error around $x=0$ for space grids. 
+
+
+ \begin{figure}[htp]                   % minipage inside figure
+   \begin{minipage}{1.2\linewidth}
+ \includegraphics[scale=.40, trim={0 110 0 30},clip]{images/report_senyou/test_deriv.png}  
+ \label{fig:err2}
+ \caption{Relative error to the reference for Eq. (\ref{eqn:diff}) for a
+non differentiable function, ${\rm nmax}=1899$}
+ \end{minipage}
+\end{figure}
+
+
+\input{tables/err2.tab}
+\input{tables/err3.tab}
+
+\section{Accuracy of Eq. (\ref{eqn:diff}) for evaluating the
+derivative of $\psi(x,t)$}
+
+The final test we want to perform is the comparison of the formula
+\begin{align}
+    Q^{(c)}(\omega) = \left| p(\omega)  \right|^2;\;\; {\rm Eq. (21)} \label{eqn:eq104}
+\end{align}
+
+\noindent with $\hat{p} = -id/dx$, and $p(t)$ and $p(\omega)$ evaluated 
+acccording to Eq. (\ref{eqn:dipole_moment}) and (\ref{eqn:fourier}),
+to Eq. (\ref{eqn:diff_dipole}).
+Moreover, we also want to compare it to teh following formula
+
+\begin{align}
+    Q^{(c)}(\omega) = 
+    = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2, \;\;\rm Eq.(31)  \label{eqn:eq31}
+\end{align}
+
+\noindent refered to as Eq. (31).
+
+Eq. (\ref{eqn:eq104}) is designated by Eq. (21) in a previous document 
+we submitted. The results are compiled in Fig. (\ref{fig:eq104_test}).
+The two last panels with intensities $F_0 = 0.3\,\rm a.u.$ show how 
+Eq. (\ref{eqn:eq104}) and (\ref{eqn:eq31}) compare 
+to Eq. (\ref{eqn:diff_dipole}).
+
+
+
+ \begin{figure}[htp]                   % minipage inside figure
+   \begin{minipage}{1.2\linewidth}
+ \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f003_12_07_hhg.png}
+ \includegraphics[scale=.30, trim={0 110 0 0},clip]{images/report_senyou/114_f003_16_04_hhg.png} \\
+ \includegraphics[scale=.30, trim={0 110 0 130},clip]{images/report_senyou/114_f01_8_06_hhg.png}
+ \includegraphics[scale=.30, trim={0 110 0 130},clip]{images/report_senyou/114_f03_3_06_hhg.png} \\
+ \includegraphics[scale=.30, trim={0 0 0 130},clip]{images/report_senyou/114_f03_3_06_hhg_31.png}
+
+ \caption{Comparison between Eq. (\ref{eqn:diff_dipole}) and (\ref{eqn:eq104})
+refered to as Eq. (22) and (21) respectively, for different intensities. 
+The relevant parameters are written on the figures.}
+ \label{fig:eq104_test}
+ \end{minipage}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\end{document}
+

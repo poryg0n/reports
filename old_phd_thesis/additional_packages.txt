@@ -1,0 +1,2 @@
+apt-get install texlive-fonts-extra
+apt-get install texlive-fonts-recommended

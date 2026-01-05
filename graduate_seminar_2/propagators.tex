@@ -1,0 +1,96 @@
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Part 2 - Solving $\boldsymbol{\phi_\omega(x,t)}$}
+\footnotesize
+\begin{textblock*}{400pt}(30pt,60pt)
+\begin{itemize}
+\item We are now interested in solving 
+the following 1D problem with a ZRP
+\begin{align}
+\begin{cases}
+	i\frac{\partial}{\partial t}\psi(x,t)
+	   & = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \psi(x,t),\\
+	i\frac{\partial}{\partial t}\phi_\omega(x,t)
+	   & = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \phi_\omega (x,t)
+ 	   + e^{i\omega t} {\hat{p}}\,
+	   \psi(x,t), \label{eqn:main_1d} 
+\end{cases}
+\end{align}
+%\begin{equation}
+%	i\frac{\partial}{\partial t}\phi_\omega(x,t)
+%	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+%	   \phi_\omega (x,t)
+% 	   + \alpha A_\omega e^{i\omega t} {\hat{p}}\,
+%	   \psi(x,t), \label{eqn:main_1d}
+%\end{equation}
+
+where
+
+\begin{equation}
+  \hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x), 
+\hspace{20pt}  \hat{V}_{\rm ext}(t) = F(t)x,
+\end{equation}
+\begin{equation}
+  \phi_\omega (x,0) = \frac{-i\varkappa^{3/2}}{\omega}
+{\rm sgn}(x)\left(e^{-\varkappa|x|} - e^{-\varkappa(\omega)|x|}\right), 
+\hspace{20pt}  \psi(x,0) = \varkappa^{1/2}e^{-\varkappa|x|}, 
+\label{eqn:bound_state0}
+\end{equation}
+
+with
+
+\begin{equation}
+  \hat{p} = -id/dx,\hspace{10pt} \mbox{ and } 
+  \hspace{10pt} \varkappa(\omega) = \sqrt{\varkappa^2 + 2\omega}.
+\end{equation}
+%\begin{equation}
+%  E_k = k^2/2,\hspace{20pt}
+%  \psi_k^{(\pm)}(x) = e^{ikx} + R(\pm|k|)e^{\pm i|kx|}, \hspace{20pt}
+%   R(k) = \frac{i\varkappa}{k-i \varkappa}. \label{eqn:inout_states}
+%\end{equation}
+%\item The parameters of the laser we will be using 
+%are given by the relations
+%\begin{equation}
+%  F(t) = F_0 e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t^\prime),\hspace{20pt}
+%  0 \leqslant t^\prime \leqslant \tau
+%\end{equation}
+%\begin{equation}
+%  \tau  = 2\pi n_{oc}/\omega,  \hspace{20pt}
+%  F_0 = .1\,{\rm a.u.}, \hspace{20pt}
+%  n_{oc} = 5, \hspace{20pt}
+%  \omega_0 = 0.114\,{\rm a.u.}
+%\end{equation}
+\end{itemize}
+
+
+%\begin{align}
+%\psi(x,t)
+% & = e^{-i(\mathcal{L}+ \hat{V}_{\rm ext})}\psi(x,0)    \nonumber\\
+%\phi_\omega(x,t)
+% & = e^{-i(\mathcal{L} + \hat{V}_{\rm ext})t}
+%   \phi_\omega(x,0) 
+%  - e^{-i(\mathcal{L} + \hat{V}_{\rm ext})t}
+%   \int_0^t e^{i\omega s}\,\frac{\partial}{\partial x}\,\psi(x,s) e^{i(\mathcal{L} 
+% + \mathcal{N})s}ds  \nonumber\\
+% & = e^{-i(\mathcal{L} + \hat{V}_{\rm ext})t}
+%  \left( \phi_\omega(x,0) 
+%   -\int_0^t e^{i\omega s}\,\frac{\partial}{\partial x}\,\psi(x,s) 
+%  e^{-i(\mathcal{L}+ \hat{V}_{\rm ext})s} ds\right)  \nonumber
+%\end{align}                                                            %
+
+\end{textblock*}
+
+\begin{textblock*}{250pt}(240pt,80pt)
+%\includegraphics[scale=.25]{dip_app_limits.png}{\footnote{\Tiny
+%H.R. Reiss, Phys Rev A 63 013409 (2000)}}
+\end{textblock*}
+
+\end{frame}
+
+

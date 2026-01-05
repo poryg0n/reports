@@ -1,0 +1,16 @@
+\begin{table}[!ht]
+    \scriptsize
+    \tiny
+    \centering
+    \begin{tabular}{ll|rr}
+    \toprule\toprule
+$j$    &  $m$   & Structure &           Interpretation    \\\hline
+$1$    &  $0$   & (dipole) Simplest radiative field &  Common in laser, no azymuthal twsit, linear polarized dipole.  \\\hline
+$2$    & $\pm1$ &  (quadrupole) Four-lobbed pattern &  Forbidden transitions, nuclear EM fields, Circular polariz., spin angular moment. \\\hline
+$3$    & $\pm2$ & (octupole) Eight-lobbed pattern   & High energy transit., structured beams, nontrivial orbital structure \\
+$4$+   & $\pm3$ &  Higher multipoles                & HHG, nuclear EM moments, astrophysics, high order vortex beams etc..\\
+\bottomrule\bottomrule
+    \end{tabular}
+%%    \caption{Ratio of x-ray diffraction intensity of $\rm Si$ normalized by incident pulse energy at high peak intensity to that a low peak intensity.}
+    \label{tab:tab1}
+\end{table}

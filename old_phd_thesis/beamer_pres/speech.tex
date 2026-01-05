@@ -1,0 +1,700 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Introduction}
+
+\begin{itemize}
+\item \textbf{Slide 1} \par
+\noindent Merci M. le Pr\'esident, \\
+\noindent Merci Messieurs et Dames, membres du jury. \par
+\noindent Bonjour et bienvenue \`a tous.
+\noindent Je suis ONGONWOU Fred\'eric, physicien, et aujourd'hui
+je vais vous entretenir sur mon sujet de th\`ese 
+qui a trait \`a la physique atomique.
+Sp\'ecifiquement, mon sujet de th\`ese porte sur la dynamique d'une particule 
+dans un champ laser intense.
+Nous proposons une \textbf{nouvelle approche th\'eotique 
+dans l'espace des moments}. 
+Ce travail a \'et\'e ex\'ecut\'e sous la supervision
+du Pr. EKOGO Thierry Blanchard du Laboratoire d'Optique et Laser
+de l'Universit\'e des Sciences des Techniques de Masuku
+et membre du jury.  
+
+\item \textbf{Slide 2} \par
+Notre travail s'inscrit dans la cadre plus g\'en\'eral de 
+ce qui est connu la "Physique Atomique et Mol\'eculaire et Optique
+Non-Lin\'eaire". 
+Cette branche de la physique est d'une importance capitale pour 
+le d\'eveloppements des sciences et des technologies 
+dans la mesure o\`u elle a une incidence directe sur presque toutes 
+les avanc\'ees techniques depuis l'invention du laser dans les ann\'ees 
+1960s. Tout indique \'egalement que l'optique non lin\'eaire restera 
+au centre du d\'eveloppement pour les prochaines d\'ecennies \`a venir.
+En effet, on peut voir que la recherche se base sur la recherche fondamentale
+et permet par la suite les avanc\'ees techniques dans divers domaines
+tels que la m\'edecine avec les techniques d'imagerie m\'edicales,
+l'armement avec les armes et syst\`emes de d\'efense assist\'es au laser
+ou encore l'industrie avec les nanotechnologies.
+D'autres exemples peuvent \^etre donn\'es
+dans les sciences de l'information et l'\'economie.
+
+Nous voyons ici quelques challenges ce se propose de r\'esoudre 
+notre branche de la physique dans les prochaines d\'ecennies.
+On reconna\^it par exemple l'axe de recherche des coll\`egues qui 
+travaillent sur les atomes froids et la condensation de Bose-Einstein.
+Quant \`a nous, nous travaillons sur les derux derniers points, 
+\`a savoir l'interaction laser atome avec intenses et super intenses 
+\`a rayons x et UV ; et sur l'interaction avec les impulsions 
+ultra-br\`eves qui pernmettront une pr\'ecision chirurgicale 
+dans le contr\^ole des atomes et des mol\'ecules.
+
+\item \textbf{Slide 3} \par
+Les figures sur la gauche repr\'esentent la situation expr\'erimentale 
+actuelle. 
+On peut sur la premi\`ere figure qu'il est possible de produire
+des inmpulsions laser aussi br\`eves que $5\,\rm fs$.
+La deuxi\`eme figure nous montre essentiellement que les 
+lasers \`a base de Titanium:Sapphire permettent pour ces impulsions 
+tr\`es br\`eves de produire des champs d'intensit\'e sup\'erieure
+\`a $100\,\rm TW/cm^2$.\par
+Dans le m\^eme temps, la recherche th\'eorique 
+conna\^it quelques difficult\'es dans la mesure o\`u 
+on d\'enote un manque de mod\`eles th\'eoriques adapt\'es
+pour al description de l'interaction rayonnement-mati\`ere 
+en champ laser intense.
+Par exemple, un tr\`es grand nombre de publications visant \`a d\'ecrire 
+ces approximations sont encore effectu\'ees
+dans l'espace des configurations.
+Cet espace est inadapt\'e \`a la description de l'ionisation 
+dans la mesure o\`u la particule \`a t\^ot fait d'aller \`a l'infini.
+Afin de palier ce probl\`eme, on recquiert 
+\`a plusieurs techniques d'approximation et de r\'eduction du 
+domaine qui sont plus ou moins efficaces pour la r\'esolution
+du probl\`eme mais ne s'appuient pas sur une base physique.
+Toutefois, conform\'ement au principe d'incertitude, 
+cette non localit\'e de la fonction d'onde dans l'espace des 
+configuration entra\^ine une forte localisation de cette derni\`ere
+dans l'esapce des moments, qui est adapt\'e pour la description 
+de l'ionisation dans la mesure o\`u le monment de la particule 
+y est fini.
+
+\item \textbf{Slide 4} \par
+Toutefois, cette sup\'eriorit\'e de l'espace des moments 
+ne vient pas gratuitement dans la mesure o\`u 
+l'\'equation de Schr\"odinger prend maintenant une forme 
+int\'egro-diff\'erentielle et sa r\'esolution num\'erique 
+recquiert maintenant la gestion du potentiel coulombien 
+qui prend une forme non locale et comporte une  singularit\'e 
+logarithmique.
+
+Dans ce travail, nous d\'ecomposons le potentiel 
+coulombien en une somme spectrale, facilement impl\'ementable 
+du point de vue num\'erique et utilisons une technique 
+de propagation qui rend la r\'esolution num\'erique 
+de l'\'equation de Schr\"odinger viable.
+
+Ultimement, ce mod\`ele permettra une description correcte
+des exp\'eriences en champ laser au del\`a de l'approximation dipolaire 
+qui ont lieu dans les infrastructures laser modernes.
+
+\item \textbf{Slide 5}\par
+Nous allons maintenant pr\'eciser le cadre th\'eorique dans
+lequel nous travaillons avant de formellement pr\'esenter le mod\`ele 
+qui repose au centre de ce travail.
+Nous analyserons ensuite quelques r\'esultats issus de
+la structure et de la dynamique avant de conclure.
+\end{itemize}
+
+\section{G\'en\'eralit\'es}
+
+\begin{itemize}
+\item \textbf{Slide 6}\par
+Du fait de sa qualit\'e d'onde \'electromagn\'etique, 
+la dynamique du champ laser est d\'ecrite par les quatre 
+\'equations de Maxwell dans le vide.
+Il est commode d'\'ecrire les champs \'electrique et magn\'etique 
+\`a l'aide des potentiels scalaire et vecteur 
+conform\'ement aux relations ci-apr\`es.
+En utilisant le quadripotentiel relativiste, 
+on \'ecrit alors l'\'equation d'onde \`a laquelle ob\'eit le rayonnement.
+L'\'equation d'onde indique que les quadripotentiel 
+d\'ecrivant les champs \'electrique et magtn\'etique
+ne sont pas uniques. En effet, tout quadripotentiel $A_\mu^\prime$ 
+li\'e \`a $A_\mu$ par la relation de jauge de premi\`ere esp\`ece
+est abilit\'e \`a decrire le champ physique.
+On parle alors de fixation de jauge.
+
+Nous travaillons en champ fort, 
+c'est \`a dire pour des champs laser d'intensit\'es sup\'erieures \`a 
+$10^{12}\,\rm W/cm^2$.
+Pour de telles intensit\'es, le potentiel vecteur 
+peutr \^etre mis sous la forme suivante 
+o\`u $f(t)$ est appel\'ee "l'enveloppe" et le terme en $\cos$ est appel\'e
+"la porteuse".
+On note que $\boldsymbol{\varepsilon}$ repr\'esente ici la 
+polarisation de l'onde \'electromagn\'etique.
+
+L'approximation dipolaire, repr\'esent\'ee par la condition 
+$\boldsymbol{k}\cdot\boldsymbol{r}$, consiste \`a n\'egliger 
+les dimensions de l'atomes devant la longueur d'onde de l'onde
+\'electromagn\'etique. Son utilisation nous permet de 
+mettre le rayonnement sous la forme suivante.
+
+\item \textbf{Slide 7}\par
+En utilisant cette description classique du rayonnement, 
+on maintient une description quantique de la particule dont la dynamique 
+est donn\'ee par son \'equation de Schr\"odinger.
+On aprle alors de description semi-classique de
+l'interaction rayonnement-mati\`ere.
+L'hamiltonien $H$ dit "de couplage minimal" est alors la somme de 
+l'hamiltonien  non-pertubr\'e $H_0$, 
+du terme d'interaction paramagn\'etique 
+et du terme d'interaction diamagn\'etique.
+
+Le principe d'invariance de jauge nous permet alors de choisir les 
+potentiels scalaire et vecteur tels que ${\rm div}\boldsymbol{A}=0$
+et $\Phi=0$. On parle alors de jauge radiation.
+Ce choix nous permet d'obtenir la forme usuelle de
+l'hamiltonien en jauge vitesse donn\'ee par $H^v$.
+
+D'autres hamiltioniens sont aptes \`a d\'ecrire 
+le syst\`eme. En effet, tout hamiltonien 
+$H^\prime$ li\'e \`a un hamiltonien $H$ 
+d\'ecrivant le syst\`eme par la transformation de jauge 
+de seconde esp\`ece, est lui-m\^eme abilit\'e \`a decrire le 
+syst\`eme.
+
+Par exemple, on obtient l'hamiltonien en jauge longeur 
+g\'en\'eralement utilis\'e dans l'espace des configurations en 
+posant $\chi=\boldsymbol{A}\cdot\boldsymbol{r}$.
+
+\item \textbf{Slide 8}\par
+Dans ces champs laser intenses, 
+l'atome subit divers processus dont l'ionisation est le plus important. 
+Keldysh introduisit un param\`etre d'adiabaticit\'e dont le calcul permet de 
+pr\'eciser la dynamique de l'ionisation.
+Ce terme d\'epend du potentiel d'ionisation $I_p$ 
+de l'atome et du potentiel pond\'eromoteur $U_p$, lui-m\^eme fonction 
+de l'intensit\'e du champ \'electrique et de la fr\'equence des
+photons incidents.
+Lorsque $\gamma \gg 1$, la dynamique est domin\'ee par 
+l'ionisation au dessus du seuil, que nous d\'esignerons par 
+processus ATI dans la suite.
+Lorsque $\gamma \ll 1$, la dynamique est domin\'ee par 
+un type d'ionisation dit "tunnel".
+On note que pour des champs suffisamment forts,
+le champ est suffisamment distordyu pour que la particule puisse 
+effectivement \'echapper au puits de potentiel sans effet tunnel. 
+On parle d'ionisation au dessus de  la barri\`ere.
+
+On souligne \'egalement que le potentiel pond\'eromoteur $U_p$
+permet de caract\'eriser les photo\'electrons qui 
+sont qualifi\'es de "directs" lorsque leur \'energie est inf\'erieure
+\`a $2U_p$ et "indirects", pour des \'energies comprises entre
+$2U_p$ et $10U_p$.
+
+\end{itemize}
+
+\section{Nouvelle approche de r\'esolution dans l'espace des moments}
+
+\begin{itemize}
+\item \textbf{Slide 9}\par
+Ayant plus explicit\'e l'essentiel des concepts pertinents 
+\`a notre \'etude, nous voulons maintenant 
+introduire le nouveau mod\`ele au c\oe ur de ce travail.
+
+\item \textbf{Slide 10}\par
+Les fonctions propres de la particule dans l'espace des configurations
+sont fornm\'ees par un produit d'une fonction radiale 
+et d'une fonction angulaire repr\'esent\'ee ici par l'harmonique sph\'erique.
+La partie radiale, usuellement donn\'ee par un polyn\^ome de 
+Laguerre peut \'egalement \^etre \'ecrite comme une fonction 
+sturmienne $S_{n\ell}^\kappa$.
+Ces fonctions ob\'eissent aux conditions aux limites usuelles.
+
+On note que les fonctions sturmiennes sont explicitement donn\'ees 
+par la relation suivante o\`u ${}_1F_1$ est la fonction hyperg\'eom\'etrique 
+confluente et $\widetilde{N}_{n\ell}^\kappa$ est un facteur de 
+normalisation.
+
+Les fonctions propres de d\'egr\'es sup\'erieurs  
+peuvent \^etre construites en utilisant la relation de r\'ecurrence suivante
+baqs\'ee sur celle des fonctions hyperg\'eom\'etriques confluentes.
+
+La figure repr\'esente la variation des fonctions sturmiennes 
+en fonction du param\`etre non lin\'eaire $\kappa$.
+On peut voir que l'augmentation de $\kappa$ r\\'eduit l'extension 
+spatiale de la fonction sturmienne qui varie \`a priori de 0 \`a l'infini, 
+pendant que son amplitude semble bien log\'ee entre 0 et 1.
+
+\item \textbf{Slide 11}\par
+Ce constat va nous aider \`a cerner l'int\'er\^et de l'espace des moments 
+dont les fonctions propres s'expriment aussi comme 
+le produit d'une fonction radiale et d'uen harmonique sph\'erique modifi\'ee.
+La relation liant les parties radiales dans les espaces des configurations 
+et des moments est donn\'ee par la relation suivante.  
+
+La fonction sturmienne radiale est explicitement donn\'ee par cette 
+relation, o\`u $C_{\bar n}$ est le polyn\^ome de Gegenbauer
+et $\mathcal{N}_{n\ell}^\kappa$ est un facteur de normalisation.
+
+Les fonctions radiales d'ordre sup\'erieures sont b\^aties sur la relation 
+de r\'ecurrence suivante bas\'ee sur celle des polyn\^omes de Gegenbauer.
+
+Sur la figure est repr\'esent\'ee l'effet sur les fonctions 
+sturmiennes de la variation du param\`etre non lin\'eaire $\kappa$.
+On peut voir que $\kappa$ a ici un effet sur l'amplitude 
+de la fonction d'onde, tandis que son extension spatiale
+reste localis\'ee entre -1 et 1.
+Cette r\'eduction du domaine auparavant de 0 \`a l'infini
+\`a l'intervalle $\left[-1;+1\right]$ ext exactement ce qui rend l'espace des 
+moments attractif sur la plan num\'erique.
+
+\item \textbf{Slide 12}\par
+La particule est d\'ecrite dans l'espace des configurations 
+par la fonctions $\varphi$ satisfaisant \`a l'\'equation de Schr\"odinger 
+et qui s'\'ecrit comme une somme des fonction de base de l'espace.
+
+La formulation dans l'espace des moments peut \^etre obtenue 
+par une transformation de Fourier de toute l'\'equation pr\'ec\'edente 
+et s'\'ecrit comme suit.
+
+On note l'apparition de l'int\'egrale dans l'\'equation.
+Ainsi, la solution de l'\'equation en un point $\boldsymbol{p}$
+de l'espace d\'epend de la solution en tous les autres points 
+$\boldsymbol{p}^\prime$ du domaine. 
+
+Une attention particuli\`ere  est port\'ee \`a la nouvelle 
+forme prise par le potentiel coulombien avec la singularit\'e
+logarithmique au d\'enominateur.
+
+Nous avons pu montrer que cette singularit\'e logarithmique 
+peut se mettre sous la forme d'une somme spectrale ici donn\'ee, 
+ce qui nous permet de r\'e\'ecrire l'\'equation de Schr\"odinger 
+comme suit.
+
+\item \textbf{Slide 13}\par
+L'int\'er\^et de cette derni\`ere \'equation se manifeste lorsque 
+l'on passe \`a la repr\'esentation matricielle de l'hamiltonien.
+Le probl\`eme aux valeurs propres g\'en\'eralis\'e qui en d\'ecoule
+s'\'ecrit donc comme suit, o\`u $S$ est la matrice de recouvrement
+et l'hamiltonien non perturb\'e $H^{(0)}$ est la somme de 
+l'\'energie cin\'etique $\mathcal{T}$ 
+et de l'\'energie potentielle coulombienne $\mathcal{V}$.
+
+Le d\'etail de ces termes est donn\'e par ces trois \'equations.
+On voit \`a partir de ces derni\`eres que les matrices de recouvrement 
+et de l'hamiltonien non perturb\'e sontb tridiagonales par bloc.
+
+\item \textbf{Slide 14}\par
+L'hamiltonien total $H$ \'etant la somme de l'hamiltonien non perturb\'e 
+$H^{(0)}$ et de l'hamiltonien d'interaction $H^{(1)}$, 
+on calcule ce dernier donn\'e ici dans la jauge vitesse et 
+pour un champ laser polaris\'e de fa\c con rectiligne.
+On obtient les termes suivants et la structure de la matrice se d\'eduit
+encore une fois des symboles de Kronecker. 
+
+Ainsi, en ce qui concerne l'hamiltonien total $H$, on voit que seul les blocs 
+$\Delta\ell=0,\pm 1$ sont occup\'es et que le nombre quantique magn\'etique 
+$m$ se conserve au cours de l'approximation. 
+Ces r\'esultats sont bien ceux pr\'edits par la th\'eorie
+pour l'utilisation  d'une polarisation lin\'eaire 
+dans l'approximation dipolaire.
+
+
+\item \textbf{Slide 15}\par
+L'hamiltonien total ainsi construit dans la base sturmienne, 
+la propagation dans le temps du vecteur solution se fait \`a l'aide 
+d'un sch\'ema d'int\'egration num\'erique.
+
+Par soucis de performance, nous proposons une technique de propagation bas\'ee 
+sur le sch\'ema publi\'e par Nurhuda et Faisal dans leur article de 1999.
+En utilisant les formules de changement de base de l'alg\`ebre lin\'eaire,
+on peut \'ecrire \`a tout instant l'hamiltonien et le vecteur d'onde solution
+la base atomique \`a l'aide des relations qui suivent.
+
+On \'ecrit ainsi la solution \`a un instant $t$ ult\'erieur
+en utilisant la m\'ethode de Crank-Nicholson.
+La matrice au d\'enominateur doit \^etre invers\'ee \`a chaque pas de 
+propagation, ce qui est num\''eriquenment tr\`es co\^teux.
+On \'ecrit donc cette matrice comme la somme d'une matrice diagonale 
+$O_D$ et d'une matrice non diagonale $O_{ND}$ et on fait un d\'eveloppement 
+en s\'erie de Taylor pour \'ecrire la formule qui vient.
+
+Comme on peut le voir, dans cette derni\`ere formule, 
+le terme qui n\'ecessite maintenant une inversion \`a chaque pas de propagation  
+est la matrice diagonale $O_D$ qui est mod\'elis\'e e par un vecteur.
+
+Le gain num\'erique occasionn\'e par cette technique par rapport \`a un sch\'ema 
+Runge-Kutta d'ordre 4 classique et de l'ordre de 50\%.
+
+\item \textbf{Slide 16}\par
+La vecteur d'onde solution obtenu \`a la fin de la propagation dans la base atomique, 
+on utilise les m\^emes formules de changement de base pour \'ecrire
+la fonction d'onde dans la base sturmienne.
+
+Diverses observables telles que les populations des \'etats li\'es, 
+les distributions en moment, en \'energie 
+et en impulsions transversales et longitudinales peuvent ensuite \^etre \'evalu\'ees
+\`a la fin de l'interaction ou au cours de celle-ci 
+par les diverses formules donn\'ees sur ce slide.
+
+\section{R\'esultats}
+
+\item \textbf{Slide 17}\par
+Nous allons maintenant \'eprouver ce nouveau mod\`ele en 
+analysant les r\'esultats du point de vue de la structure, 
+mais aussi de la dynamique dans les hautes et basses fr\'equences.
+
+\item \textbf{Slide 18}\par
+Nous avons construit l'hamiltonien de la particule 
+dans une repr\'esentation alternative qui est la base sturmienne dans 
+l'espace des moments. Nous voulons donc tout d'abord nous assurer 
+que l'hamiltonien que nous calculons repr\'esente bien notre syst\`eme, 
+c'est-\`a-dire, l'atome d'hydrog\`ene.
+
+Pour s'esn assurer, nous allons comparer les valeurs propres 
+obtenues par la diagonalisation de notre hamiltonien aux valeurs 
+th\'eroriques exactes.
+Les r\'esultats sont consign\'es dans le premier tableau.
+
+Comme on peut le voir, la pr\'ecision diminue avec l'ordre $n$
+du niveau consid\'er\'e.
+Pour les param\`etres choisis, la pr\'ecision est mauvaise \`a partir 
+du 70e niveau.
+De fa\c con g\'en\'erale, 
+la taille de base choisie influe sur le nombre d'\'etats li\'es 
+d\'ecrits et 60\% des ces \'etats li\'es d\'ecrits le sont avec une pr\'ecision 
+de plus de 10 chiffres. 
+
+%On note que les param\`etres de base ici utilis\'es 
+%permettent de d\'ecrire 83 \'etats li\'es.
+
+Alternativement, la qualit\'e de la description dus syst\`eme 
+peut \^etre \'evalu\'ee en comparant les fonctiosnm propres obtenues num\'eriquement 
+aux valeurs de r\'ef\'erence.
+Les r\'esultats sont consign\'es dans le tableau ci-bas.
+On peut voir que le recouvrement g\'en\'eral est sur 11 chiffres, 
+ce qui augure d'une description tr\`es pr\'ecise du syst\`eme.
+
+\item \textbf{Slide 19}\par
+Finalement, on peut \'evaluer la structure en comparant les 
+forces d'oscillateur calcul\'ees \`a l'aide des valeurs et vecteurs propres 
+de notre syst\`eme aux valeurs de r\'ef\'erences.
+
+Le tableau \`a double entr\'ees suivant comprare les valeurs de 
+r\'ef\'erence (pr\'esent\'ees sur la premi\`ere entr\'ee)
+aux valeurs calcul\'ees par la r\'esolution num\'erique 
+de l'\'equation de Schr\"odinger (deuxi\`eme entr\'ee).
+On voit que l'on reproduit
+la struture de l'hydrog\`ene dans les limites de la double pr\'ecision 
+sur pr\`es de 50 niveaux, ce qui est une tr\`es bonne description de la structure.
+
+Accessoirement, on peut \'evaluer les polarisabilit\'es calcul\'ees 
+\`a partir de notre mod\`ele \`a celles donn\'ees par la formule th\'eorique.
+Le tableau ci-bas pr\'esente ces r\'esultats pour de l'hydrog\`ene atomique 
+et l'ion h\'elium dans son \'etat initial $2s$.
+On peut voir que l'on reproduit parfaitement les valeurs th\'eoriques,
+
+\item \textbf{Slide 20}\par
+Ces quelques tests de validation de la structure auyant \'et\'e effectu\'es, 
+nous pouvosn maintenant \'etudier les premiers r\'esultats de
+la dynamique donn\'es par notre mod\`ele en r\'egime haute fr\'equence.
+
+Sur les deux figures suivantes, nous comparons les r\'esultats 
+issus de notre mod\`ele \`a ceux obtenus par la M\'ethode des 
+Coordonn\'ees D\'ependante du Temps de Hamido \textit{et al.}
+On note que cette m\'ethode utilise l'espace des configurations.
+
+\item \textbf{Slide 21}\par
+Dans la m\^eme id\'ee, nous comparons maintenant les r\'esultats 
+issus de ces deux mod\`eles \`a celui des potentiels s\'eparables 
+de Tetchou \textit{et al.}
+On peut voir que les r\'esultats issus de cette derni\`ere m\'ethode
+diff\`erent significativement de notre mod\`ele et de la MCDT.
+
+La raison est que ce mod\`ele ne consid\`ere que deux niveaux 
+du potentiel coulombien, et de ce fait est comparable \`a l'approximation du champ 
+fort qui n'en consid\`ere qu'un seul.
+
+Cesn r\'esultats illustrent donc bien le besoin d'int\'egrer 
+de fa\c con satisfaisante le potentiel coulombien dans la dynamique.
+
+\item \textbf{Slide 22}\par
+Nous voulons maintenant analyser un peu plus en profondeur 
+les r\'esultats de la dynamique issus de notre mod\`ele 
+dans le proche infrarouge pour des champs laser de diff\'erentes dur\'ees 
+et pour des impulsions de diff\'erentes formes.
+
+Les signaux que nous s\'electionnons sont de trois types et pour 
+chacun d'entre eux, nous faisons varier un nombre r\'eduit de param\`etres 
+et analysons les effets sur la physique de l'ionisation.
+
+Il est important de noter que chacune des courbes que nous
+pr\'esentons ici les r\'esultats de plus de 22 runs et 
+que l'obtention de la plupart de ces courbes n\'ecessite pr\`es de deux semaines 
+de calculs sur les centres calculs sp\'ecialis\'es.
+
+\item \textbf{Slide 23}\par
+Nous commen\c cons donc par l'analyse des populations des
+\'etats li\'es et des probabilit\'es d'ionisation en fonction du temps 
+en fonction de l'intensit\'e.
+Sur la figure de gauche, les courbes noire et rouge repr\'esentent 
+respectivement les r\'egimes multiphotonique et interm\'ediaire.
+On peut voir qu'\`a la fin de l'interaction, l'\'etat fondamental 
+$1s$ ne se d\'epeuple pas.
+Pour le r\'egime tunnel repr\'esent\'e par la courbe bleue en revanche, 
+on peut voir qu'une part significative (20\%) des particules est ionis\'ee.
+La deuxi\`eme figure illustre la variation des ces populations 
+pour un cas d'ionisation tunnel en noir, et d'ionisation au dessus du seuil
+(ren rouge). 
+On voit que dans ce dernier cas, une part encore plus importante de 
+particule est ionis\'ee \`a la fin de l'interaction.
+
+Ces r\'esultats sont attendus dans la mesure o\`u il existe une intensit\'e 
+de saturation $I_s$ pour laquelle la totalit\'e des particules
+est ionis\'ee \`a la fin de l'interaction.
+
+\item \textbf{Slide 24}\par
+Dans la mesure o\`u nous n'avons fait de comparaisons avec d'autres 
+auteurs qu'\`a haute fr\'equence, on peut se demander ce que donneraient 
+de telles comparaisions pour l'infrarouge proche.
+
+Les tableaux repr\'esentent la comparaison de nos r\'esultats 
+avec ceux donn\'es par deux diff\'erentes techniques de Chen \textit{et al.}
+Le recouvrement de nos r\'esultats avec les leurs est de l'ordre du dixi\`eme.
+On voit sur le pre4mier tableau que pour les impuslions br\`eves, 
+nos r\'esultats sont plus proches 
+de ce qu'ils obtiennent avec leur m\'ethode spectrale, tandis que pour les 
+impulsiosn plus longues, sur le deuxi\`eme tableau, l'accord est meilleur
+avec leur m\'ethode des grilles.
+
+C'est l'occasion de souligner la pr\'ecision avec laquelle nous travaillons 
+(sur 16 chiffres) par rapport \`a la plupart des autres auteurs 
+qui donnent des r\'esultats au milli\`eme tout au plus.
+
+Outre cela, la figure donne les populations des couches $n$ 
+et des sous-couches $\ell$ pour diff\'erentes dur\'ees de l'impulsion 
+br\`eves en haut et longues en bas, et pour diff\'erentes phases.
+On peut y voir que les effets de phases ne s'expriment que pour les impulsions 
+br\`eves dans la mesure o\`u les populations finales sont phase-d\'ependantes.
+Pour les impulsions longues en revanche, on voit que les trois distributions 
+relatives aux trois phases convergent.
+
+Ceci nous emm\`ene \`a un r\'esultat bien connu de l'interaction 
+rayonnement-mati\`ere : pas d'effets de phase pour les impulsions longues.
+
+\item \textbf{Slide 25}\par
+Il nous est \'egalement possible d'analyser le d\'etail de chacun 
+des populations de chacun des \'etats $n\ell$ \`a la fin de 
+l'interaction.
+
+La premi\`ere figure \`a gauche donne les populations finales 
+pour deux diff\'erentes formes d'impulsions br\`eves IL1 sur la premi\`ere colonne
+et IL2 sur la deuxi\`eme, pour trois diff\'erentes phases
+$\phi=0,\pi/4,\ \mbox{et}\ \pi/2$.
+On voit tr\`es clairement la d\'epedance des populations finales 
+aux phases consid\'er\'ees.
+
+Sur la deuxi\`eme figure, nous \'etudions les populations 
+des niveaux et sous-niveaux pour les diff\'erentes r\'egimes multiphotonique,
+interm\'ediaire et tunnel. On peut y voir que les amplitudes 
+des distributions augmentent avec l'intensit\'es et que les sous \'etats 
+$n,\ell>8$ ne se peuplent pas malgr\'e l'augmentation de l'intensit\'e. 
+
+Sur la troisi\`eme figure, on peut voir les distributions 
+pour des impulsions tr\`es longues de 20 cyles optiques pour ${\rm H}(1s)$,
+${\rm He^+}(2s)$ et ${\rm He^+}(2p)$.
+On note que le comportement de ${\rm He^+}(2p)$ est tr\`es semblable 
+\`a celui de ${\rm H}(1s)$.
+ 
+\item \textbf{Slide 26}\par
+De fa\c con alternative, on peut analyser la dynamique par le biais de 
+d'autres observables. 
+La dynamique de l'ionisation est tr\`es bien repr\'esent\'ee 
+par l'\'etude des densit\'e d'\'energie en fonction du temps 
+comme montr\'e sur la figure suivante.
+Les courbes bleues rep\'esentent le potentiel vecteur et les r\'egions
+en jaune repr\'esentent celles dens\'ement peupl\'ees en \'electrons.
+On peut voir que pour ces figures repr\'esentant les trois r\'egimes, 
+l'ionisation survient de plus en plus t\^ot avec l'augmentation de l'intensit\'e.
+En effet, on constate l'apparition des raies \`a partir du 4e, 3e et 2e cycle optique,
+en allant de gauche \`a droite. 
+On remarque aussi les raies verticales noires fixes par rapport \`a l'axe $p_z$
+qui donnent en fait les positions des pics ATI.
+
+\item \textbf{Slide 27}\par
+L'\'etude des densit\'es d'\'energie \`a la fin de l'interaction 
+nous donne les informations usuelles sur les effets de phase 
+pour les impulsions br\`eves.
+La premi\`ere colonne repr\'esente ces densit\'es d'\'energie 
+relatives \`a trois diff\'erentes phases pour une impulsion de type IL1.
+On peut voir que ind\'ependamment de ces phases, la distribution vers 
+l'arri\`ere domine ; tandis que pour uen impulsion de type 
+IL2, la distribution arri\`ere domine pour $\phi=0$ et $\pi/4$, 
+mais pas pour $\phi=\pi/2$. 
+
+On peut voir sur la figure suivante l'\'evolution des
+effets de phase avec l'augmentation de la dur\'ee de l'impulsion.
+On voit clairement la disparition de l'asym\'etrie gauche/droite.
+
+
+\item \textbf{Slide 28}\par
+Nous voulons maintenant \'etudier l'interaction rayonnement-mati\`ere 
+par le biais des spectres d'\'energie.
+La figure de gauche nous montre l'\'evolution de ces spectres 
+avec la dur\'ee d'impulsion. 
+On voit tr\`es clairement que les probabilit\'es d'ionisation augmentent 
+avec la dur\'ee de l'interaction.
+Toutefois, on remarque que la r\'egion concernant les \'electrons directs
+reste inaffect\'ee par la dur\'ee du pulse.
+
+Ceci contraste avec la figure \`a droite qui montre 
+l'\'evolution des spectres d'\'energie avec l'augmentation de l'intensit\'e 
+du laser. 
+On constate que cette fois ci, l'augmentation de la probabilit\'e 
+d'ionisation est uniforme.
+
+
+\item \textbf{Slide 29}\par
+Ces figures repr\'esentent les spectres en \'energie de
+diff\'erentes esp\`eces chimiques pour de tr\`es longues impulsions de 
+20 cycles optiques.
+
+Sur les bords, on peut voir les spectres 
+relatifs \`a l'hydrog\`ene initialement dans son \'etat fondamental 
+\`a l'extr\^eme gauche
+et celui de l'\'helium sur son \'etat initial $2p$ \`a l'extr\^eme droite.
+Ces spectres sont similaires par leur forme qui, 
+ont le montre, est une signature de l'hydrog\`ene.
+On observe le contrast avec les spectres au centre qui repr\'esentent 
+qui repr\'esentent l'helium dans son \'etat initial $2s$.
+La raison pour laquelle l'h\'elium $2p$ pr\'esente des similitudes 
+qualitatives avec l'hydrog\`ene est mal comprise.
+
+Outre cela, les deuxi\`eme et troisi\`eme lignes
+repr\'esentent les \'emissions vers l'avant et vers l'arri\`ere pour 
+ces longs pulses.
+Ces spectres \'etant presque indistingables, 
+ils t\'emoignent de l'absence des effets de phase pour ce type 
+d'impulsion.
+
+
+\item \textbf{Slide 30}\par
+Un tr\`es grand nombre de conclusions tir\'ees de l'analyse 
+des pr\'ec\'edentes observables est visible sur les distributions
+en moments que l'on voit sur ces figures.
+
+Par exemple, l'asym\'etrie gauche/droite dont il a d\'ej\`a \'et\'e 
+question auparavant est bien visible sur la figure de gauche.
+On voit bien la domination des $p_z$ n\'egatifs 
+ind\'enpdamment de la phase pour la premi\`ere colonne 
+et le redressement progressifs vers les $p_z$
+positifs pour la deuxi\`eme.
+
+Sur la deuxi\`emje figure, on voit l'\'evolution de
+distributions en moments avec la dur\'ee de l'impulsion.
+On voit clairement la sym\'etrisation de la distribution avec 
+la longueur de l'impulsion.
+
+Sur la troisi\`eme figure, 
+on voit ces distributions pour les trois r\'egimes d'ionisation.
+On peut voir la diff\'erence des probabilit\'es d'ionisation 
+\`a travers les amplitudes sur les l\'egendes \`a droite.
+
+On note aussi que les raies circulaires sont une manifestation 
+des spectres ATI que nous avons rencontr\'es pr\'ec\'edement.
+
+
+\item \textbf{Slide 31}\par
+Finalement on peut observer l'int\'egration des distributions en 
+moments sur les impulsions transversale et longitudinale.
+
+Sur cette derni\`ere figure, on peut voir l'immense domination
+de la r\'egion $p_z < 0$ ind\'ependamment de la phase, et l'\'evolution 
+progressive vers les $p_z > 0$ sur la deuxi\`eme figure.
+
+Sur ces autres figures, on peut voir l'\'evolution de 
+cette m\^eme observable pour les impulsions longues avec l'intensit\'e.
+On y voit l'habituelle augmentation des probabilit\'es 
+d'ionisation ainsi qu'une sorte de l\'eg\`ere sym\'etrisation des distributions 
+avec l'intensit\'e.
+
+\section{Conclusion}
+
+\item \textbf{Slide 32}\par
+Nous avons analys\'e l'interaction
+pour diff\'erents types d'impulsions br\`eves et longues et dans 
+diff\'erents r\'egimes d'intensit\'es.
+Ces \'etudes sont n\'ecessaires pour 
+saisir l'effet du rayonnement sur les la mati\`ere pour les impuslions 
+ultra-br\`eves et ultra-intenses qui sont appel\'ees \`a \^etre utilis\'ees 
+en m\'edecine et dans l'industrie.
+
+\item \textbf{Slide 33}\par
+Nous avons men\'e cette \'etude dans l'espace des moments 
+du fait de sa sup\'eriorit\'e th\'eorique pour la description de 
+l'ionisation par rapport \`a l'espace des configurations.
+
+Cet espace posant des probl\`emes connus, nous avons mis au point 
+un nouvelle approche qui consiste \`a \'ecrire le potentiel coulombien 
+non local comme une simple somme spectrale.
+La r\'esolution de l'\'equation de Schr\"odinger s'en trouve alors 
+grandement simplifi\'ee et acc\'el\'er\'ee sur la plan num\'erique.
+De plus, nous avons mis au point un sch\'ema de 
+propagation specialement adapt\'e \`a notre probl\`eme exploitant les
+propri\'et\'es de la base atomique pour obtenir des 
+performances qui rendent l'\'etude dans la r\'egions des XUV envisageables.
+
+Nous nous omme ensuite assur\'es d'une coh\'erence interne de
+nos r\'esultats en \'evaluant nos observables par diff\'erentes techniques 
+avant de les confronter aux autres r\'esultats pr\'esenmts dans la litt\'erarture.
+Nous obtenons d'excellents r\'esultats jusqu'\`a pr\'esent.
+
+\item \textbf{Slide 34}\par
+Dans l'avenir, 
+on cherchera \`a appliquer ce mod\`ele dans les r\'egimes 
+o\`u il fera une diff\'erence majeure, c'est \`a dire dans les r\'egimes
+XUV de super hautes intensit\'es, au del\`a de l'approximation dipolaire.  
+
+Nous avons pu montrer que notre d\'eveloppement est r\'ealisable 
+dans la base dite des B-Splines, ce qui traduite une certaine 
+versatilit\'e de notre approche.
+
+Des \'etudes sont r\'ealis\'ees sur la construction 
+d'un nouveau mod\`ele \`a potentiels s\'eparables b\^ati sur notre approche, 
+qui nous permettra \'eventuellement d'\'etudier la contribution de chacun des niveaux 
+d'\'energie comme l'ont fait avons nous Tertchou et ses partenaires.
+
+Et pour finir, notre mod\`ele \'etant valables pour les hydrog\'eno\"ides 
+en g\'en\'eral, nous sommes en train de l'appliquer \`a diff\'erents
+syst\`emes \`a un \'electron actif.
+
+
+\item \textbf{Slide 35}\par
+Ce travail a fait l'objet de quelques publication, l'une parue depuis 2016,
+les autres ayant \'et\'e soumises cette ann\'ee 
+dans des journaux internationaux de physique atomique.
+atomique. 
+
+\item \textbf{Slide 36}\par
+je gfinirai donc ce talk en remerciant mon Universit\'e h\^ote, 
+l'Universit\'e des Sciences et Technique de Masuku, 
+en particulier la Facult\'e des Sciences et l'Ecole Polytechnique 
+pour leur soutien \`a mon travail.
+
+Je ne saurais finir sans remercier le Centre de Physique Atomique, 
+Mol\'eculaire et d'Optique Quantique de l"universit\'e de Douala dans lequel 
+j'ai effectu\'e plusieurs stages de recherches et de perfectionnement.
+
+Enfin, je remercierai l'Agence Nationale des Bourses du Gabon 
+qui a certainement \'et\'e ma seule source de financement le long de ces recherches.
+
+Je vous remercie.
+\end{itemize}
+
+\end{document}

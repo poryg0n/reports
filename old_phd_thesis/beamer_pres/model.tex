@@ -1,0 +1,576 @@
+\section{Nouvelle approche de r\'esolution dans l'espace des moments}
+
+\begin{frame}
+ \frametitle{Progression}
+ \framesubtitle{}
+ \begin{itemize}
+   \item \textcolor{gray}{Introduction}
+   \item \textcolor{gray}{G\'en\'eralit\'es sur l'interaction laser-atome 
+en champ fort}
+   \item \textbf{Nouvelle approche de r\'esolution 
+dans l'espace des moments}
+   \item R\'esultats
+   \item Conclusion
+ \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Fonctions sturmiennes dans l'\acrshort{ec}}
+
+%\begin{tikzpicture}
+% \node at (0,0) {};
+% \node at (12,5) {\includegraphics[width=.45\linewidth]{../figures/chap3/sturm_conf_variation_kappa.eps}};
+%% \node at (7,.5) {\includegraphics[width=.7\linewidth]{../figures/chap3/sturm_mom_variation_nn_nbar.eps}};
+%\end{tikzpicture}
+
+\begin{textblock*}{10pt}(265pt,60pt)
+\includegraphics[scale=.3]{../figures/chap3/sturm_conf_variation_kappa.eps}
+\end{textblock*}
+
+\begin{textblock*}{10pt}(30pt,60pt)
+\footnotesize
+\begin{equation*}
+ \begin{split} 
+  & \Phi_{n\ell m}^\kappa (\boldsymbol{r}) = \frac{1}{r} S_{n\ell}^\kappa (r)
+   Y_{\ell m}(\theta,\varphi), \qquad
+    \ell=0,1,2,3,... \qquad n\geqslant \ell+1, \\
+   &  r\Phi_{n\ell m}^\kappa (\boldsymbol{r}) \xrightarrow{r \rightarrow 0} 0 \qquad ; \qquad r\Phi_{n\ell m}^\kappa (\boldsymbol{r})  \xrightarrow{r \rightarrow \infty} 0 \qquad
+ \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(30pt,100pt)
+\footnotesize
+\begin{equation*}
+ \begin{split} 
+&  S_{n\ell}^\kappa (r) = \widetilde{N}_{n\ell}^\kappa \, r^{\ell+1}
+    {\rm e}^{-\kappa r} {}_1 F_1(n-\ell-1;2\ell+1;2\kappa r), \\
+& \widetilde{N}_{n\ell}^\kappa = \sqrt{\frac{\kappa}{n}}(2\kappa)^{\ell+1}
+    \frac{1}{(2\ell+1)!}\sqrt{\frac{(n+\ell)!}{(n-\ell-1)!}}.
+ \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+
+\begin{textblock*}{100pt}(30pt,180pt)
+\footnotesize
+Relation de r\'ecurrence
+\begin{equation*}
+ \begin{split}
+ \sqrt{n(n-\ell-1)(n+\ell)}S_{n,\ell}^\kappa(r)
+ - 2 &\sqrt{(n-1)}(n-1-\kappa r) S_{n-1,\ell}^\kappa(r) \\
+ - & \sqrt{(n-2)(n-\ell-2)(n+\ell+1)}S_{n-2,\ell}^\kappa(r) = 0.
+ \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+% \begin{itemize}
+%   \item Fonctions sturmiennes dans l'\acrshort{ec} et lien avec 
+%les fonctions propres des hydrog\'eno\"ides (courbes)
+%    \item Int\'er\^et math\'ematique des fonctions sturmiennes  
+%    \item Fonctions sturmiennes dans l'\acrshort{em} (courbes)
+% \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Fonctions sturmiennes dans l'\acrshort{em}}
+
+%\begin{tikzpicture}
+% \node at (0,0) {};
+% \node at (12,5) {\includegraphics[width=.45\linewidth]{../figures/chap3/sturm_mom_variation_kappa.eps}};
+%% \node at (7,.5) {\includegraphics[width=.7\linewidth]{../figures/chap3/sturm_mom_variation_nn_nbar.eps}};
+%\end{tikzpicture}
+
+\begin{textblock*}{10pt}(265pt,60pt)
+\includegraphics[scale=.3]{../figures/chap3/sturm_mom_variation_kappa.eps}
+\end{textblock*}
+
+\begin{textblock*}{10pt}(30pt,60pt)
+\footnotesize
+\begin{equation*}
+ \begin{split} 
+  & \Phi_{n\ell m}^\kappa (\boldsymbol{p})
+      = \Sigma_{n\ell}^\kappa (p)
+      \widetilde{Y}_{\ell m}(\hat{\boldsymbol{p}}),  \qquad
+\widetilde{Y}_{\ell m}(\hat{\boldsymbol{p}})
+= (-1)^\ell Y_{\ell m}(\hat{\boldsymbol{p}}), \\
+   & \Sigma_{n\ell }^\kappa (p)
+   = \sqrt{\frac{2}{\pi}} \int dr\, rj_\ell(pr) S_{n\ell}^\kappa (r).
+ \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(30pt,100pt)
+\footnotesize
+\begin{equation*}
+ \begin{split}
+ & \Sigma_{n\ell}^\kappa (p)
+    = \mathcal{N}_{n\ell}^\kappa \frac{p^\ell}{(\kappa^2 + p^2)^{\ell+2}}
+      C_{n-\ell-1}^{(\ell+1)}
+  \left(\frac{p^2 - \kappa^2}{p^2 + \kappa^2} \right), 
+ \;\;\;\; t=\left( \frac{p^2 - \kappa^2}{p^2 + \kappa^2} \right), \\
+  & \mathcal{N}_{n\ell}^\kappa = 2^{2\ell+2}\kappa^{\ell+2}\,\ell!\,
+      \sqrt{\frac{2\kappa n}{\pi}\frac{(n-\ell-1)!}{(n+\ell)!}}.
+ \end{split}
+% \begin{split} 
+%& \Sigma_{n\ell}^\kappa (t)
+%    = \widetilde{\mathcal{N}}_{n\ell}^\kappa\,(1-t)^{\ell/2+2} (1+t)^{\ell/2}\,
+%      C_{n-\ell-1}^\kappa \left( t \right),
+% \;\;\;\;\; t=\left( \frac{p^2 - \kappa^2}{p^2 + \kappa^2} \right), \\
+%  & \widetilde{\mathcal{N}}_{n\ell}^\kappa = \frac{2^\ell\,\ell!}{\kappa^2}\,
+%      \sqrt{\frac{2\kappa n}{\pi}\frac{(n-\ell-1)!}{(n+\ell)!}}.
+% \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{100pt}(30pt,180pt)
+\footnotesize
+Relation de r\'ecurrence
+\begin{equation*}
+ \begin{split}
+\sqrt{(n-2)(n-\ell-1)(n+\ell)} \, & \Sigma_{n,\ell}^\kappa (p)
+   + \sqrt{n(n-1)(n-2)} \left( \frac{p^2 -\kappa^2}{p^2+\kappa^2} \right)
+     \Sigma_{n-1,\ell}^\kappa (p) \\
+    & \hspace{25mm} + \sqrt{n(n-\ell-2)(n+\ell-1)} \Sigma_{n-2,\ell}^\kappa (p) = 0.
+ \end{split}
+\end{equation*}
+
+\end{textblock*}
+
+
+% \begin{itemize}
+%   \item Fonctions sturmiennes dans l'\acrshort{ec} et lien avec 
+%les fonctions propres des hydrog\'eno\"ides (courbes)
+%    \item Int\'er\^et math\'ematique des fonctions sturmiennes  
+%    \item Fonctions sturmiennes dans l'\acrshort{em} (courbes)
+% \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Potentiel coulombien non local et singularit\'e logarithmique}
+ 
+% \putat{-0}{-120}{\includegraphics[scale=0.25]{../figures/chap3/sturm_conf_variation_nn_nbar.eps}}
+% \putat{-0}{0}{Equation de Schr\"odinger dans l'\acrshort{ec} : 
+%  \begin{equation}
+%    i\frac{\partial}{\partial t}\Psi(\boldsymbol{r},t) =
+% \end{equation}
+%}
+
+
+% \begin{itemize}
+%   \item Equation de Schr\"odinger dans l'\acrshort{ec}
+%   \begin{equation}
+%     i\frac{\partial}{\partial t}S_{n\ell}(r,t) 
+%   = \left(\frac{\boldsymbol{p}^2}{2} -\frac{Z}{r} + \boldsymbol{\mathcal{E}}\cdot\boldsymbol{r}\right)S_{n\ell}(r,t)
+%  \end{equation}
+%   \item Obtention de l'\'equation de Schr\"odinger dans l'\acrshort{em}
+%   \item Probl\`eme du potentiel coulombien non local
+% \end{itemize}
+
+
+%\begin{textblock*}{10pt}(0pt,0pt)
+%Hello
+%\end{textblock*}
+
+
+\begin{textblock*}{200pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Equation de Schr\"odinger dans l'\acrshort{ec}
+\end{itemize}
+\begin{equation*}
+ \left(\frac{d^2}{dr^2} - \frac{\kappa^2}{2} -\frac{\boldsymbol{L}^2}{2r^2}
+   - \frac{\kappa n}{r}\right) \varphi (\boldsymbol{r}) = 0, 
+\qquad \varphi(\boldsymbol{r}) = \sum_{n\ell m} c_{n\ell m}^\kappa \frac{1}{r}
+ S_{n\ell}^\kappa (r) Y_{\ell m}({\boldsymbol{\hat{r}}}),
+\qquad \kappa=\frac{Z}{n},\label{eqn:ss_config}
+\end{equation*}
+
+\end{textblock*}
+
+\begin{textblock*}{200pt}(30pt,100pt)
+\footnotesize
+\begin{itemize}
+\item Equation de Schr\"odinger dans l'\acrshort{em}
+\end{itemize}
+\begin{equation*}
+ \begin{split}
+& \left( \frac{\boldsymbol{p}^2}{2} - E \right) \psi(\boldsymbol{p})
+   + \int d\boldsymbol{p}^\prime\,V(\boldsymbol{p},\boldsymbol{p}^\prime)\,
+     \psi(\boldsymbol{p^\prime}) =  0, \qquad
+\qquad \psi(\boldsymbol{p}) = \sum_{n\ell m} c_{n\ell m}^\kappa 
+ \Sigma_{n\ell}^\kappa (p) \widetilde{Y}_{\ell m}({\boldsymbol{\hat{p}}}), \\
+&\qquad\qquad  V(\boldsymbol{p},\boldsymbol{p^\prime}) 
+  = -\frac{Z}{2\pi^2\left| \boldsymbol{p^\prime}-\boldsymbol{p}\right|^2}.
+      \label{eqn:schrodinger_moment}
+\end{split}
+\end{equation*}
+
+\end{textblock*}
+
+\begin{textblock*}{100pt}(30pt,165pt)
+\footnotesize
+On montre\footnote{\Tiny 
+Ongonwou \textit{et al.}, Ann. Phys. 375, 471–490, (2016)} que :
+\end{textblock*}
+
+\begin{textblock*}{100pt}(30pt,170pt)
+\footnotesize
+\begin{equation*}
+   \frac{1}{\left| \boldsymbol{p^\prime}-\boldsymbol{p}\right|^2}
+  = \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell \sum_{n=\ell+1}^\infty
+   \frac{2\pi^2\kappa}{n} \widetilde{\Phi}_{n\ell m}^\kappa (\boldsymbol{p}) 
+   \widetilde{\Phi}_{n\ell m}^{\kappa\ast} (\boldsymbol{p^\prime}),
+ \qquad\qquad \widetilde{\Phi}_{n\ell m}^\kappa (\boldsymbol{p})= \frac{\kappa^2+p^2}{2\kappa^2}{\Phi}_{n\ell m}^\kappa (\boldsymbol{p}),
+\end{equation*}
+\end{textblock*}
+
+
+\begin{textblock*}{100pt}(190pt,195pt)
+\small
+\begin{equation*}
+   \left(\frac{\boldsymbol{p}^2}{2}-E\right) \psi(\boldsymbol{p})
+  - \sum_{n\ell m} \frac{Z\kappa}{n} \widetilde{\Phi}_{n\ell m}^\kappa (\boldsymbol{p}) \int d\boldsymbol{p^\prime} \widetilde{\Phi}_{n\ell m}^{\kappa\ast} (\boldsymbol{p^\prime}) \psi(\boldsymbol{p^\prime}) = 0.
+\end{equation*}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Formulation matricielle de l'\acrshort{esit} 
+sous le nouveau mod\`ele dans la base sturmienne}
+
+\begin{textblock*}{10pt}(30pt,60pt)
+\footnotesize
+\begin{equation*}
+  \mathbf{H}^{(0)} \mathbf{\Psi} = E \mathbf{S}\mathbf{\Psi},
+\end{equation*}
+\end{textblock*}
+
+
+\begin{textblock*}{200pt}(230pt,65pt)
+\small
+\begin{itemize}
+ \item Probl\`eme aux valeurs propres g\'en\'eralis\'e
+\end{itemize}
+\end{textblock*}
+
+\begin{textblock*}{10pt}(30pt,80pt)
+\footnotesize
+\begin{align*}
+S_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+  & = \left\langle n^\prime \ell^\prime m^\prime ; \kappa
+   | n\ell m ; \kappa \right\rangle = Q_{n^\prime n}^{\kappa,\ell}
+   \delta_{\ell^\prime \ell}\delta_{m^\prime m},  \\
+ H^{(0)}_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+  & = \mathcal{T}_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+    + \mathcal{V}_{(n^\prime \ell^\prime m^\prime),(n\ell m)},
+     \label{eqn:unperturbed_terms}
+\end{align*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(30pt,130pt)
+\footnotesize
+\begin{align*}
+& Q_{n^\prime,n}^{\kappa,\ell} = \delta_{n^\prime,n}
+- \frac{1}{2}\sqrt{\frac{(n+\ell)(n-\ell-1)}{n(n-1)}} \delta_{n^\prime, n-1}
+- \frac{1}{2}\sqrt{\frac{(n+\ell+1)(n-\ell)}{n(n+1)}} \delta_{n^\prime, n+1}. \\
+&  \mathcal{T}_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+%     = \Big\langle n^\prime \ell^\prime m^\prime ; \kappa
+%  |\frac{p^2}{2} | n\ell m ; \kappa \Big\rangle, \hspace{8cm} \\
+    \hspace{0cm} = \frac{\kappa^2}{2}\Bigg(\delta_{n^\prime n} 
+    + \frac{1}{2}\sqrt{\frac{(n+\ell)(n-\ell-1)}{n(n-1)}}\delta_{n^\prime, n-1}
+   \hspace{0cm} + \frac{1}{2}\sqrt{\frac{(n+\ell+1)(n-\ell)}{n(n+1)}}
+   \delta_{n^\prime, n+1}\Bigg)\delta_{\ell^\prime \ell}\delta_{m^\prime m},\\
+&  \mathcal{V}_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+   = -\frac{Z\kappa}{n}\delta_{n^\prime n}
+      \delta_{\ell^\prime \ell}\delta_{m^\prime m}.
+\end{align*}
+
+%\begin{equation}
+% \begin{split}
+%&  \mathcal{T}_{(n^\prime \ell^\prime m^\prime),(n\ell m)}
+%      = \Big\langle n^\prime \ell^\prime m^\prime ; \kappa
+%   |\frac{p^2}{2} | n\ell m ; \kappa \Big\rangle, \hspace{8cm} \\
+%   & \hspace{2cm}  = \frac{\kappa^2}{2}\Big(\delta_{^\prime n} +
+%   + \frac{1}{2}\sqrt{\frac{(n+\ell)(n-\ell-1)}{n(n-1)}}
+%       \delta_{n^\prime, n-1}  \\
+%    & \hspace{4cm} + \frac{1}{2}\sqrt{\frac{(n+\ell+1)(n-\ell)}{n(n+1)}}
+%         \delta_{n^\prime, n+1}\Big)\delta_{\ell^\prime \ell}\delta_{m^\prime m},
+%    \label{eqn:kinetic_sturmian}
+%\end{split}
+%\end{equation
+
+\end{textblock*}
+
+% \begin{itemize}
+%   \item Equation de Schr\"odinger
+%   \item Expressions des matrices de l'\'energie cin\'etique, 
+%de l'\'energie potentielle et de recouvrement 
+% \end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Formulation matricielle de l'\acrshort{esdt} 
+sous le nouveau mod\`ele dans la base sturmienne}
+
+\begin{textblock*}{10pt}(30pt,60pt)
+\footnotesize
+\begin{equation*}
+\mathbf{H} = \mathbf{H}^{(0)} + \mathbf{H}^{(1)}
+\qquad\qquad  H^{(1)} (t) = {A}(t)\cdot p_z,
+\end{equation*}
+\end{textblock*}
+
+\begin{textblock*}{10pt}(40pt,80pt)
+\footnotesize
+\begin{equation*}
+ \begin{split}
+   H^{(1)}_{(n^\prime\ell^\prime m^\prime),(n\ell m)} 
+  = A(t) \Bigg\lbrace
+    \sqrt{\frac{(\ell+m+1)(\ell-m+1)}{(2\ell+1)(2\ell+3)}}
+  \delta_{\ell^\prime,\ell+1}  \mathcal{A}_{\bar n^\prime,\bar n} 
+  - \sqrt{\frac{(\ell+m)(\ell-m)}{(2\ell-1)(2\ell+1)}}
+   \delta_{\ell^\prime,\ell-1} \mathcal{B}_{\bar n^\prime,\bar n}
+  \Bigg\rbrace \delta_{m^\prime,m},
+ \end{split}
+\end{equation*}
+\end{textblock*}
+
+\begin{textblock*}{10pt}(40pt,120pt)
+\footnotesize
+\begin{align*}
+& \mathcal{A}_{\bar n^\prime, \bar n}
+ = \frac{\kappa}{2} \Bigg\lbrace
+ \sqrt{\frac{(\bar n +2\ell+2)(\bar n+2\ell+3)}{(\bar n +\ell+1)(\bar n+\ell+2)}}\delta_{\bar n^\prime,\bar n}
+ - \sqrt{\frac{\bar n(\bar n-1)}{(\bar n +\ell)(\bar n+\ell+1)}}\delta_{\bar n^\prime,\bar n-2} \Bigg\rbrace, \qquad\qquad \bar{n}=n-\ell-1, \\  
+& \mathcal{B}_{\bar n^\prime, \bar n}
+  = \frac{\kappa}{2} \Bigg\lbrace
+ \sqrt{\frac{(\bar n +2\ell)(\bar n+2\ell+1)}{(\bar n +\ell)(\bar n+\ell+1)}}\delta_{\bar n^\prime,\bar n}
+ - \sqrt{\frac{(\bar n+1)(\bar n+2)}{(\bar n +\ell+1)(\bar n+\ell+2)}}\delta_{\bar n^\prime,\bar n+2} \Bigg\rbrace. 
+\end{align*}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(40pt,200pt)
+\footnotesize
+\begin{itemize}
+ \item Seuls les blocs $\Delta\ell=0,\pm 1$ sont occup\'es.
+ \item Conservation du nombre quantique magn\'etique $m$ au cours de  
+la propagation.
+ \item \textbf{Manifestation des propri\'et\'es de l'approximation dipolaire}.
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Sch\'ema de propagation Crank-Nicholson de Nurhuda 
+et Faisal\footnote{\Tiny M. Nurhuda \textit{et al.}, Phys. Rev. A 60, 4, (1999)} (\acrshort{cnfa})}
+
+
+\begin{textblock*}{100pt}(30pt,70pt)
+\footnotesize
+Dans la base sturmienne:
+\begin{equation*}
+i\mathbf{S}\frac{\partial}{\partial t}\mathbf{C} = \mathbf{H}\mathbf{C}, 
+%\qquad\mathbf{H} = \mathbf{H}^{(0)} + \mathbf{H}^{(1)}
+\end{equation*}
+
+\end{textblock*}
+
+\begin{textblock*}{100pt}(30pt,110pt)
+\footnotesize
+Dans la base atomique:
+\begin{equation*} 
+\footnotesize
+\widetilde{\mathbf{H}} = \mathbf{U}^{-1} \mathbf{H}\;\mathbf{U}, 
+  \qquad\widetilde{\mathbf{C}} =  \mathbf{U}^{-1}{\mathbf{C}} 
+\end{equation*}
+ 
+\end{textblock*}
+
+
+\begin{textblock*}{200pt}(30pt,140pt)
+\footnotesize
+\begin{equation*}
+ \widetilde{\mathbf{C}}(t+\Delta t)
+   \sim \frac{\boldsymbol{\mathds{1}}-\xi\widetilde{\mathbf{H}}}
+{\boldsymbol{\mathds{1}}+\xi\widetilde{\mathbf{H}}}\widetilde{\mathbf{C}}(t) \qquad\Longrightarrow\qquad  \widetilde{\mathbf{C}}(t+\Delta t)
+\sim (\boldsymbol{\mathds{1}}+\xi\widetilde{\mathbf{H}})^{-1} \mathbf{\Phi},
+\qquad \xi = i\frac{\Delta t}{2}
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(30pt,170pt)
+\footnotesize
+\begin{equation*}
+\mathds{1}+\xi\widetilde{\mathbf{H}} = \mathbf{O_D} + \mathbf{O_{ND}},\qquad
+\mathbf{O_D} = \mathbf{\mathds{1}}+\xi\widetilde{\mathbf{H}}^{(0)},
+ \qquad \mathbf{O_{ND}} = \xi\widetilde{\mathbf{H}}^{(1)},
+\end{equation*}
+
+\end{textblock*}
+
+\begin{textblock*}{10pt}(30pt,190pt)
+\footnotesize
+\begin{equation*}
+ \widetilde{\mathbf{C}}(t+\Delta t) = 
+ \Bigg\lbrace\Big[\mathds{1}-\mathbf{O_D^{-1}}\mathbf{O_{ND}} 
++\left(\mathbf{O_D^{-1}}\mathbf{O_{ND}}\right)^2
+  +\ldots \Big]\mathbf{O_D}^{-1} \Bigg\rbrace \mathbf{\Phi}, 
+  \qquad\qquad \big\| \widetilde{\mathbf{C}}(t+\Delta t) \big\| - 1 \leqslant \varepsilon
+\end{equation*}
+
+\end{textblock*}
+
+%\begin{itemize}
+%  \item Pr\'esentation du mod\`ele de propagation \acrshort{cnfa}
+%  \item Impl\'ementation de la matrice d'interaction
+%  \item Comparaison des performances Runge-Kutta - \acrshort{cnfa}
+
+%\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Nouvelle approche de r\'esolution dans l'espace des moments}
+ \framesubtitle{Calcul des observables}
+
+
+\begin{textblock*}{200pt}(30pt,70pt)
+\footnotesize
+Paquet d'onde final dans la base sturmienne
+\footnotesize
+\begin{equation*}
+   \Psi(\boldsymbol{p},\tau)
+    = \sum_{n\ell} c_{n\ell}(\tau) \Sigma_{n\ell}(p)
+       \widetilde{Y}_{\ell 0}(\hat{\boldsymbol{p}}),
+\qquad\qquad \tau=n_{c}T.
+    \label{eqn:final_wave}
+\end{equation*}
+
+\end{textblock*}
+
+
+\begin{textblock*}{350pt}(30pt,105pt)
+\begin{itemize}
+\footnotesize
+\item Populations des \'etats li\'es  :\hspace{30pt}
+%$
+% \Phi_i (\boldsymbol{p}) = \sum_{n\ell m} d_{n\ell}^{(i)}
+%   \Phi_{n\ell m}^\kappa (\boldsymbol{p}).
+%$
+\begin{equation*}
+\footnotesize
+ \label{eqn:bound_state_pop}
+ \left\langle \Phi_i(\boldsymbol{p}) | \Psi(\boldsymbol{p},t) \right\rangle
+   = \sum_{\substack{n^\prime\ell^\prime m^\prime \\ n\ell m}}
+    d_{n^\prime\ell^\prime}^{(i)\ast}  c_{n\ell m }(t)
+  \left\langle \Phi_{n^\prime\ell^\prime m^\prime}^\kappa(\boldsymbol{p}) | \Phi_{n\ell m}^\kappa (\boldsymbol{p}) \right\rangle, 
+ \qquad \mathcal{P}(t)=1-\sum_{n\ell m} d_{n\ell m}(t),
+\end{equation*}
+\end{itemize}
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(200pt,94pt)
+\footnotesize
+\begin{equation*}
+  \Phi_i (\boldsymbol{p}) = \sum_{n\ell m} d_{n\ell}^{(i)}
+    \Phi_{n\ell m}^\kappa (\boldsymbol{p}).
+\end{equation*}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,150pt)
+\footnotesize
+\begin{itemize}
+\item Densit\'e de probabilt\'e :\hspace{50pt}
+%\footnotesize
+%$
+%    \mathcal{D}(\boldsymbol{p},t)
+%   = | \Psi(\boldsymbol{p},t) |^2
+%    =  \left|  \sum_{n\ell} c_{n\ell}(t) \Sigma_{n\ell}(p)
+%       \widetilde{Y}_{\ell 0}(\hat{\boldsymbol{p}})\right|^2.
+%$
+\end{itemize}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(30pt,145pt)
+\footnotesize\begin{equation*}
+    \mathcal{D}(\boldsymbol{p},t)
+   = | \Psi(\boldsymbol{p},t) |^2
+    =  \left|  \sum_{n\ell} c_{n\ell}(t) \Sigma_{n\ell}(p)
+       \widetilde{Y}_{\ell 0}(\hat{\boldsymbol{p}})\right|^2.
+\end{equation*}
+\end{textblock*}
+
+\begin{textblock*}{200pt}(30pt,170pt)
+\footnotesize
+\begin{equation*}
+ d^3\mathcal{P}
+  = \mathcal{D}(\boldsymbol{p}) 2\pi p_n dp_n dp_z
+  = \mathcal{D}(\boldsymbol{p}) pdEd\hat{\boldsymbol{p}},
+\end{equation*}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,190pt)
+\begin{itemize}
+\footnotesize
+\item Distribution en moments : 
+\item Distribution en \'energie :
+\item Distribution en impulsions transversale et longitudinale.
+\end{itemize}
+\end{textblock*}
+
+
+\begin{textblock*}{10pt}(300pt,170pt)
+\footnotesize
+\begin{align*}
+   \frac{d\mathcal{P}}{dp_ndp_z}
+&  = 2\pi p_n \mathcal{D}(\boldsymbol{p}), \\
+   \frac{d\mathcal{P}}{dE}
+&  =  \left|\sum_{n\ell m} c_{n\ell}^{\rm ion}\right|.
+\end{align*}
+\end{textblock*}
+
+
+% \begin{itemize}
+%   \item Evolution des populations au cours de l'interaction et 
+%populations finales
+%   \item Densit\'es d'\'energie
+%   \item Spectres d'\'energie 
+%   \item Distributions en moments et distributions angulaires
+%   \item Distributions en impulsion 
+% \end{itemize}
+\end{frame}
+

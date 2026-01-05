@@ -1,0 +1,152 @@
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+\noindent o2343003 \\
+ONGONWOU FREDERIC\\
+
+\vspace{30pt}
+
+
+The paper 
+\textbf{"Localized nonlinear dissipative matter waves controlled by 
+quantum fluctuations"} address the interesting problem of solitons 
+in Bose Einstein condensates in an effort to shed light on both.
+This is a tempting reserach direction given the similarities between 
+solitons and Bose Einstein condensates, both generally described 
+by some form of the nonlinear schr\"odinger equation, the latter hodling
+generally hodling an additional term wichi is the influence 
+of some external field. \\
+In this study, the authors go beyond the well known mean field approximation 
+and study the dynamics of the system up to the 4th order in an effort to better 
+take into account the effects of the quantum fluctuations in the system. 
+
+\section{Theory}
+
+The basic expression to address BEc is the following Gross-Pitaevskii equation
+\begin{equation}
+i\hbar\frac{\partial \psi}{\partial t}
+  = \left[ -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V_{\rm ext}(x) 
++ g\left|\psi \right|^2
+\right]\psi, \label{eqn:grosspit}
+\end{equation}
+
+\noindent where $g$ is the interaction strength and $V_{\rm ext}$ is 
+the external trapping potential, usually in an harmonic form.
+Let us note that the presence of $V_{\rm ext}(x)$ is the main difference 
+between the above Gross Pitaevskii equation and the
+nonlinear Schr\"odinger equation below used to describe solitons in general :
+\begin{equation}
+i\hbar\frac{\partial \psi}{\partial t} =
+   \left[ -\frac{1}{2}\frac{\partial^2}{\partial x^2}
+ + g\left|\psi \right|^2\right]\psi.
+\end{equation}
+
+The harmonic trap in the Bose Einstein condensate (\ref{eqn:grosspit})
+ensures the localization of the matter wave in finite region of space. \\
+
+In this study however, the authors go beyond the mean field approximation 
+expressed by the neglection of the higher order term and go up he 4th order
+
+\begin{equation}
+i\hbar\frac{\partial \psi}{\partial t}
+  = \left[ -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V_{\rm ext}(x) 
++ g_2\left|\psi \right|^2
++ g_3\left|\psi \right|^3
++ g_4\left|\psi \right|^4
+ + i\frac{\gamma}{2}
+\right]\psi, \label{eqn:main_eq}
+\end{equation}
+
+The additional terms help modelize the nature of their specific system
+which takes into account :
+
+\begin{itemize}
+\item the quantum fluctuations $\sim\left| \psi\right|^3$
+\item the three body loss effect $\sim\left| \psi\right|^4$
+\item the feeding parameter $\sim\gamma$
+\end{itemize}
+
+The precise details which further charaterize their system 
+surch as the correction to the external potential caused by the cheosen 
+optical lattices are not explicited 
+so we can keep it concise.
+
+\section{Method}
+
+The authors then proceed to solve (\ref{eqn:main_eq}) by mean of 
+the variational approach, using a classical gaussian trial function
+
+\begin{equation}
+\psi(c,\tau) = A(\tau)
+\exp\left\lbrace -\frac{c^2}{2a^2(\tau)}
+ + \frac{i}{2}b(\tau)c^2  + i\theta(\tau)\right\rbrace
+\end{equation}
+
+in the Lagrangian of the system.
+
+Inserting the previous trial function in bthe Lagrangian of the system, 
+they are left with the
+differential equations for the parameters $A$, $a$ and $b$
+which are then solved and analyzed for stability, by the means of 
+the Vahkitov-Kolokolov (VK) condition, that states that one of the condition 
+for the stability of the soliton is $\partial N/\partial \mu < 0$ everywhere,
+where $N$ is the number of particles and $\mu$ the chemical potential
+
+\section{Results}
+
+They apply their model to a sample of $N(0)$ atoms of ${}^7{\rm Li}$, 
+with some specific parameters (see the paper for details).
+They then study the evolution of the free variational parameters 
+$A(\tau)$, $a(\tau)$, and $b(\tau)$ for 
+$N(0)=800$ (Fig. 1), and 
+$N(0)=3500$ (Fig. 2). 
+
+In Fig. 3, they study the stability of $|\psi|^2$ as a function of space
+and time under their model for one soliton.
+
+In Fig. 4, 5 and 6, they apply the same study as the previous one for 
+a sample of $N(0)=3500$ and ifferent parameters amd prove the stability 
+of their model under said parameters. \\
+
+
+In this study, the authors build a matter wave and show its stability under
+different sets of parameters $A(\tau)$, $a(\tau)$ and $b(\tau)$, as well
+as different values of the binary interaction $g_2$ 
+(see Eq. (\ref{eqn:main_eq})).
+Doing so, they show the possible existence of localized modes in a trapped 
+BEC with three body recombination, atomic feeding and quantum fluctuation.
+
+Moreover, they find that the initial Gaussian form from their trial function 
+breaks into three trains of solitons which oscillate during propagation
+and shed light on the effect of the strength of the quanbtum fluctuations
+on the the period of oscillations and the spatial separation of
+localized matter wave.
+
+This stuyd will contribute in the general understandng of the dynamics 
+of matter wave and will hfind its importance in BEC applications.
+
+\newpage
+
+\section{Conclusion and personal considerations}
+
+In this paper, Mboumba \textit{et al.} study the stability of matter waves , in this case solitons, trapped into Bose-Einstein condensates. Their model
+take into account quantum fluctuations, three body losses as well as 
+atomic feeding. They design the Gross-Pitaevskii equation with the appropriate 
+parameters fdor staibility anbd demonstrate their viability of the system.
+From a methodological point of view, they make use of the variational method 
+in order to find an appropriate test function, and derive from the Lagrangian, 
+the necessary values for the stability of the system. 
+
+This study demonstrates the role of quantum fluctuations in the dynamics and 
+allows to have an insight of the spatial behaviour of the system in space, 
+during propagation. 
+The main goal is to gain some insight that will ater allow to control
+the solitons in BEC for applications.
+Nonetheless, the study is highly theoretical and the authors fail to stress,
+as far as that paper is concerned, the link between some current experimental 
+data and their actual treatmnent. If not possible, it would have been very good if they at least compared their data with previous results not taking into 
+account quantum fluctuations or three body losses, for example.
+
+
+\end{document}

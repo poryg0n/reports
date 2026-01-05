@@ -1,0 +1,37 @@
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}[l]{*{10}{|l}}
+    \hline
+
+                                      \multicolumn{10}{c}{$\Delta t=0.04\,{\rm a.u.}\hspace{20pt} \omega = 0.057\,{\rm a.u.} \hspace{20pt}  \tau = 551.15661$}                                         \\\hline 
+
+                                                     \multicolumn{2}{|c}{$n=3$}      &  \multicolumn{2}{c}{$n=5$}         &  \multicolumn{2}{c}{$n=8$}             &       
+                                                     \multicolumn{2}{c}{$n=12$}      &  \multicolumn{2}{c|}{$n=16$}                                                                                    \\
+
+                                                     $T=3\tau$     &  $\rm nsteps$    &  $T=5\tau$      &  $\rm nsteps$   &  $T=8\tau$    &  $\rm nsteps$          &
+                                                     $T=12\tau$    &  $\rm nsteps$    &  $T=16\tau$     &  $\rm nsteps$                                                                               \\
+                                                     1653.4698     &  41336.745       &  2755.783       &  68894.576      &  4409.2528    &  110231.32             &  
+                                                     6613.8793     &  165346.98       &  8818.5057      &  220462.64                                                                                  \\\hline\hline
+
+
+                                      \multicolumn{10}{c}{$\Delta t=0.04\,{\rm a.u.}\hspace{20pt} \omega = 0.114\,{\rm a.u.} \hspace{20pt}  \tau = 275.5783$}                                         \\\hline 
+
+                                                     \multicolumn{2}{|c}{$n=3$}      &  \multicolumn{2}{c}{$n=5$}         &  \multicolumn{2}{c}{$n=8$}             &       
+                                                     \multicolumn{2}{c}{$n=12$}      &  \multicolumn{2}{c|}{$n=16$}                                                                                    \\
+
+                                                     $T=3\tau$     &  $\rm nsteps$    &  $T=5\tau$      &  $\rm nsteps$   &  $T=8\tau$    &  $\rm nsteps$          &
+                                                     $T=12\tau$    &  $\rm nsteps$    &  $T=16\tau$     &  $\rm nsteps$                                                                               \\
+                                                     826.73491     &  20668.373       &  1377.8915      &  34447.288      &  2204.6264    &  55115.661             &  
+                                                     3306.9396     &  82673.491       &  4409.2528      &  110231.32                                                                                  \\\hline
+
+%                                                                         &                &  \multicolumn{2}{c}{$n=3$}       &  \multicolumn{2}{c}{$n=5$}         &  \multicolumn{2}{c}{$n=8$}       
+%                                                                                          &  \multicolumn{2}{c}{$n=12$}      &  \multicolumn{2}{c}{$n=16$}              \\
+
+%                                                  &  $\omega$            &    $\tau$      &  $T=3\tau$    &  $\rm nsteps$    &  $T=5\tau$      &  $\rm nsteps$    &  $T=8\tau$    &  $\rm nsteps$  
+%                                                                                          &  $T=12\tau$   &  $\rm nsteps$    &  $T=16\tau$     &  $\rm nsteps$         \\
+%       \multirow{2}{*}{$\Delta t=0.04\,\rm a.u.$} &  $0.114\,\rm a.u.$    &  275.5783     &  826.73491    &  20668.373       &  1377.8915      &  34447.288       &  2204.6264    
+%                                                                                          &  55115.661    &  1377.8915       &  34447.288      &  2204.6264       &  55115.661            \\
+%                                                  &  $0.057\,\rm a.u.$    &  551.15661    &  1653.4698    &  41336.745       &  2755.783       &  68894.576       &  4409.2528    
+%                                                  &  110231.32            &  2755.783     &  68894.576    &  4409.2528       &  110231.32        
+    \end{tabular}
+\end{table}

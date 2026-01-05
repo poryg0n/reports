@@ -1,0 +1,213 @@
+
+
+\noindent The equation we are solving is the following:
+\begin{equation}
+ i\frac{\partial}{\partial t}\psi(x,t) = 
+	\left(-\frac{1}{2}\frac{\partial^2}{\partial x^2} 
+           + \frac{1}{2}\omega^2x^2\right)\psi(x,t),
+	  \hspace{9mm} \omega=1 \label{eqn:tdse}
+\end{equation}
+
+\noindent with the fundamental as the inital condition, 
+unless stated otherwise.
+
+\section{Analytical solution and convergence control}
+\subsection{Time Independent Schr\"odinger Equation}
+
+\noindent We first solve the TISE given by 
+\begin{equation}
+	-\frac{1}{2}\frac{\partial^2}{\partial x^2}\varphi(x) 
+	  + \frac{1}{2}\omega^2x^2\varphi(x) = E\varphi(x), \label{eqn:tise}
+\end{equation}
+
+\noindent with the following boundary conditions
+\begin{equation}
+		\varphi(x) \xrightarrow{\tiny x \rightarrow \pm\infty} 0.
+\end{equation}
+
+\noindent The static solutions are given by the following equation,
+\begin{equation}
+ \varphi_n(x) = 
+	\left(\frac{\omega}{\pi}\right)^{1/4}
+	 \frac{1}{\sqrt{2^n n!}}H_n(\sqrt{\omega}x)e^{-\omega x^2/2}, 
+	 \label{eqn:eigenfun}
+\end{equation}
+
+\noindent whose the eigenvalues reads 
+
+\begin{equation}
+	E_n = \omega\left(n + \frac{1}{2} \right). \label{eqn:eigenval}
+\end{equation}
+
+\noindent In the following, we set $\omega=1$. The fundamental $(n=0)$ will be
+\begin{equation}
+	\varphi_0(x) = \left(\pi\right)^{-1/4} e^{-x^2/2} \label{eqn:init}
+\end{equation}
+
+
+\subsection{Time Dependent Schr\"odinger Equation}
+
+We want to solve (\ref{eqn:tdse}), 
+with the initial state given by (\ref{eqn:init}). 
+Since 
+${H}= -\frac{1}{2}\frac{\partial^2}{\partial x^2} + \frac{1}{2}x^2$ 
+does not depend on time, the solution is simply given by
+
+\begin{align}
+	\psi(x,t) &  = \varphi_0(x)e^{-iHt}  \\
+	 & = \left(\pi\right)^{-1/4} e^{-\frac{1}{2}(x^2+it)}  
+                   \label{eqn:tdse_sol}
+\end{align}
+
+\noindent Additionally, we can verify that the following general expression
+is a solution to (\ref{eqn:tdse})
+\begin{\eq}
+	\psi(x,t) = \left(\pi\right)^{-1/4} 
+           \exp \left[-\frac{1}{2}\left(x^2+
+                \frac{a^2}{2}\left(1+e^{-2it}\right) 
+                + it -2axe^{-it}\right) \right],
+                   \label{eqn:tdse_gensol_1}
+\end{\eq}
+
+\noindent where $a$ can be any real parameter with the dimension of length.
+Let's note that for $a=0$, we have the basic solution (\ref{eqn:tdse_sol}).
+We may rewrite this last general expression as the following
+
+\begin{\eq}
+	\psi(x,t) = \left(\pi\right)^{-1/4}
+         \exp\left\lbrace -\frac{1}{2}
+\left[ \left(x-a\cos t\right)^2 
+               +i\left( t +2ax\sin t 
+               - \frac{a^2}{2}\sin 2t\right)
+\right] 
+\right\rbrace.
+                  \label{eqn:tdse_gensol_2}
+\end{\eq}
+
+\newpage
+
+\subsection{TDSE for $V(x)=\omega^2(x+1)^2/2$}
+
+We want to solve the Schr\"odinger equation 
+\begin{equation}
+ i\frac{\partial}{\partial t}\psi(x,t) = 
+	\left(-\frac{1}{2}\frac{\partial^2}{\partial x^2} 
+          + \frac{1}{2}\omega^2(x+1)^2\right)\psi(x,t),
+    \label{eqn:tdse_2}
+\end{equation}
+
+\noindent and the following initial condition
+
+\begin{equation}
+	\Psi(x,0) = \left(\pi\right)^{-1/4} e^{-x^2/2} \label{eqn:init2}.
+\end{equation}
+
+\noindent We can infer the solution from (\ref{eqn:tdse}), 
+by making the substitution
+\begin{equation}
+   x \rightarrow y+1   \label{eqn:change_var}
+\end{equation}
+
+\noindent We then have the following
+\begin{align}
+    dx = dy \hspace{5mm} \Longrightarrow \hspace{5mm} 
+	   \frac{\partial}{\partial x}  = \frac{\partial}{\partial y}, \\
+	x \rightarrow \infty \hspace{5mm} \Longrightarrow \hspace{5mm} 
+	 y \rightarrow \infty,
+\end{align}
+
+\noindent and may rewrite the Schr\"odinger equation (\ref{eqn:tdse})
+
+\begin{equation}
+ i\frac{\partial}{\partial t}\Psi(y,t) = 
+	\left(-\frac{1}{2}\frac{\partial^2}{\partial y^2} + \frac{1}{2}\omega^2(y+1)^2\right)\Psi(y,t),
+	  \hspace{9mm} \omega=1 \label{eq:tdse2}.
+\end{equation}
+
+\noindent The static solutions are still given by (\ref{eqn:eigenfun}), 
+that we may rewrite in terms of $y$ and with $\omega=1$, as
+
+\begin{equation}
+ \varphi_n(y) = 
+	\left(\frac{1}{\pi}\right)^{1/4}
+	 \frac{1}{\sqrt{2^n n!}}H_n(y+1)e^{-(y+1)^2/2}.
+	 \label{eq:static2}
+\end{equation}
+
+\noindent The solution to the time dependent problem is then given by 
+(\ref{eqn:tdse_gensol_2}), provided the substitution (\ref{eqn:change_var})
+
+\begin{\eq}
+	\psi(x,t) = \left(\pi\right)^{-1/4}
+         \exp\left\lbrace -\frac{1}{2}
+\left[ \left(x+1-a\cos t\right)^2 
+               +i\left( t +2a(x+1)\sin t 
+               - \frac{a^2}{2}\sin 2t\right)
+\right] 
+\right\rbrace.
+                  \label{eqn:tdse_gensol_3}
+\end{\eq}
+
+This is the most general solution to 
+the Schr\"odinger equation (\ref{eqn:tdse_2}). The initial condition
+(\ref{eqn:init2}) is satisfied by setting $a=1$.
+
+
+\vspace{2cm}
+
+%\noindent In practice, 
+%an easy implementation of (\ref{eq:tdse_sol2}) in the current code
+%can be done by making the substitution $x \rightarrow x - 1$. Doing so, we 
+%would use the following solution
+%\begin{align}
+%	\Psi(x,t) &  = \varphi_0(x-1)e^{-iHt},  \\
+%	 & = \left(\pi\right)^{-1/4} e^{-\frac{1}{2}\left((x-1)^2+it\right)}. 
+%\end{align}
+
+%\newpage
+%
+%\noindent This is the implementation in the script
+%
+%\begin{verbatim}
+%DT = 0.01d0
+%DT2 = DT/2.d0
+%NTIME = 10000
+%DO ITIME=1,NTIME                 ! This loop should start at 1, not 0
+%   TIME = ITIME*DT
+%
+%C
+%C
+%C
+%
+%   DO  j= 1,20
+%      IF (j.EQ.1) THEN 
+%         HN(j) = 1.d0
+%      ELSE If (j.EQ.2) THEN
+%         HN(j) = 2*XX(II)
+%      ELSE
+%         HN(j) = 2*XX(II)*HN(j-1) * 2*(j-1)*HN(j-2)
+%   ENDDO
+%
+%   n = 0                       ! Parameter in \varphi_n
+%   j = n + 1
+%   DO II = 1, NX
+%      CE0 = DCMPLEX(0.d0,.5d0)
+%      C4(II) = CDEXP(-CE0*DT)
+%      C4(II) = HN(j)*DEXP(-.5*XX(II)**2)*CDEXP(-CE0*DT)*C4(II)
+%      C4(II) = (1/DSQRT(2**n fact(n))*C4(II)
+%      C4(II) = (4.d0*DATAN(1.d0))**(.25)*C4(II)
+%
+%      WRITE(99,) TIME, X(II), C3(II)/WX(II)/dsqrt(hscale), C4(II)
+%      WRITE(77,) TIME, X(II), CDABS(C4(II))
+%
+%C  ----- Evaluation of the error
+%      CERR1 = C3(II)/WX(II)/dsqrt(hscale) - C4(II)
+%      CERR2 = CERR1/CDABS(C4(II))
+%      CERR1 = CDABS(CERR1)                ! Absolute error
+%      CERR2 = CDABS(CERR2)                ! Relative error
+%      WRITE(88,*) TIME, X(II), CERR1, CERR2 
+%
+%   ENDDO
+%ENDDO
+%\end{verbatim}
+%

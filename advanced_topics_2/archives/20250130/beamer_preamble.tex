@@ -1,0 +1,102 @@
+
+\mode<beamer>{%
+%\usetheme{default}}
+%\usetheme[hideothersubsections,right,width=22mm]{Goettingen}}
+%\usetheme[hideothersubsections,right,width=22mm]{Singapore}
+ }
+
+%\usepackage[japanese]{babel}
+
+\usepackage{xeCJK}
+ \setCJKmainfont[BoldFont=../fonts/AozoraMincho-bold,AutoFakeSlant=0.15]{../fonts/AozoraMinchoRegular.ttf}
+%\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{gensymb}
+
+\setbeamerfont{title}{family=\rmfamily}
+%\setbeamercolor{title}{fg=red!50!blue!30}
+ \setbeamercolor{title}{fg=black}
+ \setbeamercolor{frametitle}{fg=black}
+%\usepackage{fontspec}
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+%\usefonttheme{serif} % default family is serif
+
+\setbeamertemplate{frametitle}{\vspace{1mm}\color{black}\bfseries\large\insertframetitle\par\vskip-6pt\hrulefill\par\normalsize\insertframesubtitle}
+\setbeamertemplate{footline}{\qquad\color{black}\bfseries\insertframenumber\vspace{3mm}}
+%\setbeamertemplate{footline}{\vspace{5mm}}
+\setbeamertemplate{itemize item}{\color{black}\tiny$\blacksquare$}
+\addtobeamertemplate{footnote}{}{\vspace{-2ex}}
+
+\newcommand\Fontvi{\fontsize{9}{7.2}\selectfont}
+
+\usepackage{xcolor,graphicx}
+\usepackage[outdir=figures/converted_figs/]{epstopdf}
+\usepackage{subfig,float}
+\usepackage[figurename=Fig.,tablename=Tab.]{caption}% center as possible option
+\usepackage{booktabs,array,rotating,tabularx}
+%\usepackage{verbatim}       %% Doesnt work with beamer
+
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[texcoord,
+%grid,gridcolor=red!10,subgridcolor=green!10,gridunit=pt]{eso-pic}
+\setbeamerfont{footnote mark}{size=\Tiny}
+
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{pipe}{ $|$ }% or $\vert$
+\captionsetup{
+  format=plain,
+  justification=raggedright,
+  singlelinecheck=false,
+  font=small,
+  font={bf,sf}, % This covers labelfont and textfont
+  labelsep=pipe,
+  figurename=Figure
+}
+
+
+%\captionsetup{font={tiny,onehalfspacing}}    %% messes up the footnotes
+
+\def\eq{equation}
+
+\usepackage{hyperref}
+ \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=red,
+    bookmarksnumbered=true,
+    citecolor=blue
+ }
+ \urlstyle{same}
+
+%\usepackage[acronym,nonumberlist]{glossaries}
+% \makeglossaries
+% \loadglsentries{../glossary}
+
+\usepackage{animate}
+\usepackage{tikz}
+ \usetikzlibrary{positioning}
+ \usetikzlibrary{snakes}
+%\usetikzlibrary{shapes.misc}
+%\usetikzlibrary{decorations}
+
+\newcommand{\putat}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){#3}\end{picture}}
+
+\title{\newline\newline\newline \bfseries {Major Advanced Topics  \\ 
+ \Tiny  26433101}}
+\author[Fred]{\textbf{Ongonwou Fred}}
+\institute{
+        \textbf{Phd Candidate}\\\textbf{\hspace{2mm}2343003}
+}
+%\date{April 26, 2023}
+\titlegraphic{
+% \begin{picture}(-100,0)
+%  \put(-240,167){\includegraphics[scale=.28]{ustm_logo.png}}%\footnote{logo USTM}}
+%  \put(50,155){\includegraphics[scale=1.5]{ed-sfa_logo.jpg}}%\footnote{logo ED-SFA}}
+% %\put(-150,190){\makebox(0,0)[]{\includegraphics[width=20mm]{example-image-a}}}
+% \end{picture}
+}
+

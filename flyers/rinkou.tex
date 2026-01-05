@@ -1,0 +1,1146 @@
+\section{Main Objectives}
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Overview of the problem}
+\footnotesize
+\begin{textblock*}{400pt}(30pt,60pt)
+\begin{itemize}
+\item We are ultimately interested in solving 
+the following 1D problem with a ZRP
+\begin{equation}
+	i\frac{\partial}{\partial t}\phi_\omega(x,t)
+	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \phi_\omega (x,t)
+ 	   + e^{i\omega t} {\hat{p}}\,
+	   \psi(x,t), \label{eqn:main_1d}
+\end{equation}
+%\begin{equation}
+%	i\frac{\partial}{\partial t}\phi_\omega(x,t)
+%	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+%	   \phi_\omega (x,t)
+% 	   + \alpha A_\omega e^{i\omega t} {\hat{p}}\,
+%	   \psi(x,t), \label{eqn:main_1d}
+%\end{equation}
+
+where
+
+\begin{equation}
+  \hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x), 
+\hspace{20pt}  \hat{V}_{\rm ext} = F(t)x,
+\end{equation}
+\begin{equation}
+  \phi_\omega (x,0) = \frac{-i\varkappa^{3/2}}{\omega}
+{\rm sgn}(x)\left(e^{-\varkappa|x|} - e^{-\varkappa(\omega)|x|}\right), 
+\hspace{20pt}  \psi(x,0) = \varkappa^{1/2}e^{-\varkappa|x|}, 
+\label{eqn:bound_state0}
+\end{equation}
+
+with
+
+\begin{equation}
+  \hat{p} = -id/dx,\hspace{10pt} \mbox{ and } 
+  \hspace{10pt} \varkappa(\omega) = \sqrt{\varkappa^2 + 2\omega}.
+\end{equation}
+%\begin{equation}
+%  E_k = k^2/2,\hspace{20pt}
+%  \psi_k^{(\pm)}(x) = e^{ikx} + R(\pm|k|)e^{\pm i|kx|}, \hspace{20pt}
+%   R(k) = \frac{i\varkappa}{k-i \varkappa}. \label{eqn:inout_states}
+%\end{equation}
+%\item The parameters of the laser we will be using 
+%are given by the relations
+%\begin{equation}
+%  F(t) = F_0 e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t^\prime),\hspace{20pt}
+%  0 \leqslant t^\prime \leqslant \tau
+%\end{equation}
+%\begin{equation}
+%  \tau  = 2\pi n_{oc}/\omega,  \hspace{20pt}
+%  F_0 = .1\,{\rm a.u.}, \hspace{20pt}
+%  n_{oc} = 5, \hspace{20pt}
+%  \omega_0 = 0.114\,{\rm a.u.}
+%\end{equation}
+\end{itemize}
+
+\end{textblock*}
+
+\begin{textblock*}{250pt}(240pt,80pt)
+%\includegraphics[scale=.25]{dip_app_limits.png}{\footnote{\Tiny
+%H.R. Reiss, Phys Rev A 63 013409 (2000)}}
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Overview of the problem}
+\footnotesize
+\begin{textblock*}{400pt}(30pt,60pt)
+\begin{itemize}
+\item To this end, we need to resolve $\psi(x,t)$ 
+which is given by the regular TDSE, i.e 
+\begin{equation}
+	i\frac{\partial}{\partial t}\psi(x,t)
+	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \psi(x,t),   \hspace{20pt}\psi(x,0)=\psi_0(x),  \label{eqn:step_1d}
+\end{equation}
+\begin{equation}
+  \hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x), \hspace{20pt}
+  \hat{V}_{\rm ext} = F(t)x,
+\end{equation}
+\begin{equation}
+  E_0 = -\varkappa^2/2,\hspace{20pt}
+  \psi_{0}(x) = \varkappa^{1/2}e^{-\varkappa|x|}, \hspace{20pt}
+  \varkappa = 1       \label{eqn:bound_state}
+\end{equation}
+\begin{equation}
+  E_k = k^2/2,\hspace{20pt}
+  \psi_k^{(\pm)}(x) = e^{ikx} + R(\pm|k|)e^{\pm i|kx|}, \hspace{20pt}
+   R(k) = \frac{i\varkappa}{k-i \varkappa}. \label{eqn:inout_states}
+\end{equation}
+\vspace{10pt}
+\item The parameters of the laser we will be using 
+are given by the relations
+\begin{equation}
+  F(t) = F_0 e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t^\prime),
+\hspace{20pt}  0 \leqslant t \leqslant T,
+\hspace{20pt}  t^{\prime} = t - T/2,
+\end{equation}
+\begin{equation}
+  \tau  = 2\pi n_{oc}/\omega_0,  \hspace{20pt}
+  n_{oc} = 5. \hspace{20pt}
+\end{equation}
+\end{itemize}
+
+\end{textblock*}
+
+\begin{textblock*}{250pt}(240pt,80pt)
+%\includegraphics[scale=.25]{dip_app_limits.png}{\footnote{\Tiny
+%H.R. Reiss, Phys Rev A 63 013409 (2000)}}
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Survival probability and PEMD}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item The coefficients of the projection of $\bar{\Psi}$ are then, at $T$,
+and by definition, expressed as
+\begin{equation}
+a_0 = e^{iE_0 T}\int \psi_0(x) \psi(x,T)dx, \hspace{20pt}
+a_k = e^{iE_k T}\int \psi_k^{\Tiny (-)*}(x) \psi(x,T)dx. \hspace{20pt}
+\label{eqn:a0k}
+\end{equation}
+
+%with 
+%$\bar{\Psi}_{k_j} = a_{k_j} 
+%\hspace{10pt} 0\leqslant j \leqslant m$, \hspace{30pt}
+%$\bar{\Psi} = \left( \bar{\Psi}_0, \bar{\Psi}_{k_1}, \cdots, \bar{\Psi}_{k_j}
+%\cdots, {\Psi}_{k_m}\right)$.
+
+
+\item The survival probability is then expressed, 
+at the end of the interaction, by
+\begin{align}
+   P_0         & = \left| a_0 \right|^2. \label{eqn:surv}  
+\end{align}
+
+\item The ionization probability can then be found many different 
+ways that should be consistent with each others
+\begin{align}
+   P_{\rm ion} & = \int P(k)\frac{dk}{2\pi}, 
+ \hspace{30pt} \mbox{with}\hspace{30pt} P(k) = \left| a_k \right|^2. 
+\label{eqn:pion1} \\
+               & = 1-P_0.
+\end{align}
+
+\item  $P(k)$ is the probability for the electron 
+being ionized with the energy $E_k$.
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Quantum spectrum of HHG photons (semi-classical approx.) - 1}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item In the classical approx., the spectrum is obtained from the following 
+(Eq.(80))
+\begin{equation}
+Q^{(c)}_\nu (\omega) = 
+ \alpha^2 \omega^2
+    \left| \boldsymbol{\rm A}_{\nu}\boldsymbol{\rm d}(\omega) \right|^2,
+\label{eqn:Qc}
+\end{equation}
+where for an arbitrary operator $\hat{f}$, we have   
+\begin{equation}
+f(t) = \int \psi^{*}(x,t)\hat{f}\,\psi(x,t)dx
+\label{eqn:mean_value}
+\end{equation}
+and the Fourier transform is obtained using 
+\begin{equation}
+f(\omega) = \int f(t)e^{i\omega t}dt.
+\label{eqn:fourier}
+\end{equation}
+
+\item Also, we consider the relations
+\begin{align}
+% \boldsymbol{\rm A}_\nu 
+%   = \sqrt{\frac{2\pi c^2}{\omega L^3}}\boldsymbol{\rm e}_\nu,
+%   \hspace{20pt}\alpha = 1/c.
+ \hat{p} = -i d/dx, \hspace{20pt} \hat{d} = -x
+\end{align}
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Quantum spectrum of HHG photons (semi-classical approx.) - 2}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Let us apply the following simplifications
+\begin{align}
+    \nu \longrightarrow \omega, \hspace{20pt}
+    \hspace{20pt} \boldsymbol{\rm A}_\nu \longrightarrow A_\omega, 
+    \hspace{20pt}\mbox{ and } \hspace{20pt} \alpha A_\omega = 1.
+\end{align}
+\item So the observable we are considering here is 
+\begin{align}
+    Q^{(c)}(\omega) = \omega^2 \left| d(\omega)  \right|^2.
+\end{align}
+\item Additionally let us consider Eq. (104)
+\begin{align}
+    Q^{(c)}(\omega) = \left| p(\omega)  \right|^2.
+\end{align}
+and, by virtue of $\boldsymbol{p}(t)= -\dot{\boldsymbol{d}}(t)$, which reads
+\begin{align}
+    Q^{(c)}(\omega) = \left| -\dot{d}(\omega)  \right|^2. 
+\label{eqn:dipole_mom_diff}
+\end{align}
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Length, velocity and acceleration gauges}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item (\ref{eqn:mean_value}) applied to the operator $\hat{d}$ gives
+its expression in the length gauge
+\begin{equation}
+d(t) = \langle \hat{d\,} \rangle = - \left\langle\hat{x}\right\rangle
+  = - \int \psi^{*}(x,t)\hat{x}\,\psi(x,t)dx
+\end{equation}
+
+\item $\dot{d}(t)$ is given by the formula
+\begin{equation}
+\dot{d}(t) = \frac{d}{dt}d(t)
+\end{equation}
+
+\item $p(t)$ is given by the formula
+\begin{equation}
+p(t) = \langle \hat{p\,} \rangle  
+  = - i\int \psi^{*}(x,t)\frac{d}{dx}\psi(x,t)dx
+\end{equation}
+
+\item Using the Ehrenfest theorem for the operator $x$, we get the relations 
+\begin{align}
+\frac{d}{dt}\langle \hat{x\,} \rangle 
+        & = \frac{\langle \hat{p\,} \rangle}{m}, \\
+\frac{d}{dt} \langle \hat{p\,}\rangle 
+        & = \left\langle -\frac{\partial V_{\rm ext}}{\partial x} \right\rangle
+\end{align}
+
+and some others (see Bransden and Joachain p.531-532) 
+
+
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Additional formula from Ehrenfest theorem}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item  Using the integration by parts formula, we get
+\begin{equation}
+   p(\omega) = \int_{-T/2}^{T/2} e^{i\omega t} \frac{dx(t)}{dt}dt,\hspace{30pt}
+   u(t) = x(t),\;\;\; v(t) = e^{i\omega t},
+\end{equation}
+\noindent thus
+\begin{align}
+   p(\omega) & = \int_{-T/2}^{T/2} \frac{d}{dt}\Big(e^{i\omega t}x(t)\Big)dt
+    -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt, \\
+             & = \Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt. 
+\label{eqn:additional}
+\end{align}
+
+So, we get an additional formula for evaluating 
+\begin{equation}
+Q^{(c)}(\omega) = \left| p(\omega) \right|^2,
+\end{equation}
+
+\noindent with $p(\omega)$ evaluated conformly to Eq. (\ref{eqn:additional}).
+
+
+
+\end{itemize}
+\end{textblock*}
+
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Mathematical details}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Integration is done by using the following Simpson rule,
+$m$ being the number of subintervals
+with $h=(x_{m}-x_0)/m$, $x_i = x_0 + ih$,
+\begin{align}
+\begin{split}
+ \int_{x_0}^{x_m} f(x)dx & \sim \frac{1}{3} h \sum_{i=1}^{m/2}
+  \left[ f(x_{2i-2})  + 4f(x_{2i-1}) + f(x_{2i})\right]\;\;\mbox{ (1/3 rule) }
+\end{split} \label{eqn:simps18} 
+%\begin{split}
+% \int_{x_0}^{x_m} f(x)dx & \sim \frac{3}{8} h \sum_{i=1}^{m/3}
+%  \left[ f(x_{3i-3})  + 3f(x_{3i-2}) +    \right.
+%  \left. 3f(x_{3i-1}) + f(x_{3i})\right]\;\;\mbox{ (3/8 rule) },
+%\end{split} \label{eqn:simps38} 
+\end{align}
+
+or the trapezoidal rule, given by
+\begin{align}
+\begin{split}
+ \int_{x_0}^{x_m} f(x)dx 
+   & \sim \sum_{i=1}^{m} \frac{ f(x_{i-1})  + f(x_{i})}{2}\Delta x_i
+\end{split} \label{eqn:trapez} 
+\end{align}
+
+\item Numerical differentiation may be done by using the formulas
+
+\begin{align}
+\begin{split}
+f^{\prime}_l (x_i) = \frac{f(x_{i+1}) -  f(x_i)}{x_{i+1} -x_i}, & \hspace{20pt}
+f^{\prime}_r (x_i) = \frac{f(x_{i}) -  f(x_{i-1})}{x_{i} - x_{i-1}}
+\end{split} \label{eqn:diff}   \\
+f^{\prime} (x_i) = & \frac{f^{\prime}_l (x_i) + f^{\prime}_r (x_i)}{2}
+%\begin{split}
+% \int_{x_0}^{x_m} f(x)dx & \sim \frac{3}{8} h \sum_{i=1}^{m/3}
+%  \left[ f(x_{3i-3})  + 3f(x_{3i-2}) +    \right.
+%  \left. 3f(x_{3i-1}) + f(x_{3i})\right]\;\;\mbox{ (3/8 rule) },
+%\end{split} \label{eqn:simps38} 
+\end{align}
+
+  
+\end{itemize}
+
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence - $T=3\tau$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_3_density_comp.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_hhg_comp.png} \\
+% \includegraphics[scale=.20, trim={6 130 10 130},clip]{images/114_f003_8_03_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(130pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_3_values_100.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_150.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(255pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_3_values_200.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(390pt,165pt)
+%\centering
+\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+\end{minipage}
+}
+\end{textblock*}
+
+
+
+
+\begin{textblock*}{\linewidth}(20pt,170pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\tiny 
+\centering
+\input{tables/114_f01_3t_error_2.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+    \sigma_{ij}= \left|\frac{\left(   Q^{(c)}(\omega)[i] 
+       - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
+    Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence - $T=5\tau$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_5_density_comp.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_5_hhg_comp.png} \\
+% \includegraphics[scale=.20, trim={6 130 10 130},clip]{images/114_f003_8_03_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(130pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_5_values_100.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_5_values_150.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(255pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_5_values_200.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_5_values_209.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(390pt,165pt)
+%\centering
+\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 132},clip]{images/114_f01_5_error.png } \\
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+\end{minipage}
+}
+\end{textblock*}
+
+
+
+
+\begin{textblock*}{\linewidth}(20pt,170pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\tiny 
+\centering
+\input{tables/114_f01_5t_error_2.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+    \sigma_{ij} = \left|\frac{\left(   Q^{(c)}(\omega)[i] 
+       - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
+    Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence - $T=8\tau$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_8_density_comp.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_8_hhg_comp.png} \\
+% \includegraphics[scale=.20, trim={6 130 10 130},clip]{images/114_f003_8_03_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(130pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_8_values_100.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_8_values_150.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(255pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_8_values_200.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_8_values_209.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(390pt,165pt)
+%\centering
+\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_8_error.png } \\
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+\end{minipage}
+}
+\end{textblock*}
+
+
+
+
+\begin{textblock*}{\linewidth}(20pt,170pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\tiny 
+\centering
+\input{tables/114_f01_8t_error_2.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+    \sigma_{ij} = \left|\frac{\left(   Q^{(c)}(\omega)[i] 
+       - Q^{(c)}(\omega) [j] \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
+    Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence reference table}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Sufficient time step for converged result is 
+$\Delta t \leqslant 0.08\,\rm a.u.$
+\item In the following, we will maintain $\Delta t$ set to 
+around $0.04\,\rm a.u.$
+\end{itemize}
+
+\end{textblock*}
+
+{
+\tiny 
+\input{tables/ref_dt.tab}
+}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+    \tau = n_{oc}\frac{2\pi}{\omega}, \hspace{20pt}
+    T = n \tau, \hspace{20pt}
+    \Delta t  = \frac{T}{{\rm nsteps}}, \hspace{20pt}
+    n_{oc}  = 5,
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence - $\rm{nsteps} = 100000$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_density_comp.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_hhg_comp.png} \\
+% \includegraphics[scale=.20, trim={6 130 10 130},clip]{images/114_f003_8_03_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(130pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_values_100.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_values_150.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(255pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_values_200.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_values_209.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+%\begin{textblock*}{500pt}(390pt,165pt)
+%%\centering
+%\rotatebox{90}{
+% \begin{minipage}{0.0\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_8_error.png } \\
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+%\end{minipage}
+%}
+%\end{textblock*}
+
+
+
+
+\begin{textblock*}{\linewidth}(20pt,170pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\tiny 
+\centering
+\input{tables/114_f01_T_100000.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+%   \sigma_{ij} = \left|\frac{\left(   Q^{(c)}(\omega)[i] 
+%      - Q^{(c)}(\omega) [j] \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
+    Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence - $\Delta t= 0.04\,\rm a.u.$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_density_comp_2.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_hhg_comp_2.png} \\
+% \includegraphics[scale=.20, trim={6 130 10 130},clip]{images/114_f003_8_03_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(130pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_values_dt_100.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_values_dt_150.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(255pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_T_values_dt_200.png} \\
+ \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_T_values_dt_209.png} \\
+% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+%\begin{textblock*}{500pt}(390pt,165pt)
+%%\centering
+%\rotatebox{90}{
+% \begin{minipage}{0.0\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_8_error.png } \\
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+%\end{minipage}
+%}
+%\end{textblock*}
+
+
+
+
+\begin{textblock*}{\linewidth}(20pt,170pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\tiny 
+\centering
+\input{tables/114_f01_T_dt004.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+%   \sigma_{ij} = \left|\frac{\left(   Q^{(c)}(\omega)[i] 
+%      - Q^{(c)}(\omega) [j] \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
+    Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Convergence parameters table for 
+             the homogeneous equation}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item The following table shows parameters known to return converged results 
+for Eq. (\ref{eqn:step_1d}), which is recalled below
+%\item \textbf{For $\omega=0.057\,\rm a.u.$ and $F_0 = 0.3\,\rm a.u.$,
+%PEMD and HHG spectra currently do not converge even 
+%when density probability does}
+\end{itemize}
+
+\end{textblock*}
+
+\vspace{20pt}
+
+{
+\tiny 
+\input{tables/conv_table_057.tab}
+\input{tables/conv_table_114.tab}
+}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{equation}
+	i\frac{\partial}{\partial t}\psi(x,t)
+	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \psi(x,t),   \hspace{20pt}\psi(x,0)=\psi_0(x), \nonumber
+\end{equation}
+\begin{equation}
+  \hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x), \hspace{20pt}
+  \hat{V}_{\rm ext} = F(t)x,   \nonumber
+\end{equation}
+
+\end{textblock*}
+
+
+\begin{textblock*}{100pt}(30pt,140pt)
+\scriptsize
+\textbf{Legend} \\
+$\rm (nbas/nelm) - xmax $
+
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Structure of the code, performance 
+         and memory management}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{enumerate}
+\item Diagonalization
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] most time consuming part for bigger matrixes
+\item[$\bullet$] is there a way to multithread lapack diagonalization? 
+\end{itemize}
+\item Propagation
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] can be arbitarily long 
+(convergence requires $\Delta t \leqslant 0.08\,\rm a.u.$)
+\item[$\bullet$] order 4 scheme required
+\item[$\bullet$] multithreading would also help here
+\end{itemize}
+\item Projection 
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] very short (matter of minutes)
+\item[$\bullet$] potentially very memory consuming
+\end{itemize}
+\end{enumerate}
+
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Quantum theory of raidation by nonstationary systems 
+	with application to high-order hamronic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{What is being addressed right now}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Fixing the code for performance
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] At the current state, for $\omega=0.057\,\rm a.u.$
+and $F_0=0.3\,$, PEMD and HHG-C spectra are wrong even if 
+the probability density seems right
+\item[$\bullet$] It currently make more sense to totally separate 
+propagation and observables computation programs
+\end{itemize}
+\item Inhomogeneous term should be addressed
+\begin{enumerate}
+\footnotesize
+\item[$\bullet$] Find a proper Runge Kutta case in the litterature
+\item[$\bullet$] Use Runge Kutta from Numerical Recipes as a reference
+\item[$\bullet$] Write own code and compare 
+\end{enumerate}
+
+\end{itemize}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+
+
+
+%\begin{frame}
+%\frametitle{Unveiling the Inhomogeneous Nature of 
+%	Strong Field Ionization in Extended Systems 
+%        (Phys. Rev. A 101, 013410 (2020))}
+%	\framesubtitle{The inhomogeneous equation}
+%\small
+%
+%\begin{textblock*}{400pt}(30pt,60pt)
+%\footnotesize
+%\begin{itemize}
+%\item We know want by the means of RK4 method, to deal with Eq. (\ref{eqn:main_1d}), i.e.
+%
+%\begin{equation}
+%	i\frac{\partial}{\partial t}\phi_\omega(x,t)
+%	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+%	   \phi_\omega (x,t)
+% 	   + e^{i\omega t} {\hat{p}}\,
+%	   \psi(x,t), \nonumber
+%\end{equation}
+%\begin{equation}
+%  \phi_\omega (x,0) = \frac{-i\varkappa^{3/2}}{\omega}
+%{\rm sgn}(x)\left(e^{-\varkappa|x|} - e^{-\varkappa(\omega)|x|}\right), 
+%\hspace{20pt}  \psi(x,0) = \varkappa^{1/2}e^{-\varkappa|x|}, 
+%\nonumber
+%\end{equation}
+%\item To this end, we intend to do the following
+%  \begin{enumerate}
+%    \footnotesize
+%    \item Successfully implement Runge Kutta from 
+%       "Numerical Recipes in Fortran" to our problem
+%    \item Solve Eq. (\ref{eqn:main_1d}) with any scheme from 
+%   Kidd \textit{et al.}, Phys, Rev E 96, 063307 (2017)
+%    \item Fix our own implementation of RK4
+%  \end{enumerate}
+%\end{itemize}
+%
+%\end{textblock*}
+%
+%\end{frame}

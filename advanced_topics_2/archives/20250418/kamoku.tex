@@ -1,0 +1,305 @@
+
+\section{maincontent}
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color 
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Theory}
+
+
+\footnotesize
+\begin{textblock*}{400pt}(30pt,70pt)
+\begin{equation}
+i\frac{\partial}{\partial t}\Psi(\boldsymbol{r},t) = 
+\left[ -\frac{\boldsymbol{\nabla}^2}{2} + V(r) - i\boldsymbol{\rm A}(t)\cdot\boldsymbol{\nabla}\right]\Psi(\boldsymbol{r},t)
+\end{equation}
+\begin{itemize}
+\item 2 different systems are used, so $V(r)$ is one of the following
+\begin{align}
+V(r) & = -1/r\hspace{40pt}&\ \mbox{for $\rm H$} \\
+V(r) & = -(1+1.231e^{-0.662r}-1.325re^{-1.236r}-0.231e^{-0.48r})/r
+\hspace{40pt}&\mbox{for $\rm He$}
+\end{align}
+\item The interacting field is given by
+\begin{align}
+A(t) = f(t)\left[ -\frac{E_{\rm SH}}{\omega_{\rm SH}}\sin(\omega_{\rm SH} t)
+     -\frac{E_{\rm FW}}{\omega_{\rm FW}}\sin(\omega_{\rm FW} t+\phi) \right],
+\hspace{30pt}f(t)=\sin^2(\pi t/T_p),
+\hspace{30pt}T_p=20\frac{2\pi}{\omega_{\rm SH}}.
+\end{align}
+\item $\phi$ is the relative phase between the two fields of frequency 
+$\omega_{\rm FW}$ and $\omega_{\rm SH}$ 
+\end{itemize}
+\end{textblock*}
+ 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color 
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Numerical representation}
+
+
+\footnotesize
+\begin{textblock*}{400pt}(30pt,70pt)
+\begin{itemize}
+\item The wavefunction $\Psi(\boldsymbol{r},t)$ is expanded in a basis of 
+B-splines functions, i.e
+\begin{equation}
+\Psi(\boldsymbol{r},t) 
+  = \sum_{n\ell m}^{\infty} c_{n\ell m}(t) \Phi_{n\ell m}(\boldsymbol{r}),
+  \hspace{20pt}
+\Phi_{n\ell m}(\boldsymbol{r}) = 
+ R_{n\ell}(r)Y_{\ell m}(\hat{\boldsymbol{r}}), \hspace{20pt}
+ R_{n\ell}(r) = \sum_{i=1}^{N_r} d_{i}^{(n\ell)} B_i (r)
+\end{equation}
+\item The size of the box is $r_{\rm max}=1500\,\rm a.u.$, 
+the time step is $\Delta t =0.008\,{\rm a.u.}$.
+\item The total excitation probability is given by
+\begin{equation}
+P_{\rm excit} = \sum_{\substack{n\ell m \\ n>2}} 
+\left|\left\langle \Phi_{n\ell m}^{\rm bound}(\boldsymbol{r}) | 
+   \Psi(\boldsymbol{r},T_p) \right\rangle\right|^2.
+\end{equation}
+
+\item The total ionization probability is given by
+\begin{equation}
+P_{\rm ioniz} =  1 - \sum_{\substack{n\ell m}} 
+\left|\left\langle \Phi_{n\ell m}^{\rm bound}(\boldsymbol{r}) | 
+   \Psi(\boldsymbol{r},T_p) \right\rangle\right|^2.
+\end{equation}
+
+\item Convergence is achieved for a number of partial waves 
+$\ell_{\rm max}=40$ and $N_r=1500$.
+\end{itemize}
+\end{textblock*}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color 
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Ionization and excitation probabilities}
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33, trim={0 0 0 0}, clip]{images/medium1.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\item Fig.1 upper panels show the ionization (red lines)
+and excitation (black lines) as a function of $I_{\rm FW}$ for $\rm H$ (a)
+and $\rm He$ (b)
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] Bullets represent the averaged proabilities over $\phi$
+\item[$\bullet$] Error bars denote the probability dispersion when $\phi$ varies
+\end{itemize}
+\item Most of the ionization/excitation is caused by the $\rm SH$
+\item $\phi$ changes the the probability but does not change 
+the overall behaviour
+\vspace{20pt}
+\item The reduction of the ionization yield can be seen as a function of 
+$I_{\rm FW}$ 
+\end{itemize}
+\vspace{20pt}
+\footnotesize
+\begin{align}
+I_{\rm SH} & = 0.5\times 10^{14}\,{\rm W/cm^2}\hspace{40pt}&\ \mbox{for $\rm H$}\nonumber \\
+I_{\rm SH} & = 1.5\times 10^{14}\,{\rm W/cm^2}\hspace{40pt}& \mbox{for $\rm He$}\nonumber
+\end{align}
+\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color 
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Ionization and excitation probabilities}
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33, trim={0 0 0 0}, clip]{images/medium1.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\item Fig.1 lower panels show the $I_{\rm FW}$-dependent
+photoelectron distribution (PED) for $\rm H$ (c) and $\rm He$ (d)
+\item The reduction of the yield can be seen as a function of $I_{\rm FW}$,
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] between $1$ and $4\times 10^{12}\,{\rm W/cm^2}$ 
+for the first peak in $\rm H$
+\item[$\bullet$] between $1$ and $4\times 10^{12}\,{\rm W/cm^2}$ 
+for the 1st and 2nd peaks, at different ranges for $\rm He$
+\end{itemize}
+\end{itemize}
+
+\footnotesize
+\begin{align}
+I_{\rm SW} & = 0.5\times 10^{14}\,{\rm W/cm^2}\hspace{40pt}\nonumber
+\end{align}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{$n$- and $\ell$- resolved excitation probabilities for $\rm H$}
+
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33]{images/medium2.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\vspace{10pt}
+\item Fig.2 $n$- and $\ell$- resolved excitation probabilities for $\rm H$
+\item 1st, 2nd and 3rd columns are for 3 different values of $I_{\rm FW}$
+specified in Fig. 1(c)
+\item Those distributions are explained by the fact that
+\begin{equation}
+5\omega_{\rm SW}+I_p>0
+\end{equation}
+\item Distributions are explained by selection rules, 
+propensity rules and random walking
+\item Introduction of $I_{\rm FW}$ enhances the overall excitation process
+\item Ionization reduction is shown by the lower panel
+\end{itemize}
+\vspace{10pt}
+\footnotesize
+\begin{align}
+I_{\rm FW}^1&= 0\,{\rm W/cm^2}, \hspace{50pt}
+I_{\rm FW}^2= 10^{12}\,{\rm W/cm^2}, \hspace{50pt}
+I_{\rm FW}^3= 2.5\times 10^{12}\,{\rm W/cm^2} \nonumber
+\end{align}
+\begin{align}
+I_p =-0.5\,{\rm a.u.}, \hspace{50pt}
+ \omega_{\rm SW} & = 0.114\,\rm a.u. \nonumber
+\end{align}
+\end{textblock*}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Sketches of ionization for different $I_{\rm FW}$}
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33]{images/medium3.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\vspace{50pt}
+\item (a) $I_{\rm FW} = 0\,\rm W/cm^2$. 5 photons absorbed for ionization with 
+resonance at $n=3$ 
+\item (b) $I_{\rm FW} = 1\times 10^{14}\,\rm W/cm^2$.
+$4\omega_{\rm SH} + 1\ \rm photons$ (or more) are absorbed for ionization at 
+the Rydberg states.
+\item (c) $I_{\rm FW} = 2.5\times 10^{14}\,\rm W/cm^2$. 
+$4\omega_{\rm SH} + 2\ \rm photons$ (or more) are absorbed for ionization at 
+the Rydberg states. Increase of $P_{\ell=4}$ 
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{The $\ell$-dependent ionization rate of $n=5$}
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33]{images/medium4.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\vspace{40pt}
+\item Tug-of-war between excitation and ionization for 
+$I_{\rm SH}=10^{13}\,\rm W/cm^2$ (black)
+and $I_{\rm FW}=10^{12}\,\rm W/cm^2$ (red)
+\item Ionization rate of Rydberg states $(5,\ell)$ for perturbation theory
+(solid lines) and TDSE (dashed lines)
+%\item The presence of the FW reduces the ionization process by allowing 
+%transition to higher Rydberg states harder to ionize
+\vspace{20pt}
+\item The greater the azimuthal quantum number of the initial state $\ell$,
+the lesser is the ionization rate
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Multiphoton Ionization Reduction of Atoms in Two-Color
+Femtosecond Laser Fields \small (Phys. Rev. Lett. \textbf{130}, 113201 (2023))}
+\framesubtitle{Measured and simulated ionization probabilities of $\rm He$}
+
+\begin{textblock*}{100pt}(280pt,70pt)
+\includegraphics[scale=.33]{images/medium5.png}
+\end{textblock*}
+
+\small
+\begin{textblock*}{250pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\vspace{20pt}
+\item Linearly polarized femtosecond laser pulse 
+$(35\, {\rm fs}, 800\,{\rm nm}, 1\,{\rm kHz})$ delivered from a 
+${\rm Ti:sapphire}$ amplifier
+\item Fig. 5 shows the measured yield of $\rm He^+$ from experiment (a) 
+and simulation (b) as a function of $I_{\rm FW}$
+\item Fig. 5 shows the measured yield of $\rm He^+$ from experiment (c)
+% with $I_{\rm FW}=1.6\times 10^{12}\,{\rm W/cm^2}$ (c)
+and simulation (d)
+% with $I_{\rm FW}=10^{12}\,{\rm W/cm^2}$ (d),
+as a function of $\phi$
+\begin{itemize}
+\footnotesize
+\item[$\bullet$] Ionization (through $\ell$=3) may be done by 2 pathways 
+\item[$\bullet$] Their interference is thought to induce the fluctuation
+\end{itemize}
+\vspace{10pt}
+\item The overall ionization reduction is not caused by the phase 
+but by the intensity
+\end{itemize}
+\end{textblock*}
+
+\end{frame}
+
