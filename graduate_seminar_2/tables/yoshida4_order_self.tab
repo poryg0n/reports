@@ -1,0 +1,23 @@
+\begin{table}[h!]
+\centering
+%\caption{Richardson convergence study using a fourth-order Yoshida composition.
+%Errors are measured pointwise at the final time against a reference solution.
+%The homogeneous component $\psi$ exhibits fourth-order convergence, while the driven component $\phi$
+%remains second order due to the Duhamel source discretization.}
+%\label{tab:richardson_yoshida}
+\begin{tabular}{cccc}
+\toprule
+Level &
+$\Delta t_0=0.1$ (relative) &
+$E_\psi$ &
+$E_\phi$ \\
+\midrule
+1 & $\Delta t_0$   & $4.22\times10^{-6}$ & $1.45\times10^{-3}$ \\
+2 & $\Delta t_0/2$ & $2.44\times10^{-7}$ & $7.93\times10^{-4}$ \\
+3 & $\Delta t_0/4$ & $1.50\times10^{-8}$ & $1.97\times10^{-4}$ \\
+\midrule
+Observed order &  & $p_\psi = 4.03$ & $p_\phi = 2.01$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+

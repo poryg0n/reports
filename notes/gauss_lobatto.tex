@@ -1,0 +1,129 @@
+\section{Lobatto quadratures}
+
+Like Legendre quadratrure, Gauss-Radau and Lobatto quadratures
+approximate the integral 
+
+\begin{equation}
+  \int_{-1}^{1} f(x)\,dx \sim \sum_{i=1}^N \omega_i\,f(x_i)
+\end{equation}
+
+In the Gauss-Legndre case, this formula is exact for 
+polynomials of degree $2N-1$. However, it can be extended if 
+$n\leqslant N$. The formula becomes exact for polynomials
+of degree $2N-1-n$.
+
+For the Gauss-Radau case, $n-1$.
+We are interested in the Lobatto case, i.e. $n=2$, with fixed
+quadrature points at the ends of the interval $x_1=-1$ and $x_N=1$.
+The other quyadratures points (nodes) are the zeros of $dP_{N-1}(x)/dx$, 
+with $P_n(x)$ being the Legfendre polynomials and teh weights are given by
+\begin{equation}
+\omega_i = \frac{1+x_i}{N(N-1)P_{N-1}^2(x_i)}
+\end{equation}
+
+For an arbitrary interval of integration $x \in \left[a,b\right]$,
+the nodes and the weights are modified as
+
+\begin{equation}
+x_i \hspace{10pt} \longrightarrow \frac{b+a}{2} + \frac{b-a}{2}x_i,
+\hspace{10pt}
+\omega_i \hspace{10pt} \frac{b-a}{2}\omega_i.
+\end{equation}
+
+However, other transformations are worth mentioning.
+
+
+\newpage
+
+\section{Change of variables and Jacobian in FEDVR elements}
+
+In finite-element discrete variable representations (FEDVR), basis functions are defined locally on reference elements and then embedded into physical space by an explicit change of variables. This construction relies on an affine mapping between a reference coordinate $\xi \in [-1,1]$ and a physical coordinate $x$ belonging to a finite element $[a_s,b_s]$. The role of the Jacobian is to ensure invariance of integration measures, operator representations, and basis normalization under this mapping.
+
+\subsection{Affine mapping between reference and physical elements}
+
+Let $[a_s,b_s]$ denote the physical interval associated with element $s$. The mapping from the reference interval $[-1,1]$ to $[a_s,b_s]$ is uniquely determined by the boundary conditions
+\begin{equation}
+x(-1)=a_s, \qquad x(+1)=b_s.
+\end{equation}
+Assuming an affine transformation,
+\begin{equation}
+x(\xi)=\alpha \xi + \beta,
+\end{equation}
+these conditions yield
+\begin{equation}
+\alpha=\frac{b_s-a_s}{2}, \qquad \beta=\frac{a_s+b_s}{2}.
+\end{equation}
+Hence, the explicit form of the mapping is
+\begin{equation}
+\label{eq:affine_map}
+x(\xi)=\frac{b_s-a_s}{2}\,\xi + \frac{a_s+b_s}{2}.
+\end{equation}
+This affine form preserves polynomial exactness of Gauss--Lobatto quadrature rules and is therefore the natural choice in FEDVR constructions.
+
+\subsection{Definition and determination of the Jacobian}
+
+The Jacobian of the transformation is defined by the relation between infinitesimal measures,
+\begin{equation}
+dx = J_s(\xi)\, d\xi,
+\qquad
+J_s(\xi)=\left|\frac{dx}{d\xi}\right|.
+\end{equation}
+For the affine map~\eqref{eq:affine_map}, differentiation gives
+\begin{equation}
+\frac{dx}{d\xi}=\frac{b_s-a_s}{2},
+\end{equation}
+so that the Jacobian is constant over the element,
+\begin{equation}
+\label{eq:jacobian_value}
+J_s=\frac{b_s-a_s}{2}.
+\end{equation}
+
+An equivalent and more fundamental derivation follows from invariance of integration under change of variables. Applying the transformation to the integral of the constant function,
+\begin{equation}
+\int_{a_s}^{b_s} 1\,dx
+=
+\int_{-1}^{1} J_s\, d\xi,
+\end{equation}
+immediately yields
+\begin{equation}
+b_s-a_s = 2J_s,
+\end{equation}
+which again enforces~\eqref{eq:jacobian_value}. Thus, the Jacobian is uniquely fixed by the requirement of measure preservation and does not depend on any discretization or quadrature choice.
+
+\subsection{Element tiling and implementation in FEDVR}
+
+In practical FEDVR implementations, physical elements are often uniform and are not stored explicitly via their endpoints $(a_s,b_s)$. Instead, one introduces a global half-element length $\text{jac}$ and an element-dependent shift $\text{shift}_s$, such that the mapping is written in the compact form
+\begin{equation}
+\label{eq:fedvr_map}
+x = \text{jac}\,(\xi + \text{shift}_s).
+\end{equation}
+Comparison with~\eqref{eq:affine_map} shows that
+\begin{equation}
+\text{jac} = J_s = \frac{b_s-a_s}{2},
+\qquad
+\text{jac}\,\text{shift}_s = \frac{a_s+b_s}{2}.
+\end{equation}
+The inverse transformation,
+\begin{equation}
+\label{eq:inverse_map}
+\xi = \frac{x}{\text{jac}} - \text{shift}_s,
+\end{equation}
+maps a global physical coordinate $x$ to the local reference coordinate within element $s$.
+
+\subsection{Local basis functions and normalization}
+
+FEDVR basis functions $\pi_i^{(s)}(x)$ are constructed from Lagrange--Lobatto polynomials $\ell_i(\xi)$ defined on the reference interval,
+\begin{equation}
+\pi_i^{(s)}(x) =
+\begin{cases}
+\dfrac{1}{\sqrt{\text{jac}}}\,\ell_i(\xi(x)), & \xi \in [-1,1], \\
+0, & \text{otherwise}.
+\end{cases}
+\end{equation}
+The compact support follows from the restriction $\xi\in[-1,1]$, enforced via the inverse mapping~\eqref{eq:inverse_map}. The normalization factor $1/\sqrt{\text{jac}}$ ensures orthonormality with respect to the physical measure,
+\begin{equation}
+\int \pi_i^{(s)}(x)\,\pi_j^{(s')}(x)\,dx = \delta_{ij}\,\delta_{ss'},
+\end{equation}
+since $dx=\text{jac}\,d\xi$ on each element. As a result, the mass matrix is diagonal by construction, while differential operators acquire explicit Jacobian factors through the relation $\partial_x = \text{jac}^{-1}\partial_\xi$.
+
+

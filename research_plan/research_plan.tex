@@ -1,0 +1,219 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath}
+
+\title{Research Advancement Plan}
+\author{Fred}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Background}
+High harmonic generation (HHG) is one of the most important processes
+ driving the study of the imteraction of radiation with matter
+and will lead to important advances in fundamental science and engineering.
+Through HHG, it possible to produce coherent radiations that ouperform the 
+external in field in regards to frequency and pulse duration. 
+
+The current theory is based on an approximation that ignores the very fact that 
+acceleration of charged particles is in itself, a source of radiation. 
+Such radiations as well as produced HHG effect on the whole system is neglected
+during the dynamics, among common other simplifications like 
+the dipole approximation.
+ 
+\section{Objectives and methods}
+
+Guided by the work of Yangaliev \textit{et al.} [1], 
+we want to develop a reliable method of resolution 
+of the inhomogeneous Schr\"odinger equation, 
+taking into account the radiation emitted by the particle, at various levels.
+In other words, we want to build a robust model capable of comparing
+results ranging from the classical ansatz 
+to the full quantum treatment of the radiation, but also from the 
+strong field approximation to the numerical resolution of the 
+Time Dependent Schr\"odinger Equation (TDSE), 
+in the simplified context of 1D test cases 
+before moving on to more realisitic systems.
+
+In order to ensure this transition, we will test our results against, 
+some chosen references. Precandidates are suggested down below.
+Doing so will allow us to connect our work to the whole litterature, 
+still dominated by the work of Lewenstein. 
+
+\section{Timetable}
+We shall meet the following deadlines
+
+\subsection{Validation of the main result}
+\begin{itemize}
+\item \textbf{2026/4/31} \\
+\indent Producing the first full quantum compliant results 
+		described by Yangaliev \textit{et al} [1], 
+        for some emission frequencies only. (not the full spectrum)
+         
+\item \textbf{2026/5/31} \\
+\indent Producing of the full quantum compliant HHG spectra, with 
+        converged results in the case of the field strengths 
+        $F_0 = 0.03,\mbox{ and }F_0 = 0.1\,\rm a.u.$, for both frequencies 
+        $\omega= 0.114\mbox{ and }0.57\,\rm a.u,$
+		described by Yangaliev \textit{et al}. [1].
+
+\textbf{Notes}
+
+This will fully validate our model and allow us to reproduce 
+the results displayed in the section IV of the reference 
+to a satisfactory agreement. Converged results will easily be produced for the 
+lesser intensities, but the higher ones will realistically take time 
+and will be researched during the subsequent months.
+
+
+\end{itemize}
+
+\subsection{The adiabatic approximation}
+\begin{itemize}
+\item \textbf{2026/6/31} \\
+\indent In this part, we will study dans comapre our work to 
+	Tolstikhin \textit{et al}. [2]. 
+	The interest of this reference for us is twofold 
+		\begin{itemize}
+	\item it will allow us to understand 
+		the Adiabatic Approximation (AA) and give us 
+		a strong foothold for both the developement of 
+		a resolution technic of the TDSE that is not a brute force
+		numerical resolution
+	\item it will but also will prepare us to our next step
+		which is the extension to 
+		realistic 3D sytsems.
+		\end{itemize}
+
+\textbf{Notes} 
+
+        (N1) The AA will allow us to produce alternative results 
+		that may also directly compare to 
+		Strong Field Approximation (SFA) 
+		results rampant in the litterature for strong external fields.
+
+        (N2) The AA will also allow us to design internal experiments
+		for assessing our new fully quantum model in both 
+		strong and weak fields.
+%        (N2) Validation of our results will be performed by comparing with
+%	the work of B. Piraux et al Phys. Rev A 96, 043403 (2017).
+%        This choice is motivated by its range, in the tunneling regime
+%	when the classical ansatz is expected to be fully valid.
+%	Another motivation is its tools, the Sturmian functions 
+%	that we would like to revisit. 
+
+\end{itemize}
+         
+        
+
+\subsection{Extension to realistic systems}
+
+\begin{itemize}
+\item \textbf{2026/9/31} \\
+    At this stage, we will have a functional fully quantum algorithm of 
+		resolution of the TDSE, 
+		but also an alternative semi-classical method in the AA. 
+		We will aim at extending our work to realistic stystems.
+	        Following Tolstikhin \textit{et al}. [3], who already 
+		successfully accomplished this by extending [2], to  
+		3D systems with finite range potentials, we will have
+		comparing points for our results, but most importantly a
+		pathway for our approach.
+
+
+\textbf{Notes} 
+    
+    (N1) After this point, we will have a two fully functional resolution 
+         mechanisms for the TDSE, allowing not only to compare ourselves 
+  	 to the general litterature but also to make internal comparison 
+	 experiments.
+	
+
+\item \textbf{2026/10/31} \\
+Last verifications, checks and convergence parameters tuning. If necessary, 
+comparison of our results to other works in the litterature 
+		for final validation or, following Linblom \textit{et al} [4],
+		extension of our work to rotating external fields.
+
+        
+\item \textbf{2026/11$\sim$} \\
+	Writing a paper and the thesis manuscript. 
+\end{itemize}
+
+%\textbf{Tasks:}
+%\begin{itemize}
+%    \item Analyze the classical/SFA-based Ansatz.
+%    \item Compare results with Eq.~(104) when applicable.
+%    \item Identify correspondence with the Lewenstein model and SFA.
+%\end{itemize}
+%
+%\textbf{Outcome:}
+%Alternative description of HHG with reduced computational cost and conceptual bridge between TDSE-based and semi-classical approaches.
+%
+%\section*{4. Extension to 3D Systems (by September 30)}
+%
+%\textbf{Reference:} \\
+%K. Ishikawa, ``High-Harmonic Generation,'' in \textit{Advances in Solid State Lasers: Development and Applications} (2010), Sections 2.2 and 2.4.
+%
+%\textbf{Goal:}
+%Extend the current framework to three-dimensional systems including a Coulomb potential.
+%
+%\textbf{Tasks:}
+%\begin{itemize}
+%    \item Study standard 3D TDSE formulations (spherical coordinates, partial wave expansion).
+%    \item Analyze how the inhomogeneous formulation can be adapted to 3D.
+%    \item Evaluate computational requirements and feasibility.
+%\end{itemize}
+%
+%\textbf{Note:}
+%Implementation will depend on progress in earlier phases.
+%
+%\section*{General Remarks}
+%
+%\begin{itemize}
+%    \item Priority is given to obtaining a validated and converged spectrum from Eq.~(103).
+%    \item Numerical efficiency will be improved progressively (e.g., reuse of solutions for nearby $\omega$).
+%    \item The project aims to connect exact TDSE methods with semi-classical models (SFA, Lewenstein).
+%    \item The timeline may be adjusted depending on numerical and theoretical developments.
+%\end{itemize}
+%
+%
+\section*{Primary references}
+%\begin{itemize}
+%%	\item L. Hamonou, T. Morishita,  and O. I. Tolstikhin
+%%		Phys. Rev. A 92, 013412 (2012)
+%	\item O. I. Tolstikhin, T. Morishita, and S. Watanabe,
+%		Phys. Rev. A 81, 033415 (2010)
+%	\item O. I. Tolstikhin, and T. Morishita,
+%		Phys. Rev. A 86, 043417 (2012)
+%	\item M. Ohmi, O. I. Tolstikhin and T. Morishita, 
+%		Phys. Rev. A 92, 044302 (2015)
+%	\item D. N. Yangaliev, V. P. Krainov and O. I. Tolstikhin, 
+%		Phys. Rev A 101, 013410 (2020)
+%	\item T. K. Lindblom, O. I. Tolstikhin and T. Morishita, 
+%		Phys. Rev. A 104, 023110 (2021)
+%\end{itemize}
+
+%	\item L. Hamonou, T. Morishita,  and O. I. Tolstikhin
+%		Phys. Rev. A 92, 013412 (2012)
+              \noindent	[1] D. N. Yangaliev, V. P. Krainov and O. I. Tolstikhin, 
+ 		Phys. Rev A 101, 013410 (2020) 
+
+              \noindent [2] O. I. Tolstikhin, T. Morishita, and S. Watanabe, 
+	       Phys. Rev. A 81, 033415 (2010) 
+
+	      \noindent [3] O. I. Tolstikhin, and T. Morishita,
+               Phys. Rev. A 86, 043417 (2012)
+
+              \noindent	[4] T. K. Lindblom, O. I. Tolstikhin and T. Morishita, 
+ 		Phys. Rev. A 104, 023110 (2021)
+
+              \noindent [5] M. Ohmi, O. I. Tolstikhin and T. Morishita, 
+ 		Phys. Rev. A 92, 044302 (2015) \\
+
+
+
+\end{document}

@@ -1,0 +1,52 @@
+\begin{table}[h!]
+\centering
+%\caption{Comparison between numerical and exact values of the second
+%component $\phi$ for the driven propagation with derivative initial
+%conditions. Norms are computed from the complex values shown.}
+\begin{tabular}{rcccccc}
+\toprule
+$t$ &
+$\Re\,\phi_{\mathrm{num}}$ &
+$\Im\,\phi_{\mathrm{num}}$ &
+$\|\phi_{\mathrm{num}}\|$ &
+$\Re\,\phi_{\mathrm{ex}}$ &
+$\Im\,\phi_{\mathrm{ex}}$ &
+$\|\phi_{\mathrm{ex}}\|$ \\
+\midrule
+-1.0000 & 0.000000 & 0.707107 & 0.707107 & 0.000000 & 0.000000 & 0.000000 \\
+
+% -0.8750 omitted
+
+-0.7500 & 0.387890 & 0.616635 & 0.728490 & 0.372890 & 0.725260 & 0.815604 \\
+
+% -0.6250 omitted
+
+-0.5000 & 0.722462 & 0.394582 & 0.823193 & 0.914186 & 0.549921 & 1.066741 \\
+
+% -0.3750 omitted
+
+-0.2500 & 0.963989 & 0.064716 & 0.966159 & 1.351538 & 0.153071 & 1.360186 \\
+
+% -0.1250 omitted
+
+0.0000 & 1.082191 & -0.337874 & 1.133709 & 1.545652 & -0.208745 & 1.559693 \\
+
+% 0.1250 omitted
+
+0.2500 & 1.059302 & -0.770291 & 1.309759 & 1.640943 & -0.622311 & 1.755448 \\
+
+% 0.3750 omitted
+
+0.5000 & 0.891893 & -1.186125 & 1.484037 & 1.576669 & -1.280872 & 2.033065 \\
+
+% 0.6250 omitted
+
+0.7500 & 0.591262 & -1.540110 & 1.649705 & 1.392728 & -1.703561 & 2.198913 \\
+
+% 0.8750 omitted
+
+1.0000 & 0.182351 & -1.792656 & 1.801907 & 0.922767 & -2.243259 & 2.427810 \\
+
+\bottomrule
+\end{tabular}
+\end{table}

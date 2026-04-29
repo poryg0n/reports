@@ -1,0 +1,23 @@
+\begin{table}[h!]
+\centering
+%\caption{Observed convergence orders obtained from a reference-solution study
+%using a fourth-order Yoshida propagator for the homogeneous part and a midpoint
+%Duhamel discretization for the source term.}
+%\label{tab:order_reference}
+\begin{tabular}{ccccc}
+\toprule
+$\Delta t$ &
+$E_\psi$ &
+$E_\phi$ &
+$p_\psi$ &
+$p_\phi$ \\
+\midrule
+$1.0\times10^{-1}$ & $7.79\times10^{-7}$ & $2.28\times10^{-4}$ & --   & --   \\
+$5.0\times10^{-2}$ & $4.85\times10^{-8}$ & $2.82\times10^{-5}$ & 4.01 & 3.01 \\
+$2.5\times10^{-2}$ & $3.01\times10^{-9}$ & $3.44\times10^{-6}$ & 4.01 & 3.04 \\
+\midrule
+Reference ($\Delta t = \Delta t_0 / 2^{4}$) & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+

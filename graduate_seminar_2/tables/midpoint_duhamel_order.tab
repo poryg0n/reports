@@ -1,0 +1,23 @@
+\begin{table}[!ht]
+\centering
+%\caption{Self-convergence test for the split-operator Duhamel midpoint scheme.
+%Errors are computed as $\ell^2$ norms between successive refinements.}
+\begin{tabular}{ccccc}
+\toprule
+Refinement level $k$ & 
+Time step $\Delta t$ & 
+$|\psi^{(k)} - \psi^{(k+1)}|$ &
+$|\phi^{(k)} - \phi^{(k+1)}|$ &
+Observed order \\
+\midrule
+1 & $.100 $ & $3.6596\times10^{-6}$ & $2.7621\times10^{-5}$ & --- \\
+2 & $.050 $ & $9.1488\times10^{-7}$ & $4.9953\times10^{-6}$ & --- \\
+3 & $.025 $ & $2.2872\times10^{-7}$ & $1.2522\times10^{-6}$ &
+$\begin{array}{c}
+p_\psi = 2.0000 \\
+p_\phi = 1.9961
+\end{array}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+

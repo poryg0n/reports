@@ -1,0 +1,22 @@
+\begin{table}[h!]
+\centering
+%\caption{Convergence against the exact solution. Errors correspond to the
+%values printed during the propagation run.}
+\begin{tabular}{ccccc}
+\toprule
+Level &
+$\Delta t$ (relative) &
+$E_\psi$ &
+$E_\phi$ &
+Order $(p_\psi/p_\phi)$ \\
+\midrule
+1 & $\Delta t_0$   & 1.656925(-14) & 1.173076(-11) & --- \\
+2 & $\Delta t_0/2$ & 3.154099(-14) & 7.791598(-13) & -0.93 / 3.91 \\
+3 & $\Delta t_0/4$ & 5.027708(-14) & 1.416639(-13) & -0.67 / 2.46 \\
+4 & $\Delta t_0/8$ & 1.070034(-13) & 2.478027(-13) & -1.09 / -0.81 \\
+\midrule
+Observed order &  &  &  & $-1.0897 / -0.8067$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+

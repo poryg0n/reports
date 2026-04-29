@@ -1,0 +1,18 @@
+\begin{table}[h!]
+\centering
+\begin{tabular}{ccccc}
+\toprule
+Level &
+$\Delta t$ (relative) &
+$E_\psi$ &
+$E_\phi$ &
+$p_\psi / p_\phi$ \\
+\midrule
+1 & $\Delta t_0$   & 0.5564105(-3) & 0.1529880(-1) & --- \\
+2 & $\Delta t_0/2$ & 0.3480484(-4) & 0.1093299(-2) & 3.999 / 3.807 \\
+3 & $\Delta t_0/4$ & 0.2175758(-5) & 0.7047939(-4) & 4.000 / 3.955 \\
+\midrule
+Observed order &  &  &  & $3.9997 / 3.9553$ \\
+\bottomrule
+\end{tabular}
+\end{table}

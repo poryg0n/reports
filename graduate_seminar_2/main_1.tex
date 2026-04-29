@@ -1,0 +1,340 @@
+
+\begin{frame}
+\frametitle{}
+	\framesubtitle{}
+
+\begin{textblock*}{250pt}(120pt,130pt)
+\Huge
+\textbf{Graduate Seminar 2}
+\end{textblock*}
+
+\end{frame}
+
+
+\section{Main Objectives - Section 1}
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Section 1 - Solving for $\boldsymbol{\psi(x,t)}$}
+\footnotesize
+\begin{textblock*}{400pt}(30pt,60pt)
+\begin{itemize}
+\item We solve $\psi(x,t)$ by a numerical resolution of 
+	teh Time-Dependent Sch\"odinger Equation (TDSE),i.e 
+\begin{align}
+	i\frac{\partial}{\partial t}\psi(x,t)
+	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right)  &	
+	   \psi(x,t),   \hspace{20pt}\psi(x,0)=\psi_0(x),  \label{eqn:step_1d} \\
+	\hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x),  &\hspace{20pt}
+	\hat{V}_{\rm ext}(t) = F(t)x.
+\end{align}
+\begin{align}
+  E_0 = -\varkappa^2/2,\hspace{20pt}
+	\psi_{0}(x) & = \varkappa^{1/2}e^{-\varkappa|x|}, \hspace{20pt}
+  \varkappa = 1,       \label{eqn:bound_state} \\
+  E_k = k^2/2,\hspace{20pt}
+	\psi_k^{(\pm)}(x) = e^{ikx} & + R(\pm|k|)e^{\pm i|kx|}, \hspace{20pt}
+   R(k) = \frac{i\varkappa}{k-i \varkappa}. \label{eqn:inout_states}
+\end{align}
+\vspace{10pt}
+\item The parameters of the laser we will be using 
+are given by the relations
+\begin{equation}
+  F(t) = F_0 e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t^\prime),
+\hspace{20pt}  0 \leqslant t \leqslant T,
+\hspace{20pt}  t^{\prime} = t - T/2,
+\end{equation}
+\begin{equation}
+  \tau  = 2\pi n_{oc}/\omega_0,  \hspace{20pt}
+  n_{oc} = 5. \hspace{20pt}
+\end{equation}
+\end{itemize}
+
+\end{textblock*}
+
+\begin{textblock*}{250pt}(240pt,80pt)
+%\includegraphics[scale=.25]{dip_app_limits.png}{\footnote{\Tiny
+%H.R. Reiss, Phys Rev A 63 013409 (2000)}}
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Density, survival probability and PEMD}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item The density probability of the wavefunction, at $t$ is given by
+\begin{equation}
+	\mathcal{D}(x,t) = \left|\psi(x,t)\right|^2
+	= \int \psi^{*}(x,t)\psi(x,t)dx.
+\label{eqn:density}
+\end{equation}
+\item The coefficients of the projection of ${\psi}$ are then, at $t$,
+and by definition, expressed as
+\begin{equation}
+a_0 = e^{iE_0 t}\int \psi_0(x) \psi(x,t)dx, \hspace{20pt}
+a_k = e^{iE_k t}\int \psi_k^{\Tiny (-)*}(x) \psi(x,t)dx. \hspace{20pt}
+\label{eqn:a0k}
+\end{equation}
+
+%with 
+%$\bar{\Psi}_{k_j} = a_{k_j} 
+%\hspace{10pt} 0\leqslant j \leqslant m$, \hspace{30pt}
+%$\bar{\Psi} = \left( \bar{\Psi}_0, \bar{\Psi}_{k_1}, \cdots, \bar{\Psi}_{k_j}
+%\cdots, {\Psi}_{k_m}\right)$.
+
+
+\item Then, 
+\begin{align}
+	P_0  = \left| a_0 \right|^2, 
+ \hspace{30pt} \mbox{and}\hspace{30pt} P(k) = \left| a_k \right|^2. 
+\end{align}
+
+\item The ionization probability can then be found many different 
+ways that should be consistent with each others
+\begin{align}
+   P_{\rm ion}  = \int P(k)\frac{dk}{2\pi}  = 1-P_0. \label{eqn:pion1}
+\end{align}
+
+\item  $P(k)$ is the probability for the electron 
+being ionized with the energy $E_k$.
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Observables}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+	\item For an arbitrary operator $\mathcal{O}$, we have   
+\begin{equation}
+	\mathcal{O}(t) = \int \psi^{*}(x,t)\mathcal{O}\,\psi(x,t)dx
+\label{eqn:mean_value}
+\end{equation}
+\item The the Fourier transform is obtained using 
+\begin{equation}
+	\mathcal{O}(\omega) = \int \mathcal{O}(t)e^{i\omega t}dt.
+\label{eqn:fourier}
+\end{equation}
+\item Following Bransden an Joachain, "Quantum Mechanics (2000)" (see 11.145), we define the transition amplitude $\mathcal{O}_{ba}$  and probability $P_{ba}$ 
+ between two states $a$ and $b$ such as
+\begin{align}
+	\mathcal{O}_{ba} & = \int dx\, \psi_b^*(x)\,\mathcal{O}\,\psi_a (x), 
+	\hspace{30pt}
+%	P_{ba}  = \left| \int dx\, \psi_b^*(x)\,\mathcal{O}\,
+%	 \psi_a (x) \right|^2.
+	P_{ba}  = \left| \mathcal{O}_{ba} \right|^2.
+\end{align}
+When continuum states between $q$ and $q+dq$ are involved,
+the quantity of interest is  
+	%	$P_{ba}dq$
+\begin{align}
+	P_{ba} dq & = \left| \int dx\, \psi^*_b(x)\,\mathcal{O}\,
+	 \psi_a (x) \right|^2 dq.
+\end{align}
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Length, velocity and acceleration}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item We want to evaluate the quantities
+\begin{align}
+d(t) = - \left\langle\hat{x}\right\rangle
+	= - \int \psi^{*}(x,t)\hat{x}\,\psi(x,t)dx, \hspace{20pt}&\mbox{and}
+	\hspace{20pt} \dot{x}(t) = \frac{d}{dt} x(t), \\
+p(t) = \langle \hat{p\,} \rangle  
+	 = - i\int \psi^{*}(x,t)\frac{\partial}{\partial x} &\psi(x,t)  dx.
+\end{align}
+\item Direct numerical differentiation can sometimes be avoided 
+	with the help of the Ehrenfest theorem 
+	and the commutator algebra
+\begin{align}
+	\left[ \hat{p\,}^2,\hat{x\,}\right] = -2i\hat{p\,} 
+	&\;\;\Longrightarrow\;\;
+	\hat{p\,} = i\left[ \hat{H\,},\hat{x\,}\right] 
+	\label{eqn:commutator_alg}, 	\\
+        \frac{d}{dt}\langle \hat{x\,} \rangle 
+	 = \langle \hat{p\,} \rangle, \hspace{20pt}& 
+	\frac{d}{dt} \langle \hat{p\,}\rangle 
+	= \left\langle -\frac{\partial V_{\rm ext}}{\partial x} \right\rangle.
+	\label{eqn:ehrenfest}
+\end{align}
+
+   and some others 
+   (see Bransden and Joachain, Quantum Mechanics (2000), p.531-532) 
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{High Harmonic Generation (HHG) - (semi-classical approx.)}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item 	In the classical approx., the spectrum is obtained from the following 
+(Eq.(80))
+\begin{equation}
+Q^{(c)}_\nu (\omega) = 
+ \alpha^2 \omega^2
+    \left| \boldsymbol{\rm A}_{\nu}\boldsymbol{\rm d}(\omega) \right|^2,
+\label{eqn:Qc}
+\end{equation}
+
+	Let us apply the following simplifications
+\begin{align}
+    \nu \longrightarrow \omega, \hspace{20pt}
+  \boldsymbol{\rm A}_\nu = \sqrt{\frac{2\pi c^2}{\omega L^3}}\boldsymbol{e}_\nu
+\longrightarrow A_\omega, 
+    \hspace{20pt}\mbox{ and } \hspace{20pt} \alpha A_\omega = 1.
+\end{align}
+\item So the observable we are considering here is 
+\begin{align}
+    Q^{(c)}(\omega) = \omega^2 \left| d(\omega)  \right|^2.
+\label{eqn:dipole_form}
+\end{align}
+Additionally let us consider Eq. (104)
+\begin{align}
+    Q^{(c)}(\omega) = \left| p(\omega)  \right|^2.
+\label{eqn:mom_form}
+\end{align}
+and, by virtue of $\boldsymbol{p}(t)= -\dot{\boldsymbol{d}}(t)$, which reads
+\begin{align}
+    Q^{(c)}(\omega) = \left| -\dot{d}(\omega)  \right|^2. 
+\label{eqn:dipole_mom_form}
+\end{align}
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Additional note from Ehrenfest theorem}
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item  Using the integration by parts formula, we get
+\begin{equation}
+   p(\omega) = \int_{-T/2}^{T/2} e^{i\omega t} \frac{dx(t)}{dt}dt,\hspace{30pt}
+   u(t) = x(t),\;\;\; v(t) = e^{i\omega t},
+\end{equation}
+\noindent thus
+\begin{align}
+   p(\omega) & = \int_{-T/2}^{T/2} \frac{d}{dt}\Big(e^{i\omega t}x(t)\Big)dt
+    -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt
+              = \Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
+               -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt,
+\label{eqn:additional}
+\end{align}
+
+		\noindent which reduces to (\ref{eqn:dipole_form})
+		up to a constant. 
+
+
+
+
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+        with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Transition amplitude}
+
+
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\begin{itemize}
+\footnotesize
+\item From Yangaliev \textit{et al.}, we have 
+\begin{align}
+p_{k0} & = \int dx\,\psi_k^{(-)*}(x)\,\hat{p}\, \psi_0(x)
+        =  \frac{2k\varkappa^{3/2}}{\varkappa^2 + k^2}, \\
+p_{kk^\prime} & = \int dx\, \psi_k^{(-)*}(x)\,\hat{p}\,\psi_{k^\prime}^{(-)}(x)
+        = 2\pi k \delta(k-k^\prime)
+ - \frac{2\varkappa}{k^2 - k^{\prime2} + i\epsilon}
+ \left( \frac{k^\prime|k|}{|k|-i\varkappa} 
+       - \frac{k|k^\prime|}{|k^\prime|+i\varkappa}\right) .
+\end{align}
+
+\item  Using (\ref{eqn:commutator_alg}), we can rewrite those expressions as
+\begin{align}
+p_{k0}        & =  - i\left( E_k - E_0 \right)d_{k0}, \\
+p_{kk^\prime} & =  - i\left( E_k - E_{k^\prime} \right)d_{kk^\prime}.
+\end{align}
+		\vspace{10pt}
+\item Those quantities are another way to study convergence, 
+	at the structural level
+\end{itemize}
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+

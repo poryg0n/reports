@@ -1,0 +1,20 @@
+\begin{table}[h!]
+\centering
+%\caption{Richardson convergence test for the fourth-order Duhamel scheme
+%in the non-stationary driven case ($F(t)\neq0$).}
+\begin{tabular}{ccccc}
+\toprule
+Level &
+$\Delta t$ (relative) &
+$E_\psi$ &
+$E_\phi$ &
+Order $(p_\psi/p_\phi)$ \\
+\midrule
+1 & $\Delta t_0$   & 5.506211(-06) & 1.311796(-05) & --- \\
+2 & $\Delta t_0/2$ & 3.439466(-07) & 8.271523(-07) & 4.000 / 3.988 \\
+3 & $\Delta t_0/4$ & 2.150284(-08) & 5.193475(-08) & 3.9996 / 3.9934 \\
+\midrule
+Observed order &  &  &  & $3.9996 / 3.9934$ \\
+\bottomrule
+\end{tabular}
+\end{table}
