@@ -1,0 +1,18 @@
+--- Richardson convergence test ---
+ order 2 duhamel test
+dt level 1  0.66735360E-04  0.55321283E-03
+dt level 2  0.16618589E-04  0.13783637E-03
+dt level 3  0.41508712E-05  0.34455751E-04
+Observed order (psi, phi):   2.0013  2.0001
+
+
+--- Richardson convergence test ---
+ order 4 duhamel test
+dt level 1  0.36276161E-05  0.32894949E-04
+dt level 2  0.23222539E-06  0.25871402E-05
+dt level 3  0.14600634E-07  0.17201409E-06
+Observed order (psi, phi):   3.9914  3.9108
+
+
+
+

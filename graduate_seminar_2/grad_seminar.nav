@@ -50,8 +50,12 @@
 \headcommand {\beamer@framepages {21}{21}}
 \headcommand {\slideentry {2}{1}{12}{22/22}{Order 2}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@partpages {1}{22}}
-\headcommand {\beamer@subsectionpages {11}{22}}
-\headcommand {\beamer@sectionpages {10}{22}}
-\headcommand {\beamer@documentpages {22}}
-\headcommand {\gdef \inserttotalframenumber {22}}
+\headcommand {\slideentry {2}{1}{13}{23/23}{Order 2}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {2}{1}{14}{24/24}{Order 2}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@partpages {1}{24}}
+\headcommand {\beamer@subsectionpages {11}{24}}
+\headcommand {\beamer@sectionpages {10}{24}}
+\headcommand {\beamer@documentpages {24}}
+\headcommand {\gdef \inserttotalframenumber {24}}
