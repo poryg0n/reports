@@ -1,0 +1,105 @@
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Time dependence reference table - (homogeneous problem)}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item Sufficient time step for converged result is 
+$\Delta t \leqslant 0.08\,\rm a.u.$
+\item In the following, we will maintain $\Delta t$ set to 
+around $0.04\,\rm a.u.$
+\end{itemize}
+
+
+	\textcolor{red}{\textbf{Those are old data. Just a reminder}}\\
+
+\end{textblock*}
+
+{
+\tiny 
+\input{tables/ref_dt.tab}
+}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{align}
+    \tau = n_{oc}\frac{2\pi}{\omega}, \hspace{20pt}
+    T = n \tau, \hspace{20pt}
+    \Delta t  = \frac{T}{{\rm nsteps}}, \hspace{20pt}
+    n_{oc}  = 5,
+                \nonumber
+\end{align}
+
+\end{textblock*}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Convergence parameters table for 
+             the homogeneous equation}
+\small
+
+\begin{textblock*}{400pt}(30pt,60pt)
+\footnotesize
+\begin{itemize}
+\item The following table shows parameters known to return converged results 
+for Eq. (\ref{eqn:step_1d}), which is recalled below
+%\item \textbf{For $\omega=0.057\,\rm a.u.$ and $F_0 = 0.3\,\rm a.u.$,
+%PEMD and HHG spectra currently do not converge even 
+%when density probability does}
+\end{itemize}
+	\textcolor{red}{\textbf{Those are old data. Just a reminder}}\\
+	\textcolor{red}{\textbf{What we want now, 
+	is to extend this logic to the inhomogeneous case}}
+
+\end{textblock*}
+
+\vspace{20pt}
+
+{
+\tiny 
+\input{tables/conv_table_057.tab}
+\input{tables/conv_table_114.tab}
+}
+
+
+\begin{textblock*}{400pt}(30pt,205pt)
+\scriptsize
+
+\begin{equation}
+	i\frac{\partial}{\partial t}\psi(x,t)
+	   = \left( \hat{H}_a + \hat{V}_{\rm ext}(t)\right) 
+	   \psi(x,t),   \hspace{20pt}\psi(x,0)=\psi_0(x), \nonumber
+\end{equation}
+\begin{equation}
+  \hat{H}_a = -\frac{1}{2}\frac{d^2}{dx^2} - \varkappa\delta(x), \hspace{20pt}
+  \hat{V}_{\rm ext} = F(t)x,   \nonumber
+\end{equation}
+
+\end{textblock*}
+
+
+\begin{textblock*}{100pt}(30pt,140pt)
+\scriptsize
+\textbf{Legend} \\
+$\rm (nbas/nelm) - xmax $
+
+
+\end{textblock*}
+
+\end{frame}
+
