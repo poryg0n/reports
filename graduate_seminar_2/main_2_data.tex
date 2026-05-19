@@ -502,4 +502,123 @@ larger $\Delta t$ for convergence
 
 
 
+\begin{frame}
 
+\frametitle{Quantum theory of radiation by nonstationary systems 
+	with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+	\framesubtitle{Simpson Duhamel - Self conv. test results for 2 
+         real tests}
+
+\footnotesize
+
+%\begin{textblock*}{400pt}(30pt,60pt)
+%	\begin{equation}
+%		\phi^\omega_{n+1} = U_4(\Delta t) \phi^\omega_{n}
+%		- \frac{i\Delta t}{6}\left(
+%		  U_4(\Delta t)  e^{i\omega t_{n}}     S_{n}
+%		+ 4 U_4(\Delta t/2) e^{i\omega t_{n+\frac{1}{2}}} S_{n+\frac{1}{2}}
+%		+   U_4(0) e^{i\omega t_{n+1}} S_{n+1}
+%		\right)
+%		 \tag{\ref{eqn:simpson_duhamel}}
+%	\end{equation}
+% 	\begin{equation}
+%		U_4(t) =  U(c_1h)  U(c_2h)  U(c_1h),    
+%		 \tag{\ref{eqn:yoshida}}
+% 	\end{equation}
+%\end{textblock*}
+
+
+
+\begin{textblock*}{\linewidth}(0pt,100pt)
+\rotatebox{0}{
+\begin{minipage}{.5\linewidth}
+\Tiny
+\raggedright
+\input{tables/midpoint_zrp_p_richardson_realrun.tab}
+\input{tables/simpson4_zrp_p_richardson_realrun.tab}
+\end{minipage}
+}
+\end{textblock*}
+
+%\begin{textblock*}{0.5\linewidth}(0pt,170pt)
+%\rotatebox{0}{
+%\begin{minipage}{\linewidth}
+%\Tiny
+%\raggedright
+%\input{tables/simpson4_zrp_p_richardson.tab}
+%\end{minipage}
+%}
+%\end{textblock*}
+
+
+%\begin{textblock*}{200pt}(20pt,220pt)
+%	\begin{itemize}
+%	 \item Results of the time propagation for the zero range potential
+%		 with and without source
+%	\end{itemize}
+%
+%\end{textblock*}
+
+
+
+
+
+%\begin{textblock*}{250pt}(220pt,90pt)
+%	\begin{align}
+%                \log E = \log C + p\log (\Delta t)  &\nonumber\\\vspace{20pt}
+%      {\rm Ns} = 100,\hspace{10pt} {\rm Np}  = 10   &\nonumber\\
+%		-{\rm xmin} = {\rm xrange}/2  = {\rm Np\, Ns}/2  &\nonumber\\
+%\tau = 2\pi n_{oc}/\omega_0,\;T=8\tau  &\nonumber\\\vspace{10pt}
+% 	  \mbox{Initial conditions and parameters}  &\nonumber\\
+%%   \psi_0(x) = \varkappa^{1/2}e^{-\varkappa\left|x\right|} &\nonumber\\
+%% \phi^\omega_0(x) = -i\partial_x \psi_0(x)  &\nonumber\\
+%		    S(x,t) = -i\partial_x\psi(x,t)  &\nonumber\\
+%%F(t) = F_0\,e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t), \;
+%%
+%%t^\prime = t - T/2
+%%
+%%		&\nonumber\\
+%%
+%      F_0 = 0.03,\;\;\omega_0=0.114,\;\;\omega= 0.5 \nonumber\\
+%    \Delta t_0 = 0.0689,\;\;n_{oc}=5 \nonumber
+%         \end{align}
+%
+%\end{textblock*}
+
+\begin{textblock*}{250pt}(220pt,130pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+\centering
+%	Left, From up to down $\rm {nsteps} = 10k,\, 15k,\, 20k$\\
+%	Up  $\rm {Np}=20, \rm{Ns}=100\; \rm{xmax}=2000$
+%       \begin{align}
+%       \log E = \log C + p\log (\Delta t)
+%       \end{align}
+	\begin{align}
+               \log E = \log C + p\log (\Delta t)  &\nonumber\\\vspace{20pt}
+		\rm{Np} = 20,\;\;\;\rm{Ns} = 100 \nonumber\\
+		\rm{xmax} \sim \rm{Np\,Ns}(1+1/4) /2 \nonumber\\
+		\omega_0 = 0.114\,{\rm a.u}\nonumber\\
+		F_0 = 0.03\,{\rm a.u}, \;\;T=5\tau\nonumber\\
+		{\rm nsteps} = 20 000,\, \;\;\Delta t_0=0.0689\nonumber
+	\end{align}
+%	\textcolor{red}{\textbf{The nonconvergence come from the fact that}
+%	$\rm{xmax}\sim \rm{Np\,Ns}$ here}
+
+}
+\end{minipage}
+}
+\end{textblock*}
+
+\begin{textblock*}{200pt}(250pt,220pt)
+	\begin{align}
+	p_k^{\rm self} & = \left({\rm err}_{k-1}/{\rm err}_{k}\right)/\log(2) \nonumber
+	\end{align}
+
+\end{textblock*}
+
+
+\end{frame}
