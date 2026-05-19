@@ -1,0 +1,38 @@
+%\begin{table}[h!]
+%\centering
+%\begin{tabular}{ccccc}
+%\toprule
+%Level &
+%$\Delta t$ (relative) &
+%$E_\psi$ &
+%$E_\phi$ &
+%$p_\psi / p_\phi$ \\
+%\midrule
+%1 & $\Delta t_0$   & 0.1185025(-1) & 0.1632911(+0) & --- \\
+%2 & $\Delta t_0/2$ & 0.2953778(-2) & 0.3951342(-1) & 2.004 / 2.048 \\
+%3 & $\Delta t_0/4$ & 0.7378959(-3) & 0.9798974(-2) & 2.001 / 2.011 \\
+%\midrule
+%Observed order &  &  &  & $2.0011 / 2.0116$ \\
+%\bottomrule
+%\end{tabular}
+%\end{table}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ccccc}
+\toprule
+Level &
+$\Delta t$ (relative) &
+$E_\psi$ &
+$E_\phi$ &
+$p_\psi / p_\phi$ \\
+\midrule
+1 & $\Delta t_0$   & 0.6673536(-4) & 0.5532128(-3) & --- \\
+2 & $\Delta t_0/2$ & 0.1661859(-4) & 0.1378364(-3) & 2.006 / 2.005 \\
+3 & $\Delta t_0/4$ & 0.4150871(-5) & 0.3445575(-4) & 2.001 / 2.000 \\
+\midrule
+Observed order &  &  &  & $2.0013 / 2.0001$ \\
+\bottomrule
+\end{tabular}
+\end{table}
