@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  19 MAY 2026 15:13
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  27 MAY 2026 08:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,64 +1520,137 @@ Overfull \hbox (6.17401pt too wide) in paragraph at lines 115--115
 [17
 
 ]) (./main_2_data.tex
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/psi_003_114_10
-k_8_20_200_13_24.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/psi_003_114_10k_8_2
-0_200_13_24.png>
+File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
+4_15k_25_20_300_2.png Graphic file (type bmp)
+</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k
+_25_20_300_2.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 129--129
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
  [] 
  []
 
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/phi_003_114_10
-k_8_20_200_13_24.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/phi_003_114_10k_8_2
-0_200_13_24.png>
+File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
+4_15k_25_30_200_2.png Graphic file (type bmp)
+</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k
+_25_30_200_2.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 129--129
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
  [][] 
  []
 
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_10k_8_
-24_20_200_13.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_10k_8_24_20
-_200_13.png>
+File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
+4_20k_25_30_200_2.png Graphic file (type bmp)
+</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k
+_25_30_200_2.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 129--129
- [] 
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
+ [][] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 129--129
-[][]  
- []
-
-[18
-
-]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 262--262
-[][]  
- []
-
-[19
-
-]
 Overfull \hbox (6.17401pt too wide) in paragraph at lines 382--382
 [][]  
  []
 
-[20
+[18
 
 ] (./tables/Qw.tab)
 Overfull \hbox (6.17401pt too wide) in paragraph at lines 500--500
 [][]  
  []
 
+[19
+
+]
+File: data/conv_compare.png Graphic file (type bmp)
+<data/conv_compare.png>
+ (./tables/midpoint_zrp_p_richardson_realrun.tab)
+(./tables/simpson4_zrp_p_richardson_realrun.tab)
+Overfull \hbox (5.664pt too wide) in paragraph at lines 629--629
+[][]  
+ []
+
+
+Overfull \hbox (5.664pt too wide) in paragraph at lines 629--629
+[][]  
+ []
+
+[20
+
+]
+File: images/psi_comp_file_25.png Graphic file (type bmp)
+<images/psi_comp_file_25.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
+ [] 
+ []
+
+File: images/phi_comp_file_25.png Graphic file (type bmp)
+<images/phi_comp_file_25.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
+ [][] 
+ []
+
+File: images/psi_comp_file_45.png Graphic file (type bmp)
+<images/psi_comp_file_45.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
+ [] 
+ []
+
+File: images/phi_comp_file_45.png Graphic file (type bmp)
+<images/phi_comp_file_45.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 762--762
+[][]  
+ []
+
 [21
 
-] (./tables/midpoint_zrp_p_richardson_realrun.tab)
-(./tables/simpson4_zrp_p_richardson_realrun.tab)
-Overfull \hbox (5.664pt too wide) in paragraph at lines 624--624
+]
+File: images/phi_comp_file_q10_16.png Graphic file (type bmp)
+<images/phi_comp_file_q10_16.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+ [] 
+ []
+
+File: images/phi_comp_file_q10_13.png Graphic file (type bmp)
+<images/phi_comp_file_q10_13.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+ [][] 
+ []
+
+File: images/phi_comp_file_q10_12.png Graphic file (type bmp)
+<images/phi_comp_file_q10_12.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+ [][] 
+ []
+
+File: images/psi_comp_file_np25_30.png Graphic file (type bmp)
+<images/psi_comp_file_np25_30.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+ [] 
+ []
+
+File: images/phi_comp_file_np25_30.png Graphic file (type bmp)
+<images/phi_comp_file_np25_30.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 895--895
 [][]  
  []
 
@@ -1602,10 +1675,10 @@ Package rerunfilecheck Info: File `grad_seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 4172637E08010851496B23929A0382F8;427.
  ) 
 Here is how much of TeX's memory you used:
- 33034 strings out of 476179
- 728354 string characters out of 5808663
+ 33114 strings out of 476179
+ 730926 string characters out of 5808663
  1059191 words of memory out of 5000000
- 53014 multiletter control sequences out of 15000+600000
+ 53084 multiletter control sequences out of 15000+600000
  483944 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,18n,122p,421b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
