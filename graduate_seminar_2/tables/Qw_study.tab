@@ -1,17 +1,17 @@
-
 \begin{table}[h!]
 \centering
-%\caption{Dependence of the quality indicator $Q(\omega)$ on the FEDVR grid parameters.
-%Here $x_{\max}\sim (N_pN_s+q)/2$, with $q=0$ or $q=\tfrac12$.}
-%\label{tab:qw_grid_scan}
-\begin{tabular}{ccccc}
+%\caption{Dependence of the computed quantity $Q(\omega)$ on the FEDVR
+%discretization parameters. The effective box size is
+%$x_{\max}=N_pN_s(1+q)/2$, where $q=0$ or $1/2$.}
+%\label{tab:qw_convergence}
+\begin{tabular}{cccccc}
 \toprule
-$N_p$ & $N_s$ & $q$ & $x_{\max}$ & $Q(\omega)$ \\
+$N_p$ & $N_s$ & $q$ & $x_{\max}$ & $b_0(\omega)$ & $Q(\omega)$ \\
 \midrule
-50 & 200 & $\tfrac12$ & 5000.25 & $1.2622\times10^{7}$ \\
-40 & 200 & $0$        & 4000.00 & $6.2369\times10^{3}$ \\
-40 & 200 & $\tfrac12$ & 4000.25 & $2.6371\times10^{7}$ \\
-30 & 200 & $\tfrac12$ & 3000.25 & $6.3649\times10^{9}$ \\
+30 & 200 & $1/2$ & 9000  & 12.7406754 & $6.3649490\times10^{9}$ \\
+40 & 200 & $0$   & 4000  & 12.7400795 & $6.2368512\times10^{3}$ \\
+40 & 200 & $1/2$ & 12000 & 12.7412440 & $2.6370941\times10^{7}$ \\
+50 & 200 & $1/2$ & 15000 & 12.7976569 & $1.2622004\times10^{7}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
