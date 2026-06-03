@@ -18,3 +18,5 @@
 \beamer@slide {eqn:yoshida}{11}
 \beamer@slide {eqn:midpoint_duhamel}{12}
 \beamer@slide {eqn:simpson_duhamel}{13}
+\beamer@slide {eqn:eq_pk0}{17}
+\beamer@slide {eqn:eq_pkkak}{17}

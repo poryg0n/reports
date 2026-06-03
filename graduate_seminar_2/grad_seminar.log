@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  27 MAY 2026 08:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  3 JUN 2026 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,179 +1482,210 @@ Overfull \hbox (5.664pt too wide) in paragraph at lines 164--164
 File: images/pk0_40_200_8000.png Graphic file (type bmp)
 <images/pk0_40_200_8000.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 115--115
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 114--114
  [] 
  []
 
 File: images/pk0_40_200_8000.png Graphic file (type bmp)
 <images/pk0_40_200_8000.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 115--115
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 114--114
  [][] 
  []
 
 File: images/pkl_20_100_2000.png Graphic file (type bmp)
 <images/pkl_20_100_2000.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 115--115
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 114--114
  [] 
  []
 
 File: images/pkl_40_200_8000.png Graphic file (type bmp)
 <images/pkl_40_200_8000.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 115--115
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 114--114
  [][] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 115--115
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 114--114
 [][]  
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 115--115
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 114--114
 [][]  
  []
 
 [17
 
-]) (./main_2_data.tex
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
-4_15k_25_20_300_2.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k
-_25_20_300_2.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
- [] 
- []
-
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
-4_15k_25_30_200_2.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k
-_25_30_200_2.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
- [][] 
- []
-
-File: /s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_11
-4_20k_25_30_200_2.png Graphic file (type bmp)
-</s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k
-_25_30_200_2.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 382--382
- [][] 
- []
-
-
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 382--382
-[][]  
- []
-
-[18
-
-] (./tables/Qw.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 500--500
-[][]  
- []
-
-[19
-
 ]
-File: data/conv_compare.png Graphic file (type bmp)
-<data/conv_compare.png>
- (./tables/midpoint_zrp_p_richardson_realrun.tab)
-(./tables/simpson4_zrp_p_richardson_realrun.tab)
-Overfull \hbox (5.664pt too wide) in paragraph at lines 629--629
-[][]  
- []
+File: images/psi_comp_file_2npns_np20_25_30_1.png Graphic file (type bmp)
+<images/psi_comp_file_2npns_np20_25_30_1.png>
 
-
-Overfull \hbox (5.664pt too wide) in paragraph at lines 629--629
-[][]  
- []
-
-[20
-
-]
-File: images/psi_comp_file_25.png Graphic file (type bmp)
-<images/psi_comp_file_25.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 235--235
  [] 
  []
 
-File: images/phi_comp_file_25.png Graphic file (type bmp)
-<images/phi_comp_file_25.png>
+File: images/psi_comp_file_2npns_np20_25_30.png Graphic file (type bmp)
+<images/psi_comp_file_2npns_np20_25_30.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
- [][] 
- []
-
-File: images/psi_comp_file_45.png Graphic file (type bmp)
-<images/psi_comp_file_45.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
- [] 
- []
-
-File: images/phi_comp_file_45.png Graphic file (type bmp)
-<images/phi_comp_file_45.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 762--762
- [][] 
- []
-
-
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 762--762
-[][]  
- []
-
-[21
-
-]
-File: images/phi_comp_file_q10_16.png Graphic file (type bmp)
-<images/phi_comp_file_q10_16.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
- [] 
- []
-
-File: images/phi_comp_file_q10_13.png Graphic file (type bmp)
-<images/phi_comp_file_q10_13.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
- [][] 
- []
-
-File: images/phi_comp_file_q10_12.png Graphic file (type bmp)
-<images/phi_comp_file_q10_12.png>
-
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 235--235
  [][] 
  []
 
 File: images/psi_comp_file_np25_30.png Graphic file (type bmp)
 <images/psi_comp_file_np25_30.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 235--235
+ [][] 
+ []
+
+File: images/pkkakdk_comp_file_2npns_np20_25_30.png Graphic file (type bmp)
+<images/pkkakdk_comp_file_2npns_np20_25_30.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 235--235
+ [] 
+ []
+
+File: images/pkkakdk_comp_file_2npns_np40_15_20_np30_15.png Graphic file (type 
+bmp)
+<images/pkkakdk_comp_file_2npns_np40_15_20_np30_15.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 235--235
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 235--235
+[][]  
+ []
+
+[18
+
+]) (./main_2_data.tex
+File: images/phi_comp_file_2npns_np20_25_30.png Graphic file (type bmp)
+<images/phi_comp_file_2npns_np20_25_30.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 119--119
+ [] 
+ []
+
+File: images/phi_comp_file_2npns_np40_50_60.png Graphic file (type bmp)
+<images/phi_comp_file_2npns_np40_50_60.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 119--119
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 119--119
+[][]  
+ []
+
+[19
+
+] (./tables/Qw.tab)
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 240--240
+[][]  
+ []
+
+[20
+
+]
+File: data/conv_compare.png Graphic file (type bmp)
+<data/conv_compare.png>
+ (./tables/midpoint_zrp_p_richardson_realrun.tab)
+(./tables/simpson4_zrp_p_richardson_realrun.tab)
+Overfull \hbox (5.664pt too wide) in paragraph at lines 319--319
+[][]  
+ []
+
+
+Overfull \hbox (5.664pt too wide) in paragraph at lines 319--319
+[][]  
+ []
+
+[21
+
+]
+File: images/psi_comp_file_25.png Graphic file (type bmp)
+<images/psi_comp_file_25.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 410--410
+ [] 
+ []
+
+File: images/phi_comp_file_25.png Graphic file (type bmp)
+<images/phi_comp_file_25.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 410--410
+ [][] 
+ []
+
+File: images/psi_comp_file_45.png Graphic file (type bmp)
+<images/psi_comp_file_45.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 410--410
+ [] 
+ []
+
+File: images/phi_comp_file_45.png Graphic file (type bmp)
+<images/phi_comp_file_45.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 410--410
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 410--410
+[][]  
+ []
+
+[22
+
+]
+File: images/phi_comp_file_q10_16.png Graphic file (type bmp)
+<images/phi_comp_file_q10_16.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 494--494
+ [] 
+ []
+
+File: images/phi_comp_file_q10_13.png Graphic file (type bmp)
+<images/phi_comp_file_q10_13.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 494--494
+ [][] 
+ []
+
+File: images/phi_comp_file_q10_12.png Graphic file (type bmp)
+<images/phi_comp_file_q10_12.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 494--494
+ [][] 
+ []
+
+File: images/psi_comp_file_np25_30.png Graphic file (type bmp)
+<images/psi_comp_file_np25_30.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 494--494
  [] 
  []
 
 File: images/phi_comp_file_np25_30.png Graphic file (type bmp)
 <images/phi_comp_file_np25_30.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 895--895
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 494--494
  [][] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 895--895
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 494--494
 [][]  
  []
 
-[22
+[23
 
 ])
 \tf@nav=\write6
@@ -1675,12 +1706,12 @@ Package rerunfilecheck Info: File `grad_seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 4172637E08010851496B23929A0382F8;427.
  ) 
 Here is how much of TeX's memory you used:
- 33114 strings out of 476179
- 730926 string characters out of 5808663
- 1059191 words of memory out of 5000000
- 53084 multiletter control sequences out of 15000+600000
+ 33141 strings out of 476179
+ 731007 string characters out of 5808663
+ 1059311 words of memory out of 5000000
+ 53109 multiletter control sequences out of 15000+600000
  483944 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,18n,122p,421b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on grad_seminar.pdf (22 pages).
+Output written on grad_seminar.pdf (23 pages).

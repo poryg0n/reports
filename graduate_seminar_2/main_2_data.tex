@@ -1,271 +1,5 @@
 
 
-%\begin{frame}
-%\frametitle{Quantum theory of radiation by nonstationary systems 
-%        with application to high-order harmonic generation
-%        (Phys. Rev. A 101, 013410 (2020))}
-%	\framesubtitle{Midpoint vs Simpson Duhamel - direct test 1 - 
-%         $\mathbf{{\rm nsteps}=10000}$}
-%\small
-%\begin{textblock*}{500pt}(5pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/psi_003_114_10k_8_20_200_13_24.png} \\
-% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/phi_003_114_10k_8_20_200_13_24.png} \\
-%% \includegraphics[scale=.18, trim={6 170 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_10k_20_200.png} \\
-%%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{500pt}(190pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 150 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_10k_8_24_20_200_13.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_3_values_100.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_150.png} \\
-%%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-%
-%
-%%\begin{textblock*}{500pt}(255pt,60pt)
-%%%\centering
-%%%\rotatebox{90}{
-%% \begin{minipage}{0.0\linewidth}
-%% \begin{figure}[tp]
-%% \includegraphics[scale=.18, trim={6 160 10 185},clip]{images/density_20_100_4000.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
-%%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-%% \end{figure}
-%%
-%%\end{minipage}
-%%\end{textblock*}
-%
-%
-%%\begin{textblock*}{500pt}(390pt,165pt)
-%%%\centering
-%%\rotatebox{90}{
-%% \begin{minipage}{0.0\linewidth}
-%% \begin{figure}[tp]
-%% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-%% \end{figure}
-%%\end{minipage}
-%%}
-%%}
-%%\end{textblock*}
-%%
-%%
-%%
-%%
-%\begin{textblock*}{200pt}(200pt,130pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%\scriptsize
-%\centering
-%%	Left, From up to down $\rm {nsteps} = 10k,\, 15k,\, 20k$\\
-%%	Up  $\rm {Np}=20, \rm{Ns}=100\; \rm{xmax}=2000$
-%	\begin{align}
-%		\rm{Np} = 20,\;\;\;\rm{Ns} = 200 \nonumber\\
-%		\rm{xmax} \sim \rm{Np\,Ns}(1+1/3) /2 \nonumber\\
-%		\omega_0 = 0.114\,{\rm a.u}\nonumber\\
-%		F_0 = 0.03\,{\rm a.u}, \;\;T=8\tau\nonumber\\
-%		{\rm nsteps} = 10 000,\, \;\;\Delta t=0.220\nonumber
-%	\end{align}
-%%	\textcolor{red}{\textbf{The nonconvergence come from the fact that}
-%%	$\rm{xmax}\sim \rm{Np\,Ns}$ here}
-%
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{\linewidth}(20pt,170pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%%\input{tables/114_f01_3t_error_2.tab}
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{400pt}(30pt,205pt)
-%\scriptsize
-%%
-%%\begin{align}
-%%	\mathcal{D}_\eta(x,t) = \left| \eta(x,T)\right|^2
-%%%   \sigma_{ij}= \left|\frac{\left(   Q^{(c)}(\omega)[i] 
-%%%      - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
-%%%   Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
-%%%              -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
-%%%               \nonumber
-%%\end{align}
-%\begin{itemize}
-%\scriptsize
-%\item No improvement brought by the order 4 scheme whatsoever
-%\end{itemize}
-%
-%\end{textblock*}
-%
-%\end{frame}
-
-
-
-%\begin{frame}
-%\frametitle{Quantum theory of radiation by nonstationary systems 
-%        with application to high-order harmonic generation
-%        (Phys. Rev. A 101, 013410 (2020))}
-%	\framesubtitle{Midpoint vs Simpson Duhamel - direct test 2 - 
-%         $\mathbf{{\rm nsteps}=20000}$}
-%\small
-%\begin{textblock*}{500pt}(5pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-%% \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/psi_003_114_20k_8_20_200_13_24.png} \\
-%% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/phi_003_114_20k_8_20_200_13_24.png} \\
-%% \includegraphics[scale=.18, trim={6 170 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_10k_20_200.png} \\
-%%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{500pt}(190pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-%% \includegraphics[scale=.18, trim={6 150 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_20k_8_24_20_200_13.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 133},clip]{images/114_f01_3_values_100.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_150.png} \\
-%%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-%
-%
-%%\begin{textblock*}{500pt}(255pt,60pt)
-%%%\centering
-%%%\rotatebox{90}{
-%% \begin{minipage}{0.0\linewidth}
-%% \begin{figure}[tp]
-%% \includegraphics[scale=.18, trim={6 160 10 185},clip]{images/density_20_100_4000.png} \\
-%%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
-%%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-%% \end{figure}
-%%
-%%\end{minipage}
-%%\end{textblock*}
-%
-%
-%%\begin{textblock*}{500pt}(390pt,165pt)
-%%%\centering
-%%\rotatebox{90}{
-%% \begin{minipage}{0.0\linewidth}
-%% \begin{figure}[tp]
-%% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
-%%%%\caption{Eigenvalues.}
-%%%\label{fig:pemd_0114}
-%% \end{figure}
-%%\end{minipage}
-%%}
-%%}
-%%\end{textblock*}
-%%
-%%
-%%
-%%
-%\begin{textblock*}{200pt}(200pt,130pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%\scriptsize
-%\centering
-%%	Left, From up to down $\rm {nsteps} = 10k,\, 15k,\, 20k$\\
-%%	Up  $\rm {Np}=20, \rm{Ns}=100\; \rm{xmax}=2000$
-%	\begin{align}
-%		\rm{Np} = 20,\;\;\;\rm{Ns} = 200 \nonumber\\
-%		\rm{xmax} \sim \rm{Np\,Ns}(1+1/3) /2 \nonumber\\
-%		\omega_0 = 0.114\,{\rm a.u}\nonumber\\
-%		F_0 = 0.03\,{\rm a.u}, \;\;T=8\tau\nonumber\\
-%		{\rm nsteps} = 20 000,\, \;\;\Delta t=0.110\nonumber
-%	\end{align}
-%%	\textcolor{red}{\textbf{The nonconvergence come from the fact that}
-%%	$\rm{xmax}\sim \rm{Np\,Ns}$ here}
-%
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{\linewidth}(20pt,170pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%%\input{tables/114_f01_3t_error_2.tab}
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
-%
-%
-%\begin{textblock*}{400pt}(30pt,205pt)
-%\scriptsize
-%%
-%%\begin{align}
-%%	\mathcal{D}_\eta(x,t) = \left| \eta(x,T)\right|^2
-%%%   \sigma_{ij}= \left|\frac{\left(   Q^{(c)}(\omega)[i] 
-%%%      - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
-%%%   Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
-%%%              -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
-%%%               \nonumber
-%%\end{align}
-%\begin{itemize}
-%\scriptsize
-%\item No improvement brought by the order 4 scheme whatsoever
-%\item In principle, order 4 should require less steps, i.e tolerate a 
-%larger $\Delta t$ for convergence
-%
-%\end{itemize}
-%
-%\end{textblock*}
-%
-%\end{frame}
-
-
-
-
-
-
 \begin{frame}
 \frametitle{Quantum theory of radiation by nonstationary systems 
         with application to high-order harmonic generation
@@ -278,9 +12,9 @@
 %\rotatebox{90}{
  \begin{minipage}{0.0\linewidth}
  \begin{figure}[tp]
- \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_20_300_2.png} \\
- \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_30_200_2.png} \\
- \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
+ \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/phi_comp_file_2npns_np20_25_30.png} \\
+ \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/phi_comp_file_2npns_np40_50_60.png} \\
+% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
 %%\caption{Eigenvalues.}
 %\label{fig:pemd_0114}
  \end{figure}
@@ -334,26 +68,29 @@
 %\end{textblock*}
 %
 %
-%
-%
-\begin{textblock*}{200pt}(200pt,190pt)
+
+\begin{textblock*}{200pt}(280pt,180pt)
 \rotatebox{0}{
 \begin{minipage}{\linewidth}
 {
 \scriptsize
 \centering
-	\begin{align}
-  &\mbox{1st row}\hspace{20pt}&\rm{Np} = 20,\;\;\;\rm{Ns} = 300 \nonumber\\
-  &\mbox{3rd row}\hspace{20pt} &\rm{nsteps}=20000\nonumber\\
-  &\mbox{other rows}\hspace{20pt} &\rm{Np} = 30,\;\;\;\rm{Ns} = 200 \nonumber\\
-  &\mbox{other rows}\hspace{20pt} &\rm{nsteps}=15000\nonumber\\
-  &\rm{xmax} \sim \rm{Np\,Ns}(1+q)/2, \hspace{20pt}
-  &\mbox{\textcolor{blue}{\textbf{Same row, same info}}} \nonumber
-	\end{align}
+        \begin{align}
+%               \rm{Np} = 20,\;\;\;\rm{Ns} = 100 \nonumber\\
+                \;\;\;\rm{Ns} = 200 \nonumber\\
+                \rm{xmax} \sim \left(\rm{Np\,Ns}+1/2\right) \nonumber\\
+                \omega_0 = 0.114\,{\rm a.u}\nonumber\\
+                F_0 = 0.03\,{\rm a.u}, \;\;T=5\tau\nonumber\\
+                {\rm nsteps} = 15 000,\, \;\;\Delta t=0.092\nonumber
+        \end{align}
+%       \textcolor{red}{\textbf{The nonconvergence come from the fact that}
+%       $\rm{xmax}\sim \rm{Np\,Ns}$ here}
+
 }
 \end{minipage}
 }
 \end{textblock*}
+
 
 
 %\begin{textblock*}{\linewidth}(20pt,170pt)
@@ -380,6 +117,9 @@
 %\end{textblock*}
 
 \end{frame}
+
+
+
 
 
 
@@ -511,23 +251,6 @@
 
 \footnotesize
 
-%\begin{textblock*}{400pt}(30pt,60pt)
-%	\begin{equation}
-%		\phi^\omega_{n+1} = U_4(\Delta t) \phi^\omega_{n}
-%		- \frac{i\Delta t}{6}\left(
-%		  U_4(\Delta t)  e^{i\omega t_{n}}     S_{n}
-%		+ 4 U_4(\Delta t/2) e^{i\omega t_{n+\frac{1}{2}}} S_{n+\frac{1}{2}}
-%		+   U_4(0) e^{i\omega t_{n+1}} S_{n+1}
-%		\right)
-%		 \tag{\ref{eqn:simpson_duhamel}}
-%	\end{equation}
-% 	\begin{equation}
-%		U_4(t) =  U(c_1h)  U(c_2h)  U(c_1h),    
-%		 \tag{\ref{eqn:yoshida}}
-% 	\end{equation}
-%\end{textblock*}
-
-
 
 \begin{textblock*}{\linewidth}(0pt,60pt)
 \rotatebox{0}{
@@ -554,39 +277,6 @@
 \end{textblock*}
 
 
-%\begin{textblock*}{200pt}(20pt,220pt)
-%	\begin{itemize}
-%	 \item Results of the time propagation for the zero range potential
-%		 with and without source
-%	\end{itemize}
-%
-%\end{textblock*}
-
-
-
-
-
-%\begin{textblock*}{250pt}(220pt,90pt)
-%	\begin{align}
-%                \log E = \log C + p\log (\Delta t)  &\nonumber\\\vspace{20pt}
-%      {\rm Ns} = 100,\hspace{10pt} {\rm Np}  = 10   &\nonumber\\
-%		-{\rm xmin} = {\rm xrange}/2  = {\rm Np\, Ns}/2  &\nonumber\\
-%\tau = 2\pi n_{oc}/\omega_0,\;T=8\tau  &\nonumber\\\vspace{10pt}
-% 	  \mbox{Initial conditions and parameters}  &\nonumber\\
-%%   \psi_0(x) = \varkappa^{1/2}e^{-\varkappa\left|x\right|} &\nonumber\\
-%% \phi^\omega_0(x) = -i\partial_x \psi_0(x)  &\nonumber\\
-%		    S(x,t) = -i\partial_x\psi(x,t)  &\nonumber\\
-%%F(t) = F_0\,e^{-(2t^\prime/\tau)^2}\cos(\omega_0 t), \;
-%%
-%%t^\prime = t - T/2
-%%
-%%		&\nonumber\\
-%%
-%      F_0 = 0.03,\;\;\omega_0=0.114,\;\;\omega= 0.5 \nonumber\\
-%    \Delta t_0 = 0.0689,\;\;n_{oc}=5 \nonumber
-%         \end{align}
-%
-%\end{textblock*}
 
 \begin{textblock*}{250pt}(220pt,80pt)
 \rotatebox{0}{
@@ -671,39 +361,6 @@
 \end{textblock*}
 
 
-%\begin{textblock*}{500pt}(255pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 160 10 185},clip]{images/density_20_100_4000.png} \\
-%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
-%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-
-
-%\begin{textblock*}{500pt}(390pt,165pt)
-%%\centering
-%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%\end{minipage}
-%}
-%}
-%\end{textblock*}
-%
-%
-%
-%
 \begin{textblock*}{200pt}(280pt,160pt)
 \rotatebox{0}{
 \begin{minipage}{\linewidth}
@@ -741,15 +398,6 @@
 
 \begin{textblock*}{400pt}(30pt,205pt)
 \scriptsize
-%
-%\begin{align}
-%	\mathcal{D}_\eta(x,t) = \left| \eta(x,T)\right|^2
-%%   \sigma_{ij}= \left|\frac{\left(   Q^{(c)}(\omega)[i] 
-%%      - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
-%%   Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
-%%              -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
-%%               \nonumber
-%\end{align}
 \begin{itemize}
 \scriptsize
 \item No improvement brought by the order 4 scheme whatsoever
@@ -767,7 +415,7 @@
 \frametitle{Quantum theory of radiation by nonstationary systems 
         with application to high-order harmonic generation
         (Phys. Rev. A 101, 013410 (2020))}
-	\framesubtitle{Space grid convergence for the inhomogeneous problem}
+	\framesubtitle{Space grid convergence for the homogeneous problem}
 \small
 \begin{textblock*}{500pt}(5pt,60pt)
 %\centering
@@ -803,39 +451,6 @@
 \end{textblock*}
 
 
-%\begin{textblock*}{500pt}(255pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 160 10 185},clip]{images/density_20_100_4000.png} \\
-%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
-%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
-
-
-%\begin{textblock*}{500pt}(390pt,165pt)
-%%\centering
-%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%\end{minipage}
-%}
-%}
-%\end{textblock*}
-%
-%
-%
-%
 \begin{textblock*}{200pt}(280pt,180pt)
 \rotatebox{0}{
 \begin{minipage}{\linewidth}
@@ -873,23 +488,8 @@
 
 \begin{textblock*}{400pt}(30pt,205pt)
 \scriptsize
-%
-%\begin{align}
-%	\mathcal{D}_\eta(x,t) = \left| \eta(x,T)\right|^2
-%%   \sigma_{ij}= \left|\frac{\left(   Q^{(c)}(\omega)[i] 
-%%      - Q^{(c)}(\omega)[j]  \right)}{Q^{(c)}(\omega)[j]}\right|, \hspace{20pt}
-%%   Q^{(c)}(\omega) & = \left|\Bigg[ e^{i\omega t} x(t)\Bigg]_{-T/2}^{T/2}
-%%              -i\omega \int_{-T/2}^{T/2} e^{i\omega t}x(t)dt\right|^2.
-%%               \nonumber
-%\end{align}
-
-%\begin{itemize}
-%\scriptsize
-%\item No improvement brought by the order 4 scheme whatsoever
-%\item In principle, order 4 should require less steps, i.e tolerate a 
-%\item ${\Delta t} \leqslant 0.08$ sufficient for convergence for the inhomogeneous problem 
-%\end{itemize}
 
 \end{textblock*}
 
 \end{frame}
+
