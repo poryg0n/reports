@@ -13,7 +13,7 @@
  \begin{minipage}{0.0\linewidth}
  \begin{figure}[tp]
  \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/phi_comp_file_2npns_np20_25_30.png} \\
- \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/phi_comp_file_2npns_np40_50_60.png} \\
+ \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/phi_comp_file_2npns_np40_50_60.png} \\
 % \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
 %%\caption{Eigenvalues.}
 %\label{fig:pemd_0114}
@@ -23,34 +23,20 @@
 \end{textblock*}
 
 
-\begin{textblock*}{500pt}(180pt,60pt)
+\begin{textblock*}{500pt}(190pt,60pt)
 %\centering
+%\rotatebox{90}{
  \begin{minipage}{0.0\linewidth}
  \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={30 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_20_300_1.png} \\
-% \includegraphics[scale=.18, trim={30 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_30_200_1.png} 
+ \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/psi_comp_file_np25_30.png} \\
+% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
 % \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
 %%\caption{Eigenvalues.}
 %\label{fig:pemd_0114}
  \end{figure}
+
 \end{minipage}
 \end{textblock*}
-
-
-%\begin{textblock*}{500pt}(255pt,60pt)
-%%\centering
-%%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 160 10 185},clip]{images/hhg_20_200_4000_.png} \\
-%% \includegraphics[scale=.20, trim={6 100 10 130},clip]{images/114_f01_3_values_209.png} \\
-%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%
-%\end{minipage}
-%\end{textblock*}
 
 
 %\begin{textblock*}{500pt}(390pt,165pt)
@@ -115,6 +101,21 @@
 %
 %
 %\end{textblock*}
+
+
+\begin{textblock*}{400pt}(30pt,200pt)
+\footnotesize
+\begin{itemize}
+\scriptsize
+\item The convergence region for $\psi$ is ${\rm xrange} \sim 2000$
+\item The convergence region for $\phi$ is ${\rm xrange} \sim 4500$
+\item The plateau for $\phi$ seems to be $1e-8$, 
+above the double precision limit
+\item The result is confirmed by 2 different methods and has been tested 
+against an analytical result
+\end{itemize}
+\end{textblock*}
+
 
 \end{frame}
 
@@ -193,32 +194,25 @@
 %%
 %%
 %%
-%\begin{textblock*}{200pt}(200pt,190pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%\scriptsize
-%\centering
-%	\begin{align}
-%  &\mbox{1st row}\hspace{20pt}&\rm{Np} = 20,\;\;\;\rm{Ns} = 300 \nonumber\\
-%  &\mbox{3rd row}\hspace{20pt} &\rm{nsteps}=20000\nonumber\\
-%  &\mbox{other rows}\hspace{20pt} &\rm{Np} = 30,\;\;\;\rm{Ns} = 200 \nonumber\\
-%  &\mbox{other rows}\hspace{20pt} &\rm{nsteps}=15000\nonumber\\
-%  &\rm{xmax} \sim \rm{Np\,Ns}(1+q)/2, \hspace{20pt}
-%  &\mbox{\textcolor{blue}{\textbf{Same row, same info}}} \nonumber
-%	\end{align}
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
+\begin{textblock*}{200pt}(100pt,190pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+For this laser intensity and frequency, the reference result is
+$Q(\omega) \sim 1e-5$ 
+}
+\end{minipage}
+}
+\end{textblock*}
 
 
-\begin{textblock*}{\linewidth}(20pt,200pt)
+\begin{textblock*}{\linewidth}(20pt,100pt)
 \rotatebox{0}{
 \begin{minipage}{\linewidth}
 {
 \Tiny
-\input{tables/Qw.tab}
+\input{tables/Qw_study.tab}
 }
 \end{minipage}
 }
