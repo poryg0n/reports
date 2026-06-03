@@ -1,0 +1,17 @@
+
+\begin{table}[h!]
+\centering
+%\caption{Dependence of the quality indicator $Q(\omega)$ on the FEDVR grid parameters.
+%Here $x_{\max}\sim (N_pN_s+q)/2$, with $q=0$ or $q=\tfrac12$.}
+%\label{tab:qw_grid_scan}
+\begin{tabular}{ccccc}
+\toprule
+$N_p$ & $N_s$ & $q$ & $x_{\max}$ & $Q(\omega)$ \\
+\midrule
+50 & 200 & $\tfrac12$ & 5000.25 & $1.2622\times10^{7}$ \\
+40 & 200 & $0$        & 4000.00 & $6.2369\times10^{3}$ \\
+40 & 200 & $\tfrac12$ & 4000.25 & $2.6371\times10^{7}$ \\
+30 & 200 & $\tfrac12$ & 3000.25 & $6.3649\times10^{9}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
