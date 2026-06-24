@@ -1,0 +1,11 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{cccccc}
+\hline
+$b_{0\omega}$ & $\mathrm{Re}(b_{0\omega})$ & $\mathrm{Im}(b_{0\omega})$ & $|b_{0\omega}|^2$ & $\mathrm{Re}(Q(\omega))$ & $\mathrm{Im}(Q(\omega))$ \\
+\hline
+3.1399646834322419 & 1.7620682503078942 & 0.0 & 12.964262731944862 & 12.964262731944862 & 0.0 \\
+\hline
+\end{tabular}
+%\caption{Computed values of $b_0(\omega)$ and $Q(\omega)$.}
+\end{table}

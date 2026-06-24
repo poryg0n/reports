@@ -1,11 +1,28 @@
-\begin{table}[h]
+\begin{table}[h!]
 \centering
-\begin{tabular}{cccccc}
-\hline
-$b_{0\omega}$ & $\mathrm{Re}(b_{0\omega})$ & $\mathrm{Im}(b_{0\omega})$ & $|b_{0\omega}|^2$ & $\mathrm{Re}(Q(\omega))$ & $\mathrm{Im}(Q(\omega))$ \\
-\hline
-3.1399646834322419 & 1.7620682503078942 & 0.0 & 12.964262731944862 & 12.964262731944862 & 0.0 \\
-\hline
+%\caption{Dependence of $b_0(\omega)$ and $Q(\omega)$ on the number of
+%time steps. The first row corresponds to the homogeneous reference
+%calculation.}
+%\label{tab:nsteps_qw}
+\begin{tabular}{ccccc}
+\toprule
+Run & ${\rm nsteps}$ & $Re\,b_0(\omega)$ &
+$Im\,b_0(\omega)$ & $Q(\omega)$ \\
+\midrule
+Homogeneous & 20000 &
+$-0.6830301(-5)$ &
+$ 0.1928069(-5)$ &
+$3.2058559(-3)$ \\
+
+Driven & 15000 &
+$-0.1770619(-2)$ &
+$-0.3836150(-3)$ &
+$1.7834170(-3)$ \\
+
+Driven & 20000 &
+$-0.1770615(-2)$ &
+$-0.3836362(-3)$ &
+$1.7828446(-3)$ \\
+\bottomrule
 \end{tabular}
-%\caption{Computed values of $b_0(\omega)$ and $Q(\omega)$.}
 \end{table}
