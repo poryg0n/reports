@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.10.23)  24 JUN 2026 12:51
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.10.23)  24 JUN 2026 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1679,92 +1679,4 @@ Overfull \hbox (58.99866pt too wide) detected at line 856
 []
  []
 
-[23
-
-] [24
-
-]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
-[][]  
- []
-
-(./tables/Qw_study.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
-[][]  
- []
-
-[25
-
-]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1077--1077
-[][]  
- []
-
-(./tables/Qw_study_1.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1077--1077
-[][]  
- []
-
-[26
-
-]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1140--1140
-[][]  
- []
-
-(./tables/Qw.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1140--1140
-[][]  
- []
-
-[27
-
-]
-File: data/conv_compare.png Graphic file (type bmp)
-<data/conv_compare.png>
- (./tables/midpoint_zrp_p_richardson_realrun.tab)
-(./tables/simpson4_zrp_p_richardson_realrun.tab)
-Overfull \hbox (5.664pt too wide) in paragraph at lines 1222--1222
-[][]  
- []
-
-
-Overfull \hbox (5.664pt too wide) in paragraph at lines 1222--1222
-[][]  
- []
-
-[28
-
-])
-\tf@nav=\write6
-\openout6 = `grad_seminar.nav'.
-
-\tf@toc=\write7
-\openout7 = `grad_seminar.toc'.
-
-\tf@snm=\write8
-\openout8 = `grad_seminar.snm'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
- (./grad_seminar.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 17.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
-Package rerunfilecheck Info: File `grad_seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 064C08EFB1E51B4221B4014031F0ED10;191.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 3.0pt have occurred.
-
- ) 
-Here is how much of TeX's memory you used:
- 32073 strings out of 481370
- 671962 string characters out of 5926566
- 984874 words of memory out of 5000000
- 48319 multiletter control sequences out of 15000+600000
- 546579 words of font info for 119 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 58i,18n,79p,779b,649s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on grad_seminar.pdf (28 pages).
+[2
