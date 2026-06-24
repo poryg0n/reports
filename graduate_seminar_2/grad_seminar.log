@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  10 JUN 2026 14:36
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  24 JUN 2026 09:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,6 +860,18 @@ slant=0.15;"
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
+(/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box78
+\UL@hyphenbox=\box79
+\UL@skip=\skip71
+\UL@hook=\toks45
+\UL@height=\dimen324
+\UL@pe=\count362
+\UL@pixel=\dimen325
+\ULC@box=\box80
+Package: ulem 2019/11/18
+\ULdepth=\dimen326
+)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/beamer/beamerfontthemeprofessio
 nalfonts.sty)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
@@ -883,89 +895,89 @@ Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen324
-\captionmargin=\dimen325
-\caption@leftmargin=\dimen326
-\caption@rightmargin=\dimen327
-\caption@width=\dimen328
-\caption@indent=\dimen329
-\caption@parindent=\dimen330
-\caption@hangindent=\dimen331
+\caption@tempdima=\dimen327
+\captionmargin=\dimen328
+\caption@leftmargin=\dimen329
+\caption@rightmargin=\dimen330
+\caption@width=\dimen331
+\caption@indent=\dimen332
+\caption@parindent=\dimen333
+\caption@hangindent=\dimen334
 Package caption Info: beamer document class detected.
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to th
 e beamer document classes (AR)
 ))
-\c@caption@flags=\count362
-\c@continuedfloat=\count363
+\c@caption@flags=\count363
+\c@continuedfloat=\count364
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 )
-\c@KVtest=\count364
-\sf@farskip=\skip71
-\sf@captopadj=\dimen332
-\sf@capskip=\skip72
-\sf@nearskip=\skip73
-\c@subfigure=\count365
-\c@subfigure@save=\count366
-\c@depth=\count367
-\c@subtable=\count368
-\c@subtable@save=\count369
-\sf@top=\skip74
-\sf@bottom=\skip75
+\c@KVtest=\count365
+\sf@farskip=\skip72
+\sf@captopadj=\dimen335
+\sf@capskip=\skip73
+\sf@nearskip=\skip74
+\c@subfigure=\count366
+\c@subfigure@save=\count367
+\c@depth=\count368
+\c@subtable=\count369
+\c@subtable@save=\count370
+\sf@top=\skip75
+\sf@bottom=\skip76
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count370
-\float@exts=\toks45
-\float@box=\box78
-\@float@everytoks=\toks46
-\@floatcapt=\box79
+\c@float@type=\count371
+\float@exts=\toks46
+\float@box=\box81
+\@float@everytoks=\toks47
+\@floatcapt=\box82
 )
 Package caption Info: Option `figurename' requires the `newfloat' package on in
-put line 38.
+put line 39.
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip76
-\multirow@cntb=\count371
-\multirow@dima=\skip77
-\bigstrutjot=\dimen333
+\multirow@colwidth=\skip77
+\multirow@cntb=\count372
+\multirow@dima=\skip78
+\bigstrutjot=\dimen336
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen334
-\lightrulewidth=\dimen335
-\cmidrulewidth=\dimen336
-\belowrulesep=\dimen337
-\belowbottomsep=\dimen338
-\aboverulesep=\dimen339
-\abovetopsep=\dimen340
-\cmidrulesep=\dimen341
-\cmidrulekern=\dimen342
-\defaultaddspace=\dimen343
-\@cmidla=\count372
-\@cmidlb=\count373
-\@aboverulesep=\dimen344
-\@belowrulesep=\dimen345
-\@thisruleclass=\count374
-\@lastruleclass=\count375
-\@thisrulewidth=\dimen346
+\heavyrulewidth=\dimen337
+\lightrulewidth=\dimen338
+\cmidrulewidth=\dimen339
+\belowrulesep=\dimen340
+\belowbottomsep=\dimen341
+\aboverulesep=\dimen342
+\abovetopsep=\dimen343
+\cmidrulesep=\dimen344
+\cmidrulekern=\dimen345
+\defaultaddspace=\dimen346
+\@cmidla=\count373
+\@cmidlb=\count374
+\@aboverulesep=\dimen347
+\@belowrulesep=\dimen348
+\@thisruleclass=\count375
+\@lastruleclass=\count376
+\@thisrulewidth=\dimen349
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen347
-\ar@mcellbox=\box80
-\extrarowheight=\dimen348
-\NC@list=\toks47
-\extratabsurround=\skip78
-\backup@length=\skip79
-\ar@cellbox=\box81
+\col@sep=\dimen350
+\ar@mcellbox=\box83
+\extrarowheight=\dimen351
+\NC@list=\toks48
+\extratabsurround=\skip79
+\backup@length=\skip80
+\ar@cellbox=\box84
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -973,42 +985,42 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count376
-\rotFPtop=\skip80
-\rotFPbot=\skip81
-\rot@float@box=\box82
-\rot@mess@toks=\toks48
+\c@r@tfl@t=\count377
+\rotFPtop=\skip81
+\rotFPbot=\skip82
+\rot@float@box=\box85
+\rot@mess@toks=\toks49
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen349
-\TX@old@table=\dimen350
-\TX@old@col=\dimen351
-\TX@target=\dimen352
-\TX@delta=\dimen353
-\TX@cols=\count377
-\TX@ftn=\toks49
+\TX@col@width=\dimen352
+\TX@old@table=\dimen353
+\TX@old@col=\dimen354
+\TX@target=\dimen355
+\TX@delta=\dimen356
+\TX@cols=\count378
+\TX@ftn=\toks50
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2020/09/26 v1.10
 
 Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
 Package textpos Info: choosing support for LaTeX3 on input line 61.
-\TP@textbox=\box83
-\TP@holdbox=\box84
-\TPHorizModule=\dimen354
-\TPVertModule=\dimen355
-\TP@margin=\dimen356
-\TP@absmargin=\dimen357
+\TP@textbox=\box86
+\TP@holdbox=\box87
+\TPHorizModule=\dimen357
+\TPVertModule=\dimen358
+\TP@margin=\dimen359
+\TP@absmargin=\dimen360
 Grid set 16 x 16 = 28.45274pt x 16.00467pt
-\TPboxrulesize=\dimen358
-\TP@ox=\dimen359
-\TP@oy=\dimen360
-\TP@tbargs=\toks50
+\TPboxrulesize=\dimen361
+\TP@ox=\dimen362
+\TP@oy=\dimen363
+\TP@tbargs=\toks51
 TextBlockOrigin set to 0pt x 0pt
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 76.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 76.
+Package hyperref Info: Option `colorlinks' set `true' on input line 77.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 77.
  (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2022/02/21 PDF & SVG animations from files and inline graphics
 
@@ -1018,10 +1030,10 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks51
-\XKV@tempa@toks=\toks52
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
 )
-\XKV@depth=\count378
+\XKV@depth=\count379
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
@@ -1029,16 +1041,16 @@ Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count379
-\calc@Bcount=\count380
-\calc@Adimen=\dimen361
-\calc@Bdimen=\dimen362
-\calc@Askip=\skip82
-\calc@Bskip=\skip83
+\calc@Acount=\count380
+\calc@Bcount=\count381
+\calc@Adimen=\dimen364
+\calc@Bdimen=\dimen365
+\calc@Askip=\skip83
+\calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count381
-\calc@Cskip=\skip84
+\calc@Ccount=\count382
+\calc@Cskip=\skip85
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
@@ -1049,37 +1061,37 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count382
+\c@abspage=\count383
 Package zref Info: New property: abspage on input line 66.
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2022/03/18 v0.54 driver independent access to low-level PDF fe
 atures
-\g_pbs_page_int=\count383
-\g_pbs_obj_int=\count384
-\g_pbs_oc_int=\count385
+\g_pbs_page_int=\count384
+\g_pbs_obj_int=\count385
+\g_pbs_oc_int=\count386
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2021/06/11 v0.20 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count386
+\g_ocgbase_nd_int=\count387
 )
-\@anim@box=\box85
-\@anim@measbox=\box86
-\@anim@tmpdima=\dimen363
-\@anim@tmpdimb=\dimen364
-\@anim@num=\count387
-\@anim@curframe=\count388
-\@anim@curframe@zb=\count389
-\@anim@resizeflags=\count390
-\@anim@skipfram=\count391
-\@anim@mulframecnt=\count392
+\@anim@box=\box88
+\@anim@measbox=\box89
+\@anim@tmpdima=\dimen366
+\@anim@tmpdimb=\dimen367
+\@anim@num=\count388
+\@anim@curframe=\count389
+\@anim@curframe@zb=\count390
+\@anim@resizeflags=\count391
+\@anim@skipfram=\count392
+\@anim@mulframecnt=\count393
 \@anim@@tmlnfile=\read3
-\@anim@tmpcnt=\count393
-\c@@anim@ltxcnt=\count394
-\@anim@curlayer=\count395
-\@anim@lineno=\count396
-\@anim@curfield=\count397
-\@anim@@resizeflags=\count398
+\@anim@tmpcnt=\count394
+\c@@anim@ltxcnt=\count395
+\@anim@curlayer=\count396
+\@anim@lineno=\count397
+\@anim@curfield=\count398
+\@anim@@resizeflags=\count399
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -1088,7 +1100,7 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.c
 ode.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box87
+\pgfnodeparttextbox=\box90
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.cod
 e.tex
@@ -1097,8 +1109,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versi
 on-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen365
-\pgf@nodesepend=\dimen366
+\pgf@nodesepstart=\dimen368
+\pgf@nodesepend=\dimen369
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-versi
 on-1-18.sty
@@ -1108,10 +1120,10 @@ Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen367
-\pgffor@skip=\dimen368
-\pgffor@stack=\toks53
-\pgffor@toks=\toks54
+\pgffor@iter=\dimen370
+\pgffor@skip=\dimen371
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
 ))
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.c
 ode.tex
@@ -1120,34 +1132,34 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryploth
 andlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count399
-\pgfplotmarksize=\dimen369
+\pgf@plot@mark@count=\count400
+\pgfplotmarksize=\dimen372
 )
-\tikz@lastx=\dimen370
-\tikz@lasty=\dimen371
-\tikz@lastxsaved=\dimen372
-\tikz@lastysaved=\dimen373
-\tikz@lastmovetox=\dimen374
-\tikz@lastmovetoy=\dimen375
-\tikzleveldistance=\dimen376
-\tikzsiblingdistance=\dimen377
-\tikz@figbox=\box88
-\tikz@figbox@bg=\box89
-\tikz@tempbox=\box90
-\tikz@tempbox@bg=\box91
-\tikztreelevel=\count400
-\tikznumberofchildren=\count401
-\tikznumberofcurrentchild=\count402
-\tikz@fig@count=\count403
+\tikz@lastx=\dimen373
+\tikz@lasty=\dimen374
+\tikz@lastxsaved=\dimen375
+\tikz@lastysaved=\dimen376
+\tikz@lastmovetox=\dimen377
+\tikz@lastmovetoy=\dimen378
+\tikzleveldistance=\dimen379
+\tikzsiblingdistance=\dimen380
+\tikz@figbox=\box91
+\tikz@figbox@bg=\box92
+\tikz@tempbox=\box93
+\tikz@tempbox@bg=\box94
+\tikztreelevel=\count401
+\tikznumberofchildren=\count402
+\tikznumberofcurrentchild=\count403
+\tikz@fig@count=\count404
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.c
 ode.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count404
-\pgfmatrixcurrentcolumn=\count405
-\pgf@matrix@numberofcolumns=\count406
+\pgfmatrixcurrentrow=\count405
+\pgfmatrixcurrentcolumn=\count406
+\pgf@matrix@numberofcolumns=\count407
 )
-\tikz@expandcount=\count407
+\tikz@expandcount=\count408
 
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librar
 ies/tikzlibrarytopaths.code.tex
@@ -1172,16 +1184,16 @@ ies/tikzlibrarydecorations.pathmorphing.code.tex
 ies/tikzlibrarydecorations.code.tex
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorati
 ons.code.tex
-\pgfdecoratedcompleteddistance=\dimen378
-\pgfdecoratedremainingdistance=\dimen379
-\pgfdecoratedinputsegmentcompleteddistance=\dimen380
-\pgfdecoratedinputsegmentremainingdistance=\dimen381
-\pgf@decorate@distancetomove=\dimen382
-\pgf@decorate@repeatstate=\count408
-\pgfdecorationsegmentamplitude=\dimen383
-\pgfdecorationsegmentlength=\dimen384
+\pgfdecoratedcompleteddistance=\dimen381
+\pgfdecoratedremainingdistance=\dimen382
+\pgfdecoratedinputsegmentcompleteddistance=\dimen383
+\pgfdecoratedinputsegmentremainingdistance=\dimen384
+\pgf@decorate@distancetomove=\dimen385
+\pgf@decorate@repeatstate=\count409
+\pgfdecorationsegmentamplitude=\dimen386
+\pgfdecorationsegmentlength=\dimen387
 )
-\tikz@lib@dec@box=\box92
+\tikz@lib@dec@box=\box95
 )
 (/mnt2/s/fred/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgf
 librarydecorations.pathmorphing.code.tex))
@@ -1278,7 +1290,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 .sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count409
+\c@section@level=\count410
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1576,44 +1588,188 @@ Overfull \hbox (58.99866pt too wide) detected at line 253
 [19
 
 ]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 367--367
+File: images/pk0a0_25_psi_20_200_1q10.png Graphic file (type bmp)
+<images/pk0a0_25_psi_20_200_1q10.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 407--407
+ [] 
+ []
+
+File: images/pk0a0_25_psi_30_200_1q10.png Graphic file (type bmp)
+<images/pk0a0_25_psi_30_200_1q10.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 407--407
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 407--407
 [][]  
  []
 
-(./tables/Qw_study.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 367--367
+
+Overfull \hbox (24.09085pt too wide) detected at line 407
+[]
+ []
+
+
+Overfull \hbox (30.26486pt too wide) in paragraph at lines 407--407
 [][]  
+ []
+
+
+Overfull \hbox (58.99866pt too wide) detected at line 407
+[]
  []
 
 [20
 
 ]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 477--477
+File: images/diff_terms_25_psi_20_200_1q10.png Graphic file (type bmp)
+<images/diff_terms_25_psi_20_200_1q10.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 562--562
+ [] 
+ []
+
+File: images/diff_terms_25_psi_30_200_1q10.png Graphic file (type bmp)
+<images/diff_terms_25_psi_30_200_1q10.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 562--562
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 562--562
+[][]  
+ []
+
+
+Overfull \hbox (88.60542pt too wide) detected at line 562
+[]
+ []
+
+
+Overfull \hbox (94.77943pt too wide) in paragraph at lines 562--562
+[][]  
+ []
+
+
+Overfull \hbox (58.99866pt too wide) detected at line 562
+[]
+ []
+
+[21
+
+]
+File: images/diff_terms_25_psi_20_200_1q10_improved.png Graphic file (type bmp)
+
+<images/diff_terms_25_psi_20_200_1q10_improved.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 722--722
+ [] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 722--722
+[][]  
+ []
+
+
+Overfull \hbox (88.60542pt too wide) detected at line 722
+[]
+ []
+
+
+Overfull \hbox (94.77943pt too wide) in paragraph at lines 722--722
+[][]  
+ []
+
+
+Overfull \hbox (58.99866pt too wide) detected at line 722
+[]
+ []
+
+[22
+
+]
+File: images/pemd_akbkw_20_200_1q10_k1000.png Graphic file (type bmp)
+<images/pemd_akbkw_20_200_1q10_k1000.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+File: images/norm_20_200_20k_1q10.png Graphic file (type bmp)
+<images/norm_20_200_20k_1q10.png>
+
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 856--856
+[][]  
+ []
+
+
+Overfull \hbox (47.17142pt too wide) detected at line 856
+[]
+ []
+
+
+Overfull \hbox (53.34543pt too wide) in paragraph at lines 856--856
+[][]  
+ []
+
+
+Overfull \hbox (58.99866pt too wide) detected at line 856
+[]
+ []
+
+[23
+
+] [24
+
+]
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
+[][]  
+ []
+
+(./tables/Qw_study.tab)
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
+[][]  
+ []
+
+[25
+
+]
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1125--1125
 [][]  
  []
 
 (./tables/Qw_study_1.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 477--477
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1125--1125
 [][]  
  []
 
-[21
+[26
 
 ]
 File: data/conv_compare.png Graphic file (type bmp)
 <data/conv_compare.png>
  (./tables/midpoint_zrp_p_richardson_realrun.tab)
 (./tables/simpson4_zrp_p_richardson_realrun.tab)
-Overfull \hbox (5.664pt too wide) in paragraph at lines 559--559
+Overfull \hbox (5.664pt too wide) in paragraph at lines 1207--1207
 [][]  
  []
 
 
-Overfull \hbox (5.664pt too wide) in paragraph at lines 559--559
+Overfull \hbox (5.664pt too wide) in paragraph at lines 1207--1207
 [][]  
  []
 
-[22
+[27
 
 ])
 \tf@nav=\write6
@@ -1634,12 +1790,12 @@ Package rerunfilecheck Info: File `grad_seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 4172637E08010851496B23929A0382F8;427.
  ) 
 Here is how much of TeX's memory you used:
- 33062 strings out of 476179
- 728209 string characters out of 5808663
- 1059199 words of memory out of 5000000
- 53037 multiletter control sequences out of 15000+600000
- 483944 words of font info for 123 fonts, out of 8000000 for 9000
+ 33250 strings out of 476179
+ 732731 string characters out of 5808663
+ 1060642 words of memory out of 5000000
+ 53213 multiletter control sequences out of 15000+600000
+ 484050 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,18n,122p,421b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on grad_seminar.pdf (22 pages).
+Output written on grad_seminar.pdf (27 pages).
