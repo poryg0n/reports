@@ -7,7 +7,7 @@
 \begin{tabular}{ccccc}
 \toprule
 Run & ${\rm nsteps}$ & ${\rm Re}\,b_0(\omega)$ &
-${\rm Im|\,b_0(\omega)$ & $Q(\omega)$ \\
+${\rm Im}\,b_0(\omega)$ & $Q(\omega)$ \\
 \midrule
 Homogeneous & 20000 &
 $-0.6830301(-5)$ &
