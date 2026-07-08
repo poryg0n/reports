@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  24 JUN 2026 13:13
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.5.2)  8 JUL 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1628,34 +1628,34 @@ Overfull \hbox (58.99866pt too wide) detected at line 407
 File: images/diff_terms_25_psi_20_200_1q10.png Graphic file (type bmp)
 <images/diff_terms_25_psi_20_200_1q10.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 562--562
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 563--563
  [] 
  []
 
 File: images/diff_terms_25_psi_30_200_1q10.png Graphic file (type bmp)
 <images/diff_terms_25_psi_30_200_1q10.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 562--562
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 563--563
  [][] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 562--562
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 563--563
 [][]  
  []
 
 
-Overfull \hbox (88.60542pt too wide) detected at line 562
+Overfull \hbox (88.55472pt too wide) detected at line 563
 []
  []
 
 
-Overfull \hbox (94.77943pt too wide) in paragraph at lines 562--562
+Overfull \hbox (94.72873pt too wide) in paragraph at lines 563--563
 [][]  
  []
 
 
-Overfull \hbox (58.99866pt too wide) detected at line 562
+Overfull \hbox (58.99866pt too wide) detected at line 563
 []
  []
 
@@ -1666,27 +1666,27 @@ File: images/diff_terms_25_psi_20_200_1q10_improved.png Graphic file (type bmp)
 
 <images/diff_terms_25_psi_20_200_1q10_improved.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 722--722
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 724--724
  [] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 722--722
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 724--724
 [][]  
  []
 
 
-Overfull \hbox (88.60542pt too wide) detected at line 722
+Overfull \hbox (88.55472pt too wide) detected at line 724
 []
  []
 
 
-Overfull \hbox (94.77943pt too wide) in paragraph at lines 722--722
+Overfull \hbox (94.72873pt too wide) in paragraph at lines 724--724
 [][]  
  []
 
 
-Overfull \hbox (58.99866pt too wide) detected at line 722
+Overfull \hbox (58.99866pt too wide) detected at line 724
 []
  []
 
@@ -1696,34 +1696,34 @@ Overfull \hbox (58.99866pt too wide) detected at line 722
 File: images/pemd_akbkw_20_200_1q10_k1000.png Graphic file (type bmp)
 <images/pemd_akbkw_20_200_1q10_k1000.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 856--856
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 858--858
  [] 
  []
 
 File: images/norm_20_200_20k_1q10.png Graphic file (type bmp)
 <images/norm_20_200_20k_1q10.png>
 
-Overfull \hbox (177.77652pt too wide) in paragraph at lines 856--856
+Overfull \hbox (177.77652pt too wide) in paragraph at lines 858--858
  [][] 
  []
 
 
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 856--856
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 858--858
 [][]  
  []
 
 
-Overfull \hbox (47.17142pt too wide) detected at line 856
+Overfull \hbox (47.17142pt too wide) detected at line 858
 []
  []
 
 
-Overfull \hbox (53.34543pt too wide) in paragraph at lines 856--856
+Overfull \hbox (53.34543pt too wide) in paragraph at lines 858--858
 [][]  
  []
 
 
-Overfull \hbox (58.99866pt too wide) detected at line 856
+Overfull \hbox (58.99866pt too wide) detected at line 858
 []
  []
 
@@ -1732,36 +1732,36 @@ Overfull \hbox (58.99866pt too wide) detected at line 856
 ] [24
 
 ]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 966--966
 [][]  
  []
 
-(./tables/Qw_study.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1015--1015
+(./tables/Qw_study_1.tab)
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 966--966
 [][]  
  []
 
 [25
 
 ]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1077--1077
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1029--1029
 [][]  
  []
 
-(./tables/Qw_study_1.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1077--1077
+(./tables/Qw.tab)
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1029--1029
 [][]  
  []
 
 [26
 
 ]
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1140--1140
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1094--1094
 [][]  
  []
 
 (./tables/Qw.tab)
-Overfull \hbox (6.17401pt too wide) in paragraph at lines 1140--1140
+Overfull \hbox (6.17401pt too wide) in paragraph at lines 1094--1094
 [][]  
  []
 
@@ -1786,10 +1786,10 @@ Package rerunfilecheck Info: File `grad_seminar.out' has not changed.
 (rerunfilecheck)             Checksum: 4172637E08010851496B23929A0382F8;427.
  ) 
 Here is how much of TeX's memory you used:
- 33236 strings out of 476179
- 732150 string characters out of 5808663
+ 33233 strings out of 476179
+ 732080 string characters out of 5808663
  1060642 words of memory out of 5000000
- 53204 multiletter control sequences out of 15000+600000
+ 53202 multiletter control sequences out of 15000+600000
  484050 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,18n,122p,421b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
