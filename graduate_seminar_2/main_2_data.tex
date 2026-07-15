@@ -127,138 +127,6 @@ against an analytical result
 \frametitle{Quantum theory of radiation by nonstationary systems 
         with application to high-order harmonic generation
         (Phys. Rev. A 101, 013410 (2020))}
-        \framesubtitle{Study of the behavior of $\phi_\omega$ against 
-         the equation (homogeneous vs inhomogeneous)}
-\small
-\begin{textblock*}{500pt}(5pt,60pt)
-%\centering
-%\rotatebox{90}{
- \begin{minipage}{0.0\linewidth}
- \begin{figure}[tp]
- \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/phi_comp_file_1q4_homo_inhom.png} \\
-%\includegraphics[scale=.18, trim={6 150 10 185},clip]{images/phi_comp_file_npns_1q4_np20_30_40.png} \\
-% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
-%%\caption{Eigenvalues.}
-%\label{fig:pemd_0114}
- \end{figure}
-
-\end{minipage}
-\end{textblock*}
-
-
-\begin{textblock*}{500pt}(190pt,60pt)
-%\centering
-%\rotatebox{90}{
- \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/density_comp_file_1q4_np20.png} \\
-% \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/density_comp_file_1q4_np30.png} \\
-%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-
-\end{minipage}
-\end{textblock*}
-
-
-%\begin{textblock*}{500pt}(390pt,165pt)
-%%\centering
-%\rotatebox{90}{
-% \begin{minipage}{0.0\linewidth}
-% \begin{figure}[tp]
-% \includegraphics[scale=.20, trim={6 100 10 120},clip]{images/114_f01_3_error.png } \\
-%%%\caption{Eigenvalues.}
-%%\label{fig:pemd_0114}
-% \end{figure}
-%\end{minipage}
-%}
-%}
-%\end{textblock*}
-%
-%
-
-\begin{textblock*}{200pt}(260pt,60pt)
-\rotatebox{0}{
-\begin{minipage}{\linewidth}
-{
-\scriptsize
-\centering
-
-
-\footnotesize
-\begin{align}
-b_{0\omega}(T) & = e^{iE_0T} \int \psi_0(x) \phi_\omega(x,T) dx, \nonumber \\
-b_{k\omega}(T) & = e^{iE_kT} \int \psi_k^{(-)*}(x) \phi_\omega(x,T) dx\nonumber,
-\end{align}
-
-
-\footnotesize
-\begin{align}
-  Q(\omega) = \left| b_{0\omega}\right|^2
-        + \int \left| b_{k\omega}\right|^2 \frac{dk}{2\pi} \nonumber
-\end{align}
-        \begin{align}
-                \rm{Np} = 20,\;\;\;\rm{Ns} = 100 \nonumber\\
-%               \;\;\;\rm{Ns} = 200 \nonumber\\
-                \rm{xmax} \sim \left(\rm{Np\,Ns}+q\right)/2 \nonumber\\
-                \omega_0 = 0.114\,{\rm a.u}\nonumber\\
-                q=1/4\nonumber\\
-                F_0 = 0.03\,{\rm a.u}, \;\;T=5\tau\nonumber\\
-                {\rm nsteps} = 20 000,\, \;\;\Delta t=0.06889\nonumber
-        \end{align}
-%       \textcolor{red}{\textbf{The nonconvergence come from the fact that}
-%       $\rm{xmax}\sim \rm{Np\,Ns}$ here}
-
-}
-\end{minipage}
-}
-\end{textblock*}
-
-
-
-\begin{textblock*}{200pt}(30pt,140pt)
-\footnotesize
-
-\begin{align}
-b_{0\omega} & = b_{0\omega}(T)
- +\int\frac{e^{i(E_0+\omega-E_{k^\prime})T}p_{0k^\prime}a_{k^\prime}}
-{E_0+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber\\
-b_{k\omega} & = b_{k\omega}(T)
- +\frac{e^{i(E_k+\omega-E_0)T}p_{k0}a_0}{E_k+\omega-E_0}
- +\int\frac{e^{i(E_k+\omega-E_{k^\prime})T}p_{kk^\prime}a_{k^\prime}}
-{E_k+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber
-\end{align}
-
-\begin{align}
- i\partial_t \phi_{\omega}(t) 
- & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) \nonumber\\
- i\partial_t \phi_{\omega}(t) 
- & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) 
--i e^{i\omega t} \partial_x \psi (x,t) \nonumber
-\end{align}
-%\begin{itemize}
-%\scriptsize
-%\item The convergence region for $\psi$ is ${\rm xrange} \sim 2000$
-%\item The convergence region for $\phi$ is ${\rm xrange} \sim 4500$
-%\item The plateau for $\phi$ seems to be $1e-8$, 
-%above the double precision limit
-%\item The result is confirmed by 2 different methods and has been tested 
-%against an analytical result
-%\end{itemize}
-
-\end{textblock*}
-
-
-\end{frame}
-
-
-
-
-\begin{frame}
-\frametitle{Quantum theory of radiation by nonstationary systems 
-        with application to high-order harmonic generation
-        (Phys. Rev. A 101, 013410 (2020))}
         \framesubtitle{Convergence of the vector,  
          non integral transition terms $p_{k0}a_0$}
 \small
@@ -733,7 +601,7 @@ b_{k\omega} & = b_{k\omega}(T)
         with application to high-order harmonic generation
         (Phys. Rev. A 101, 013410 (2020))}
         \framesubtitle{Study of the the coefficients $b_{k\omega}(T)$, 
-         norm and PEMD}
+         norm and PEMD (a lookback)}
 \small
 \begin{textblock*}{500pt}(5pt,60pt)
 %\centering
@@ -971,6 +839,83 @@ $Q(\omega) \sim 1e-5$
 
 
 
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+        with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Quantum High Harmonic Generation, 
+        for $\phi_\omega$ (many channels)... - Propagation program}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_20k_25_30_200.png} \\
+%% \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_30_200_2.png} \\
+% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/bkw_003_114_20k_25_30_200.png} 
+%%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+%\begin{textblock*}{300pt}(100pt,180pt)
+%\rotatebox{0}{
+%\begin{minipage}{\linewidth}
+%{
+%\scriptsize
+%For this laser intensity and frequency, the reference result is
+%$Q(\omega) \sim 1e-5$ 
+%}
+%\end{minipage}
+%}
+%\end{textblock*}
+
+
+\begin{textblock*}{\linewidth}(20pt,100pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\Tiny
+\input{tables/norm_multichan.tab}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+\begin{textblock*}{300pt}(100pt,160pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+Solving the inhomogeneous equation for hundreds of channels simultaneously
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+%
+%
+%\begin{textblock*}{200pt}(150pt,205pt)
+%\scriptsize
+%%
+%\begin{align}
+%	&Q^{(c)}(\omega) = \omega^2 \left| d(\omega)  \right|^2, \nonumber\\
+%	&\mbox{Above is Eq.80, below is Eq.(104)} \nonumber\\
+%        &Q^{(c)}(\omega) = \left| p(\omega)  \right|^2. \nonumber
+%\end{align}
+%
+%
+%\end{textblock*}
+
+\end{frame}
+
+
+
+
 
 
 \begin{frame}
@@ -1050,47 +995,189 @@ $Q(\omega) \sim 1e-5$
 
 
 
+
 \begin{frame}
 \frametitle{Quantum theory of radiation by nonstationary systems 
         with application to high-order harmonic generation
         (Phys. Rev. A 101, 013410 (2020))}
-        \framesubtitle{Quantum High Harmonic Generation, 
-        for $\phi_\omega$ (many channels)... - Propagation program}
+        \framesubtitle{Q-HHG vs C-HHG}
 \small
 \begin{textblock*}{500pt}(5pt,60pt)
 %\centering
 %\rotatebox{90}{
  \begin{minipage}{0.0\linewidth}
  \begin{figure}[tp]
-% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/hhg_003_114_20k_25_30_200.png} \\
-%% \includegraphics[scale=.18, trim={6 180 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_15k_25_30_200_2.png} \\
-% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_hhg/bkw_003_114_20k_25_30_200.png} 
-%%%\caption{Eigenvalues.}
+ \includegraphics[scale=.28, trim={6 140 10 185},clip]{images/pemd_akbkw_20_200_1q10_k1000.png} \\
+%\includegraphics[scale=.18, trim={6 150 10 185},clip]{images/norm_20_200_20k_1q10.png} \\
+% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
+%%\caption{Eigenvalues.}
 %\label{fig:pemd_0114}
  \end{figure}
 
 \end{minipage}
 \end{textblock*}
 
-%\begin{textblock*}{300pt}(100pt,180pt)
-%\rotatebox{0}{
-%\begin{minipage}{\linewidth}
-%{
-%\scriptsize
-%For this laser intensity and frequency, the reference result is
-%$Q(\omega) \sim 1e-5$ 
-%}
-%\end{minipage}
-%}
-%\end{textblock*}
+
+\begin{textblock*}{500pt}(190pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/density_comp_file_1q4_np20.png} \\
+% \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/density_comp_file_1q4_np30.png} \\
+%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+
+\end{minipage}
+\end{textblock*}
 
 
-\begin{textblock*}{\linewidth}(20pt,100pt)
+%
+\begin{textblock*}{200pt}(270pt,80pt)
 \rotatebox{0}{
 \begin{minipage}{\linewidth}
 {
-\Tiny
-\input{tables/norm_multichan.tab}
+\scriptsize
+\centering
+
+\footnotesize
+\begin{align}
+b_{0\omega}(T) & = e^{iE_0T} \int \psi_0(x) \phi_\omega(x,T) dx, \nonumber \\
+b_{k\omega}(T) & = e^{iE_kT} \int \psi_k^{(-)*}(x) \phi_\omega(x,T) dx\nonumber,
+\end{align}
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{200pt}(260pt,130pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+\centering
+
+
+\footnotesize
+\begin{align}
+  Q(\omega) = \left| b_{0\omega}\right|^2
+        + \int \left| b_{k\omega}\right|^2 \frac{dk}{2\pi} \nonumber
+\end{align}
+        \begin{align}
+                \rm{Np} = 20,\;\;\;\rm{Ns} = 200 \nonumber\\
+%               \;\;\;\rm{Ns} = 200 \nonumber\\
+                \rm{xmax} \sim \left(\rm{Np\,Ns}+q\right)/2 \nonumber\\
+                \omega_0 = 0.114\,{\rm a.u}\nonumber\\
+                q=1/10\nonumber\\
+                F_0 = 0.03\,{\rm a.u}, \;\;T=5\tau\nonumber\\
+                {\rm nsteps} = 20 000,\, \;\;\Delta t=0.06889\nonumber
+        \end{align}
+%       \textcolor{red}{\textbf{The nonconvergence come from the fact that}
+%       $\rm{xmax}\sim \rm{Np\,Ns}$ here}
+
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+\begin{textblock*}{200pt}(30pt,190pt)
+\footnotesize
+
+\begin{align}
+b_{0\omega} & = b_{0\omega}(T)
+ +\int\frac{e^{i(E_0+\omega-E_{k^\prime})T}p_{0k^\prime}a_{k^\prime}}
+{E_0+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber\\
+b_{k\omega} & = b_{k\omega}(T)
+ +\frac{e^{i(E_k+\omega-E_0)T}p_{k0}a_0}{E_k+\omega-E_0}
+ +\int\frac{e^{i(E_k+\omega-E_{k^\prime})T}p_{kk^\prime}a_{k^\prime}}
+{E_k+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber
+\end{align}
+
+%\begin{align}
+% i\partial_t \phi_{\omega}(t) 
+% & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) \nonumber\\
+% i\partial_t \phi_{\omega}(t) 
+% & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) 
+%-i e^{i\omega t} \partial_x \psi (x,t) \nonumber
+%\end{align}
+%%\begin{itemize}
+%\scriptsize
+%\item The convergence region for $\psi$ is ${\rm xrange} \sim 2000$
+%\item The convergence region for $\phi$ is ${\rm xrange} \sim 4500$
+%\item The plateau for $\phi$ seems to be $1e-8$, 
+%above the double precision limit
+%\item The result is confirmed by 2 different methods and has been tested 
+%against an analytical result
+%\end{itemize}
+
+\end{textblock*}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Quantum theory of radiation by nonstationary systems 
+        with application to high-order harmonic generation
+        (Phys. Rev. A 101, 013410 (2020))}
+        \framesubtitle{Study of the the coefficients $b_{k\omega}(T)$}
+\small
+\begin{textblock*}{500pt}(5pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+ \begin{figure}[tp]
+ \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/pemd_akbkw_20_200_1q10_k1000.png} \\
+ \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/norm_20_200_20k_1q10.png} \\
+% \includegraphics[scale=.18, trim={6 140 10 185},clip]{/s/fred/ドキュメント/電通大/hpc_fedvr_main_ref/data/exp/png_density/density_003_114_20k_25_30_200_2.png} 
+%%\caption{Eigenvalues.}
+%\label{fig:pemd_0114}
+ \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{500pt}(190pt,60pt)
+%\centering
+%\rotatebox{90}{
+ \begin{minipage}{0.0\linewidth}
+% \begin{figure}[tp]
+% \includegraphics[scale=.18, trim={6 180 10 185},clip]{images/density_comp_file_1q4_np20.png} \\
+% \includegraphics[scale=.18, trim={6 150 10 185},clip]{images/density_comp_file_1q4_np30.png} \\
+%% \includegraphics[scale=.20, trim={30 130 10 130},clip]{images/114_f003_12_07_hhg.png} 
+%%%\caption{Eigenvalues.}
+%%\label{fig:pemd_0114}
+% \end{figure}
+
+\end{minipage}
+\end{textblock*}
+
+
+\begin{textblock*}{200pt}(270pt,80pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+\centering
+
+\footnotesize
+\begin{align}
+b_{0\omega}(T) & = e^{iE_0T} \int \psi_0(x) \phi_\omega(x,T) dx, \nonumber \\
+b_{k\omega}(T) & = e^{iE_kT} \int \psi_k^{(-)*}(x) \phi_\omega(x,T) dx\nonumber,
+\end{align}
 }
 \end{minipage}
 }
@@ -1098,21 +1185,78 @@ $Q(\omega) \sim 1e-5$
 
 
 
-%
-%
-%\begin{textblock*}{200pt}(150pt,205pt)
-%\scriptsize
-%%
+\begin{textblock*}{200pt}(260pt,130pt)
+\rotatebox{0}{
+\begin{minipage}{\linewidth}
+{
+\scriptsize
+\centering
+
+
+\footnotesize
+\begin{align}
+  Q(\omega) = \left| b_{0\omega}\right|^2
+        + \int \left| b_{k\omega}\right|^2 \frac{dk}{2\pi} \nonumber
+\end{align}
+        \begin{align}
+                \rm{Np} = 20,\;\;\;\rm{Ns} = 200 \nonumber\\
+%               \;\;\;\rm{Ns} = 200 \nonumber\\
+                \rm{xmax} \sim \left(\rm{Np\,Ns}+q\right)/2 \nonumber\\
+                \omega_0 = 0.114\,{\rm a.u}\nonumber\\
+                q=1/10\nonumber\\
+                F_0 = 0.03\,{\rm a.u}, \;\;T=5\tau\nonumber\\
+                {\rm nsteps} = 20 000,\, \;\;\Delta t=0.06889\nonumber
+        \end{align}
+%       \textcolor{red}{\textbf{The nonconvergence come from the fact that}
+%       $\rm{xmax}\sim \rm{Np\,Ns}$ here}
+
+}
+\end{minipage}
+}
+\end{textblock*}
+
+
+
+
+
+\begin{textblock*}{200pt}(30pt,190pt)
+\footnotesize
+
+\begin{align}
+b_{0\omega} & = b_{0\omega}(T)
+ +\int\frac{e^{i(E_0+\omega-E_{k^\prime})T}p_{0k^\prime}a_{k^\prime}}
+{E_0+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber\\
+b_{k\omega} & = b_{k\omega}(T)
+ +\frac{e^{i(E_k+\omega-E_0)T}p_{k0}a_0}{E_k+\omega-E_0}
+ +\int\frac{e^{i(E_k+\omega-E_{k^\prime})T}p_{kk^\prime}a_{k^\prime}}
+{E_k+\omega-E_{k^\prime} + i0} \frac{dk^\prime}{2\pi} \nonumber
+\end{align}
+
 %\begin{align}
-%	&Q^{(c)}(\omega) = \omega^2 \left| d(\omega)  \right|^2, \nonumber\\
-%	&\mbox{Above is Eq.80, below is Eq.(104)} \nonumber\\
-%        &Q^{(c)}(\omega) = \left| p(\omega)  \right|^2. \nonumber
+% i\partial_t \phi_{\omega}(t) 
+% & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) \nonumber\\
+% i\partial_t \phi_{\omega}(t) 
+% & = \left(\hat{H}_a + \hat{V}_{\rm ext}(t) \right) \phi_{\omega}(t) 
+%-i e^{i\omega t} \partial_x \psi (x,t) \nonumber
 %\end{align}
-%
-%
-%\end{textblock*}
+%%\begin{itemize}
+%\scriptsize
+%\item The convergence region for $\psi$ is ${\rm xrange} \sim 2000$
+%\item The convergence region for $\phi$ is ${\rm xrange} \sim 4500$
+%\item The plateau for $\phi$ seems to be $1e-8$, 
+%above the double precision limit
+%\item The result is confirmed by 2 different methods and has been tested 
+%against an analytical result
+%\end{itemize}
+
+\end{textblock*}
+
 
 \end{frame}
+
+
+
+
 
 
 
