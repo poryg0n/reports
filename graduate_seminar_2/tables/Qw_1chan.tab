@@ -1,0 +1,15 @@
+\begin{table}[h!]
+\centering
+%\caption{Comparison of the single-channel and multichannel implementations
+%at $\omega=0.50$ a.u. The multichannel result is currently unavailable,
+%indicating a mismatch in the frequency indexing.}
+%\label{tab:single_multi_compare}
+\begin{tabular}{ccc}
+\toprule
+Implementation & $\omega$ (a.u.) & $Q(\omega)$ \\
+\midrule
+Single-channel & 0.50 & $1.9582346(-1)$ \\
+Multichannel   & 0.50 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

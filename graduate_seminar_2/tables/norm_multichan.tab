@@ -1,0 +1,24 @@
+\begin{table}[h!]
+\centering
+%\caption{Photoelectron spectrum computed by the multichannel program.}
+%\label{tab:multichannel_spectrum}
+\begin{tabular}{ccccccc}
+\toprule
+$t$
+& $\|\phi_{0.50}\|$
+& $\|\phi_{0.51}\|$
+& $\|\phi_{0.52}\|$
+& $\cdots$
+& $\|\psi\|$
+& $\|\phi_{0.50}^{(\mathrm{SC})}\|$ \\
+\midrule
+$-688.946$ & 0.44834 & 0.44527 & 0.44226 & {$\cdots$}& 1.00000 & 0.44834 \\
+$-688.877$ & 0.40099 & 0.41982 & 0.44808 & {$\cdots$}& 1.00000 & 0.40099 \\
+$-688.808$ & 0.35620 & 0.39547 & 0.45356 & {$\cdots$}& 1.00000 & 0.35620 \\
+\multicolumn{7}{c}{$\cdot$}\\
+$688.739$ & 0.66593 & 0.50968 & 0.46123 & {$\cdots$}& 1.00000 & 0.66593 \\
+$688.808$ & 0.66502 & 0.50937 & 0.46113 & {$\cdots$}& 1.00000 & 0.66502 \\
+$688.877$ & 0.66404 & 0.50905 & 0.46102 & {$\cdots$}& 1.00000 & 0.66404 \\
+\bottomrule
+\end{tabular}\end{table}
+

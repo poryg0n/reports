@@ -1,0 +1,22 @@
+\begin{table}[h!]
+\centering
+%\caption{Photoelectron spectrum computed by the multichannel program.}
+%\label{tab:multichannel_spectrum}
+\begin{tabular}{ccc}
+\toprule
+Channel $i$ & $\omega_i$ (a.u.) & $Q(\omega_i)$ \\
+\midrule
+1 & 0.51 & $6.3729270(1)$ \\
+2 & 0.52 & $6.9318564(1)$ \\
+3 & 0.53 & $4.5211314(2)$ \\
+4 & 0.54 & $2.1573174(2)$ \\
+5 & 0.55 & $2.3645825(2)$ \\
+\multicolumn{3}{c}{$\cdots$} \\
+45 & 0.95 & \dots \\
+46 & 0.96 & $2.7280145(1)$ \\
+47 & 0.97 & $5.1638662(2)$ \\
+48 & 0.98 & $1.7652958(2)$ \\
+49 & 0.99 & $6.6526266(0)$ \\
+\bottomrule
+\end{tabular}
+\end{table}
