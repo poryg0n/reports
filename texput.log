@@ -1,18 +1,18 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.10.23)  3 JUL 2026 11:54
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2025.10.23)  16 JUL 2026 08:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**grad_seminar.tex
+**graduate_seminar_2/
 
 ! Emergency stop.
-<*> grad_seminar.tex
-                    
+<*> graduate_seminar_2/
+                       
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
  2 strings out of 481370
- 22 string characters out of 5926566
+ 29 string characters out of 5926566
  239972 words of memory out of 5000000
  17132 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000

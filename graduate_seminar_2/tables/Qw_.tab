@@ -1,0 +1,25 @@
+\begin{table}[h!]
+\centering
+%\caption{Representative values of the computed quantum spectrum
+%$Q(\omega)$ for selected frequency channels.}
+\begin{tabular}{ccc}
+\toprule
+Channel & $\omega$ (a.u.) & $\Re[Q(\omega)]$ \\
+\midrule
+1   & 0.50 & $1.9582346(-1)$ \\
+2   & 0.51 & $4.2815679(-2)$ \\
+3   & 0.52 & $2.6335454(-3)$ \\
+\multicolumn{3}{c}{$\cdots$}\\
+61  & 1.10 & $2.9983280(-1)$ \\
+62  & 1.11 & $2.1082327(-1)$ \\
+63  & 1.12 & $1.0892261(-1)$ \\
+\multicolumn{3}{c}{$\cdots$}\\
+%96  & 1.45 & $3.4106215(-4)$ \\
+%97  & 1.46 & $1.8293276(-2)$ \\
+98  & 1.47 & $7.2830156(-2)$ \\
+99  & 1.48 & $1.4370327(-1)$ \\
+100 & 1.49 & $2.0523578(-1)$ \\
+\bottomrule
+\end{tabular}
+%\label{tab:Qw_spectrum_100ch}
+\end{table}
