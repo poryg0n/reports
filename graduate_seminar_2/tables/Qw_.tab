@@ -4,7 +4,7 @@
 %$Q(\omega)$ for selected frequency channels.}
 \begin{tabular}{ccc}
 \toprule
-Channel & $\omega$ (a.u.) & $\Re[Q(\omega)]$ \\
+Channel & $\omega$ (a.u.) & $Q(\omega)$ \\
 \midrule
 1   & 0.50 & $1.9582346(-1)$ \\
 2   & 0.51 & $4.2815679(-2)$ \\
